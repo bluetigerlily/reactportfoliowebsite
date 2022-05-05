@@ -1,0 +1,270 @@
+/* font-family: 'Merienda', cursive; */
+
+// $black: #000000ff;
+// $champagne-pink: #f9dec9ff;
+// $wild-blue-yonder: #99b2ddff;
+// $raw-umber: #7e6551ff;
+// $purple-navy: #5e548eff;
+
+.contactoutercontainerclass {
+    font-family: 'Merienda', cursive;
+    display: flex;
+    flex-direction: column;
+    color: #5e548eff;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mapaddressemailphonecontainerclass {
+    order: 0 !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;    
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.15);
+    transition: all .4s ease;
+    margin-bottom: 2rem;
+}
+
+.mapaddressemailphonecontainerclass:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 1rem .5rem rgba(0,0,0,.25);
+}
+
+.mapframeclass {
+    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.15);
+    margin: 1rem;
+    padding: 1rem;
+    outline: .4rem solid ;
+    max-width: 1440px;
+    transform-style: flat;
+}
+@media screen and (max-width: 1000px) {
+    .mapframeclass {
+        width: 23rem; 
+        padding: 1vh;
+        margin: 1vw;
+        height: 10rem;  
+        outline-offset: -.5rem;
+        box-shadow: none;
+    }
+}
+
+.informationoutercontainerclass {
+    display: flex;
+    flex-direction: row;
+    column-gap: 3rem;
+    width: 100%;
+    justify-items: center;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 1440px;
+    transform-style: flat;
+
+}
+@media screen and (max-width: 1000px) {
+    .informationoutercontainerclass {
+        flex-direction: column;
+        padding: 1vh;
+        margin: 1vw;
+    }
+}
+
+.addressoutercontainer {
+    display: flex;
+    flex-direction: column;
+    order: 0 !important;
+
+}
+.addresstitleclass {
+    font-size: 140%;
+    order: 0;
+    
+}
+.addressclass {
+    font-size: 130%;
+    order: 1;
+}
+
+.emailcontainerclass {
+    order: 1 !important;
+    display: flex;
+    flex-direction: column;
+}
+.emailtitleclass {
+    font-size: 140%;
+    order: 0;    
+}
+.emailclass {
+    font-size: 130%;
+    order: 1;
+}
+.phonecontainerclass {
+    order: 2 !important;
+    display: flex;
+    flex-direction: column;
+}
+.phonetitleclass {
+    order: 0;
+    font-size: 140%;
+}
+.phoneclass {
+    order: 1;
+    font-size: 130%;
+}
+.contactform {
+    flex-direction: column;
+    order: 2;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #99b2ddff;
+    border-radius: 1rem;
+    font-size: 130%;
+    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
+    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.15);
+    transition: all .4s ease;
+    max-width: 1440px;
+    transform-style: flat;
+    margin: .6rem;
+    
+
+}
+label {
+    color:  #f9dec9ff;
+    font-weight: bold;
+    display: block;
+    float: left;
+    background: #5e548eff;
+    height: 3rem;
+    width: 7rem;
+    font-size: 1.3rem;    
+    margin-right: .3rem;
+    margin-bottom: .6rem;
+    border-radius: .25rem;
+    padding-top: .35rem;
+  }
+  label:after { content: ": " }
+  .inputcontainer {
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+  }
+@media screen and (max-width: 1000px) {
+    label {
+    color:  #f9dec9ff;
+    font-weight: bold;
+    display: block;
+    justify-items: center;
+    justify-content: center;
+    float: left;
+    background: #5e548eff;
+    height: 30px;
+    width: 80px;
+    font-size: 1rem;
+    margin-right: .3rem;
+    margin-bottom: .3rem;
+    border-radius: .25rem;
+    padding-top: .1rem;
+  }
+    .contactform {
+        padding: 1vh;
+        margin: 1vw;
+    }
+}
+input[type=text]{
+    height: 3rem;
+    width: 15rem;
+    }
+input[type=email] {
+    height: 3rem;
+    width: 15rem;
+    }
+textarea{
+    height: fit-content;
+    max-width: 15rem;
+    min-height: 3rem;
+    min-width: 15rem;
+    }
+@media screen and (max-width: 1000px) {
+input[type=text]{
+    height: 2.3rem;
+    width: 12rem;
+    }
+input[type=email] {
+    height: 2.3rem;
+    width: 12rem;
+    }
+textarea{
+    height: fit-content;
+    max-width: 12rem;
+    min-height: 2.3rem;
+    min-width: 12rem;
+    }
+}
+.contactform:hover {
+    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+    box-shadow: 1rem .5rem rgba(0,0,0,.25);
+}
+.contactformtitle{
+    order: 0;
+}
+
+.paramessageclass {
+    order: 1;
+}
+
+.inputcontainer {
+    order: 2;
+    background-color: #99b2ddff;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    max-width: 1440px;
+    transform-style: flat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .inputcontainer {
+        padding: 1vh;
+        margin: 1vw;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.messageclass {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    margin: 1vw;
+    min-width: 100%;
+    order: 2;
+}
+.submitbuttonclass {
+    background: #5e548eff;
+    border-radius: .5rem;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    padding: 1vw;
+    max-width: 100%;
+    min-width: 60%;
+    order: 3;
+    margin: 1vw;
+}

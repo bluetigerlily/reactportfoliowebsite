@@ -1,0 +1,86 @@
+// $black: #000000ff;
+// $champagne-pink: #f9dec9ff;
+// $wild-blue-yonder: #99b2ddff;
+// $white: #ffffff;
+// $purple-navy: #5e548eff;
+
+
+::-webkit-scrollbar {
+  width: 1.5em;
+  cursor: pointer;
+  height: 1em;
+}
+
+::-webkit-scrollbar-track {
+  background: #99b2ddff;
+  border: .1em solid #5e548eff;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9dec9ff;
+  border: .25em solid #f9dec9ff;
+  outline: .1em solid #5e548eff;
+  border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5e548eff;
+}
+
+@supports (scrollbar-color: #99b2ddff #5e548eff) {
+  * {
+    scrollbar-color: #99b2ddff #5e548eff;
+    scrollbar-width: auto;
+  }
+}
+
+
+.containerclass {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color:  #99b2ddff;
+
+}
+
+
+.appbodyclass {
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  background-color:  #99b2ddff;
+  overflow: hidden;
+  width: 100%;
+  margin: 3%;
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  // opacity: 0.78;
+}
+
+#navbardivid {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: sticky;
+  top: .1em;
+  width: 100%;
+}
+
+#particlesdivid {
+  position: absolute;
+  top: 0;
+  width: fit-content;
+  height: fit-content;
+  left: 0;
+  z-index: 0;
+  cursor: pointer;
+}
+
+
+
+

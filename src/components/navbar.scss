@@ -1,0 +1,66 @@
+/* font-family: 'Merienda', cursive; */
+
+// $black: #000000ff;
+// $champagne-pink: #f9dec9ff;
+// $wild-blue-yonder: #99b2ddff;
+// $raw-umber: #7e6551ff;
+// $purple-navy: #5e548eff;
+
+
+.navcontainer{ 
+    font-family: 'Merienda', cursive;
+    background: #5e548eff;
+    cursor: pointer !important;
+    font-size: 2vw;
+    outline-offset: -.4rem;
+    outline: .1rem dashed #f9dec9ff;
+}
+@media screen and (max-width: 1000px) {
+    .navcontainer {
+        outline: none;
+    }
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    height: auto;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    min-width: 320px !important;
+    overflow: hidden;
+    white-space: nowrap;
+    column-gap: .9em !important;
+    margin-top: 0.2em;
+    
+}
+
+a {
+    color:     #f9dec9ff;
+    text-decoration: none;
+    border-bottom: 0.2em solid #5a5266a4;
+    transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+}
+
+a:hover,
+a:focus {
+  background: #f9dec9ff;
+  color: #5e548eff;
+  text-decoration: underline;
+}
+
+#aboutbtnnav {
+    order: 0 !important;
+}
+#projectsbtnnav {
+    order: 1 !important;
+} 
+#skillsbtnnav {
+    order: 2 !important;
+}
+#contactbtnnav {
+    order: 3 !important;;
+}

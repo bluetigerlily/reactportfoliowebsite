@@ -1,0 +1,103 @@
+/* font-family: 'Merienda', cursive; */
+
+// $black: #000000ff;
+// $champagne-pink: #f9dec9ff;
+// $wild-blue-yonder: #99b2ddff;
+// $raw-umber: #7e6551ff;
+// $purple-navy: #5e548eff;
+
+.skillsouterdivclass {
+    font-family: 'Merienda', cursive;
+    display: flex;
+    flex-direction: column;
+    color: #5e548eff;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: #f9dec9ff;
+    border-radius: 10%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    outline: .4rem #5e548eff dashed;
+    outline-offset: -.7rem;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    a {
+        color: #5e548eff;
+    }
+}
+
+.skillstitleclass {
+    font-size: 2.6rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.skillsparadescriptionclass {
+    font-size: 1.3rem;
+    padding: 1rem;
+    margin: 1rem;
+    height: fit-content;
+    width: fit-content;
+
+}
+
+.skillsmappingdivcontainerclass {
+    font-size: 1.3rem;
+    display: flex;
+    padding-bottom: 5rem;
+    height: fit-content;
+    width: 100%;
+    flex-flow: wrap;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+@media screen and (max-width: 1000px) {
+    .skillsmappingdivcontainerclass {
+    flex-direction: column;
+    flex-flow: wrap;
+    }
+    .skillsparadescriptionclass {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .skillsouterdivclass {
+        width: 100%;
+        margin: none;
+        justify-self: center;
+    }
+
+}
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+        .skillsmappingdivcontainerclass {
+            flex-direction: column;
+             flex-flow: wrap;
+        }
+        .skillsparadescriptionclass {
+            display: flex;
+            flex-flow: wrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+        .skillsouterdivclass {
+            width: 100%;
+            margin: none;
+            justify-self: center;
+            font-size: 1rem;
+        }
+}
+
+
+.skillsmappinginnerspanclass {
+    padding: 1rem;
+    height: auto;
+    width: auto;
+}

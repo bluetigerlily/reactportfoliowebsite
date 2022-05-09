@@ -95,6 +95,33 @@
         }
 }
 
+@media only screen 
+  and (max-device-width: 320px) {
+    .skillsmappingdivcontainerclass {
+        flex-direction: column;
+         flex-flow: wrap;
+         font-size: .8rem;
+    }
+    .skillstitleclass {
+        font-size: 2rem;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    .skillsparadescriptionclass {
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: .7rem;
+    }
+    .skillsouterdivclass {
+        width: 100%;
+        margin: none;
+        justify-self: center;
+        font-size: 1rem;
+    }
+  }
+
 
 .skillsmappinginnerspanclass {
     padding: 1rem;

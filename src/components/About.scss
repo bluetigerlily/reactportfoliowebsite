@@ -132,7 +132,8 @@
     }
 }
 @media only screen 
-and (max-device-width: 320px) { 
+and (max-device-width: 0px) 
+and (min-device-width: 320px) { 
     .inner_poligon {
         flex-direction: column;
         width: 15rem; 
@@ -161,18 +162,7 @@ and (max-device-width: 320px) {
         outline: .1rem double #5e548eff;
         border-radius: 5%;
     }
-     .imageoutercontainer {
-        flex-flow: column;
-        order: 2 !important;
-        width: auto;
-        min-height: 30vh;
-        margin-bottom: 6rem;
-        margin-top: 9rem;
-        column-gap: 3rem;
-        row-gap: 3rem;
-        display: flex;
-        align-items: center;
-    }
+    
     .trailcontainer {
         order: 2 !important;
         visibility: hidden;
@@ -181,13 +171,24 @@ and (max-device-width: 320px) {
         z-index: -2 !important;
         transform: translateY(40.5em) rotateX(1deg);
     }
-
+    .imageoutercontainer {
+        order: 2 !important;
+        width: fit-content;
+        min-height: 30vh;
+        margin-bottom: 6rem;
+        margin-top: 9rem;
+        column-gap: 3rem;
+        row-gap: 3rem;
+        align-items: center;
+    }
     .imageoutercontainer img {
         width: 300px;
         position: relative;
         background-color: grey;
     }
-}
+ }
+
+
 @media only screen 
 and (min-device-width: 320px)
   and (max-device-width: 568px)
@@ -219,7 +220,7 @@ and (min-device-width: 320px)
         align-items: center;
         outline: .1rem double #5e548eff;
         border-radius: 5%;
-    }
+     }
      .imageoutercontainer {
         flex-flow: column;
         order: 2 !important;
@@ -231,8 +232,10 @@ and (min-device-width: 320px)
         column-gap: 3rem;
         row-gap: 3rem;
         display: flex;
+        padding: 1rem;
         align-items: center;
     }
+    
         .trailcontainer {
         order: 2 !important;
         visibility: hidden;
@@ -341,14 +344,17 @@ animation: loopOnScreen3 3s infinite;
 
 .imageoutercontainer {
     order: 2 !important;
-    width: auto;
     min-height: 30vh;
     margin-bottom: 6rem;
     margin-top: 9rem;
     column-gap: 3rem;
     row-gap: 3rem;
     display: flex;
+    flex-direction: row;
     align-items: center;
+}
+.imageoutercontainer img {
+    max-width: fit-content; 
 }
 .imageoutercontainer {
 
@@ -389,10 +395,10 @@ $imageborderradius: 10%;
 //the images
 
 @media screen 
-and (min-width: 580px)
+and (min-width: 320px)
 and (max-width: 1000px) {
     .imageoutercontainer {
-        flex-flow: column;
+        flex-direction: column;
         order: 2 !important;
         width: auto;
         min-height: 30vh;

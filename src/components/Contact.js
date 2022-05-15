@@ -1,5 +1,6 @@
 import React from "react";
 import "./Contact.scss";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 
 export default function Contact() {
@@ -72,11 +73,11 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="contactform">
             <h2 className="contactformtitle">
-              Hire Me
+              Contact Me
             </h2>
             <p className="paramessageclass">
-              If you think I'd be a good fit for your position or just would like to learn more
-               please reach out to me using the form below or just giving me a call.  Thank you for
+              If you think I'd be a good fit for your position or would like to just learn more,
+               please reach out to me using the form below.  Thank you for
                 your time!
             </p>
             <div className="inputcontainer">
@@ -126,7 +127,19 @@ export default function Contact() {
               Submit
             </button>
             </div>
-          </form>
+        
+
+        <div className="footer">
+          <div className="linkedincontainer">
+            <a href="https://www.linkedin.com/feed/" id="linkedin" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+          </div>
+          <div className="githubcontainer">
+            <a href="https://github.com/bluetigerlily" id="linkedin" target="_blank" rel="noreferrer"><FaGithub /></a>
+          </div>
+        </div>
+
+
+        </form>
         </div>
       </section>
     );

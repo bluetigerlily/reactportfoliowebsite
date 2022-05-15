@@ -1,6 +1,9 @@
 import React from "react";
 import { codingskills } from "../data";
 import "./Skills.scss";
+import { FaHackerrank } from "react-icons/fa";
+import { SiCodecademy } from "react-icons/si";
+
 
 
 export default function Skills() {
@@ -13,8 +16,9 @@ export default function Skills() {
               </h1>
               <p className="skillsparadescriptionclass" id="skillsparadescriptionid">
                 I use: &nbsp;
-                <a href="https://www.codecademy.com/learn" target="_blank" rel="noreferrer">https://www.codecademy.com/learn</a> 
-                &nbsp;&amp;&nbsp;<a href="https://www.hackerrank.com/vhr825" target="_blank" rel="noreferrer">https://www.hackerrank.com/vhr825</a>&nbsp; 
+                <a href="https://www.codecademy.com/learn" target="_blank" id="codeacademy" rel="noreferrer"><SiCodecademy /> Codecademy</a> 
+                &nbsp;&amp;&nbsp;
+                <a href="https://www.hackerrank.com/vhr825" target="_blank" id="hackerrank" rel="noreferrer"><FaHackerrank /> Hackerrank</a>&nbsp; 
                 as supplemental learning resources along with following Programming Youtubers, Online Articles, and Completeing Projects.  
                  Below are some of the Skills and Technologies I've learned during my time Programming:  
               </p>
@@ -24,7 +28,7 @@ export default function Skills() {
                 <div key={skill} className="skillsmappinginngclass">
                   <div className="skillsmappinginnerdivclass">
                     <span className="skillsmappinginnerspanclass">
-                      {skill}
+                      {skill[0]} {skill[1]}
                     </span>
                   </div>
                 </div>

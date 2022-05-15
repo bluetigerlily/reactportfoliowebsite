@@ -1,5 +1,6 @@
 import React from "react";
-
+import { FaAws, FaCss3, FaHtml5, FaPython, FaReact, FaJs, FaJava, FaNode, FaGithub, FaFoursquare } from "react-icons/fa"
+import { SiApachemaven, SiPostgresql, SiJquery, SiCypress, SiFirebase, SiHibernate, SiJunit5 } from "react-icons/si";
 
 export const projects = [
     {
@@ -35,8 +36,29 @@ export const projects = [
 
   ];
 
-  export const codingskills = ["Java", "HTML", "CSS", "Javascript", "React", "SQL", "Hibernate", "Python", "JUnit Testing", "Log4J Data Logging",
-   "Automated Testing with Cypress", "AWS", "Firebase", "JQuery", "JDBC", "APIs", "Node.js", "Maven"];
+  export const codingskills = [
+  
+  ["Java", <FaJava />],
+  ["HTML", <FaHtml5 />],
+  ["CSS", <FaCss3 />],
+  ["Javascript", <FaJs />],
+  ["React", <FaReact />],
+  ["SQL", <SiPostgresql />],
+  ["Hibernate", <SiHibernate />],
+  ["Python", <FaPython />],
+  ["JUnit Testing", <SiJunit5 />],
+  ["Log4J Data Logging", ],
+  ["Cypress", <SiCypress />],
+  ["AWS", <FaAws />],
+  ["Firebase", <SiFirebase />], 
+  ["JQuery", <SiJquery />],
+  ["JDBC", ],
+  ["APIs", <FaFoursquare />],
+  ["Node.js", <FaNode />],
+  ["Maven", <SiApachemaven />],
+  ["GitHub", <FaGithub />]
+ 
+];
 
 
   export default function Properties(props) {

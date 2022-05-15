@@ -29,13 +29,12 @@ export default function Navbar() {
 
           <li className="contactnav" id="contactnavbar">
             <a href="#contact" className="contactbtn" id="contactbtnnav">
-              Hire Me
+              Contact Me
             </a>
           </li>
 
           </ul>
         </nav>
-
       </header>
 
     );

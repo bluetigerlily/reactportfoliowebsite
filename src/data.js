@@ -30,7 +30,7 @@ export const projects = [
         `Excursion is a Travel Website made using HTML and CSS.  Showcases knowledge and use of HTML, CSS, and hosting on Github Pages.  
         Also demonstates ability to follow a design document, as this was a project from Codeacademy.com.`,
       image: "https://live.staticflickr.com/65535/52009795018_4988047345_n.jpg",
-      link: "https://github.com/bluetigerlily/portfoliopart2/tree/main/projects/Excursion",
+      link: "https://lustrous-sfogliatella-351fd1.netlify.app/",
     },
     
 

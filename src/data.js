@@ -21,7 +21,7 @@ export const projects = [
         `React Web Application called Jamming which allows users to search for music using the Spotify API and create a custom playlist and also save it to their Spotify account.
           Showcases knowledge of React Components, Passing State Properties, and using Api's.`,
       image: "https://live.staticflickr.com/65535/52009983884_9ea580af4e_n.jpg",
-      link: "https://github.com/bluetigerlily/project/tree/master",
+      link: "https://bespoke-paprenjak-7522cb.netlify.app/",
     },
     {
       title: "Excursion - Travel Website",

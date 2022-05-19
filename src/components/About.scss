@@ -1,10 +1,10 @@
 /* font-family: 'Merienda', cursive; */
 
-// $black: #000000ff;
-// $champagne-pink: #f9dec9ff;
-// $wild-blue-yonder: #99b2ddff;
-// $raw-umber: #7e6551ff;
-// $purple-navy: #5e548eff;
+// $black: #000000;
+// $champagne-pink: #f9dec9;
+// $wild-blue-yonder: #99b2dd;
+// $raw-umber: #7e6551;
+// $purple-navy: #5e548e;
 
 //some other variables throughout the code defined above
 //the parts as needed for easier toggling / changing of 
@@ -16,10 +16,10 @@
     --typewriterCharacters: 11;
   }
 
-  $myblack: #00000f;
-  $mypurple: #5e548eff;
-  $myblue: #99b2ddff;
-  $mypink: #f9dec9ff;
+  $myblack: hsl(240, 100%, 3%);
+  $mypurple: #5e548e;
+  $myblue: #99b2dd;
+  $mypink: #f9dec9;
 
   //change to adjust the curvature of the images
   $imageborderradius: 10%;
@@ -93,7 +93,7 @@
     // outline: .6rem double $mypurple;
     border-radius: 10%;
     padding: 5rem;
-    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+    background: linear-gradient(to bottom, #5e548e, #67659e, #7077ad, #7b88bc, #879aca, #8da2d0, #93aad7, #99b2dd, #99b2dd, #99b2dd, #99b2dd, #99b2dd), url(../assests/leather.svg);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
 }

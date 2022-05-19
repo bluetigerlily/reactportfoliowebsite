@@ -25,7 +25,25 @@ $mypink: #f9dec9ff;
         outline: none;
     }
 }
+@media only screen 
+and (max-device-width: 0px) 
+and (min-device-width: 320px) { 
+    
+    .nav-list {
+        margin-top: 0.2rem;
+        width: 100%;
+        min-width: none;
+        text-align: center;
+        column-gap: .9rem;
+    }
+    .navcontainer {
+        outline: none;
+        font-size: .4rem;
+        height: fit-content;
+        width: 100%;
+    }
 
+}
 .nav-list {
     list-style-type: none;
     display: flex;
@@ -38,8 +56,8 @@ $mypink: #f9dec9ff;
     min-width: 320px !important;
     overflow: hidden;
     white-space: nowrap;
-    column-gap: .9em !important;
-    margin-top: 0.2em;
+    column-gap: .9rem !important;
+    margin-top: 0.2rem;
     
 }
 

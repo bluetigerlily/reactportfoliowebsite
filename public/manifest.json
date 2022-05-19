@@ -4,6 +4,7 @@
   "icons": [
   ],
   "start_url": ".",
+  "description": "Portfolio Website for Entry Level Full Stack Developer Haley Moses.",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"

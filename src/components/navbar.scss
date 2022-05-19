@@ -14,11 +14,11 @@ $mypink: #f9dec9ff;
 
 .navcontainer{ 
     font-family: 'Merienda', cursive;
-    background: $mypurple;
+    background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
     cursor: pointer !important;
     font-size: 2vw;
-    outline-offset: -.4rem;
-    outline: .1rem dashed $mypink;
+    // outline-offset: -.4rem;
+    // outline: .1rem dashed $mypink;
 }
 @media screen and (max-width: 1000px) {
     .navcontainer {
@@ -58,21 +58,31 @@ and (min-device-width: 320px) {
     white-space: nowrap;
     column-gap: .9rem !important;
     margin-top: 0.2rem;
-    
+    a {
+        color:     $mypink;
+        text-decoration: none;
+        border-bottom: 0.2em solid $mypurple;
+        border-top: 0.2em solid $mypurple;
+        padding: 1rem;
+        transition: background 0.1s cubic-bezier(.33,.66,.66,1);
+    }    
 }
 
 a {
     color:     $mypink;
     text-decoration: none;
     border-bottom: 0.2em solid $mypurple;
+    border-top: 0.2em solid $mypurple;
+
     transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
 a:hover,
 a:focus {
-  background: $mypink;
+  background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
   color: $mypurple;
   text-decoration: underline;
+  border-radius: 10%;
 }
 
 #aboutbtnnav {

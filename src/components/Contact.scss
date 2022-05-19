@@ -18,48 +18,17 @@ $mypink: #f9dec9ff;
     flex-direction: column;
     color: $mypurple;
     justify-content: center;
+    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-}
-
-
-.mapaddressemailphonecontainerclass {
-    order: 0 !important;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
     justify-content: center;    
-    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.15);
-    transition: all .4s ease;
-    margin-bottom: 2rem;
 }
 
-.mapaddressemailphonecontainerclass:hover {
-    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-    box-shadow: 1rem .5rem rgba(0,0,0,.25);
-}
 
-.mapframeclass {
-    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.15);
-    margin: 1rem;
-    padding: 1rem;
-    outline: .4rem solid ;
-    max-width: 1440px;
-    transform-style: flat;
-}
-@media screen and (max-width: 1000px) {
-    .mapframeclass {
-        width: 23rem; 
-        padding: 1vh;
-        margin: 1vw;
-        height: 10rem;  
-        outline-offset: -.5rem;
-        box-shadow: none;
-    }
-}
+
 
 .informationoutercontainerclass {
     display: flex;
@@ -72,6 +41,8 @@ $mypink: #f9dec9ff;
     padding-right: 1rem;
     max-width: 1440px;
     transform-style: flat;
+
+    
 
 }
 @media screen and (max-width: 1000px) {
@@ -132,11 +103,8 @@ $mypink: #f9dec9ff;
     height: 100%;
     justify-content: center;
     align-items: center;
-    background-color: $myblue;
     border-radius: 1rem;
     font-size: 130%;
-    border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-    box-shadow: .2rem .4rem rgba(0, 0, 0, 0.15);
     transition: all .4s ease;
     max-width: 1440px;
     transform-style: flat;
@@ -149,7 +117,7 @@ label {
     font-weight: bold;
     display: block;
     float: left;
-    background: $mypurple;
+    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
     height: 3rem;
     width: 7rem;
     font-size: 1.3rem;    
@@ -163,6 +131,7 @@ label {
       display: flex;
       justify-content: center;
       align-items: center; 
+      
   }
 @media screen and (max-width: 1000px) {
     label {
@@ -172,7 +141,7 @@ label {
     justify-items: center;
     justify-content: center;
     float: left;
-    background: $mypurple;
+    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
     height: 30px;
     width: 80px;
     font-size: 1rem;
@@ -216,9 +185,8 @@ textarea{
     min-width: 12rem;
     }
 }
-.contactform:hover {
+.contactoutercontainerclass:hover {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-    box-shadow: 1rem .5rem rgba(0,0,0,.25);
 }
 .contactformtitle{
     order: 0;
@@ -251,7 +219,6 @@ textarea{
 
 .inputcontainer {
     order: 2;
-    background-color: $myblue;
     border-radius: 1rem;
     box-sizing: border-box;
     height: 100%;
@@ -287,13 +254,15 @@ textarea{
     border-radius: .5rem;
     border: 0;
     box-sizing: border-box;
-    color: #eee;
+    color: $mypink;
     cursor: pointer;
     padding: 1vw;
     max-width: 100%;
     min-width: 60%;
     order: 3;
     margin: 1vw;
+    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+
 }
 @media only screen 
   and (max-device-width: 320px) { 

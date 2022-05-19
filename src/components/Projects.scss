@@ -23,15 +23,14 @@ $mypink: #f9dec9ff;
     color: $mypink;
     font-family: 'Merienda', cursive;
     flex-direction: column;
-    background: $mypurple;
-    border-radius: 10%;
-    outline: 0.3rem dashed $myblue;
-    outline-offset: -2.5rem;
     text-align: center;
     justify-content: center;
     align-items: center;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-}
+    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10%;
+
+  }
 #projectstitleid {
   font-size: 2.6rem;
 }
@@ -71,7 +70,6 @@ $mypink: #f9dec9ff;
     }
     .projectsouterdivclass {
         outline: none;
-        border-radius: 5%;
     }
 }
 @media only screen 
@@ -119,7 +117,7 @@ $mypink: #f9dec9ff;
     margin: 1.5rem;
     width: 90%;
     height: auto;
-    background-color: $mypink;
+    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
     border-radius: 10%;
     box-shadow: 
     rgb(201, 196, 236) 5px 5px,
@@ -143,7 +141,7 @@ $mypink: #f9dec9ff;
     border: .2rem solid $mypurple;
     border-radius: 10%;
     margin: 1.5rem; 
-    background: $myblue; 
+    background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
     width: auto;
     padding: 4%;
     min-height: 14rem;

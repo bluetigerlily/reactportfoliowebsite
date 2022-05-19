@@ -23,13 +23,11 @@ $mypink: #f9dec9ff;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background: $mypink;
-    border-radius: 10%;
+    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-radius: 10%;    border-radius: 10%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    outline: .4rem $mypurple dashed;
-    outline-offset: -.7rem;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     a {
         color: $mypurple;
     }

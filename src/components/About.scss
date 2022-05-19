@@ -12,7 +12,6 @@
 *, *::before, *::after { box-sizing: border-box }
 //my variables
 :root {
-    --bg-color:  #f9dec9ff;
     --typewriterSpeed: 6s;
     --typewriterCharacters: 11;
   }
@@ -62,20 +61,19 @@
 
     &::before {
         width: 100%;
-        background: $mypink;
+        background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
         height: 100%;
         z-index: -1;    
     }
-
     &::after {
-        background: $mypink;
+        background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
         width: 100vw;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         z-index: -2;
         height: 100%;
-        outline: .3em dashed $mypurple;  
+        // outline: .3em dashed $mypurple;  
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     }
@@ -83,23 +81,27 @@
 }
 .svgandparacontainer {
     display: flex;
-    width: 100%;
+    width: full;
     height: 100%;
     flex-direction: row;
-    margin: 5rem;
+    margin: 9rem;
     order: 1 !important;
     column-gap: 2rem;
     justify-content: center;
     align-items: center;
-    outline-offset: 3rem;
-    outline: .6rem double $mypurple;
+    // outline-offset: 3rem;
+    // outline: .6rem double $mypurple;
     border-radius: 10%;
+    padding: 5rem;
+    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
 }
 
 .inner_poligon{
     order: 0 !important;
     display: flex;
-    background: $mypink;
+    background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
     width: 40rem; 
     height: 40rem; 
     justify-content: center;
@@ -120,7 +122,7 @@
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: $mypink;
+        background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -153,7 +155,7 @@ and (min-device-width: 320px) {
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: $mypink;
+        background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -165,12 +167,12 @@ and (min-device-width: 320px) {
         display: flex;
         width: 100%;
         height: 100%;
-        margin: 1rem;
+        margin: 5rem;
         order: 1 !important;
         column-gap: 2rem;
         justify-content: center;
         align-items: center;
-        outline: .1rem double $mypurple;
+        // outline: .1rem double $mypurple;
         border-radius: 5%;
     }
     
@@ -225,12 +227,12 @@ and (min-device-width: 320px)
         display: flex;
         width: 100%;
         height: 100%;
-        margin: 1rem;
+        margin: 5rem;
         order: 1 !important;
         column-gap: 2rem;
         justify-content: center;
         align-items: center;
-        outline: .1rem double $mypurple;
+        // outline: .1rem double $mypurple;
         border-radius: 5%;
      }
      .imageoutercontainer {
@@ -248,15 +250,9 @@ and (min-device-width: 320px)
         display: flex;
         padding: 1rem;
         align-items: center;
+        
     }
-        .trailcontainer {
-        order: 2 !important;
-        visibility: hidden;
-        width: 1vw;
-        height: 0;
-        z-index: -2 !important;
-        transform: translateY(40.5em) rotateX(1deg);
-    }
+ 
    
   }
 
@@ -317,6 +313,8 @@ animation: loopOnScreen3 3s infinite;
     max-width: 1440px;
     min-height: 40vh;
     padding: 1vh;
+    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+
 }
 #aboutfirstparaid:hover {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
@@ -326,7 +324,7 @@ animation: loopOnScreen3 3s infinite;
     .svgandparacontainer {
         flex-direction: column;
         display: flex;
-        width: 80%;
+        width: 100%;
         height: 100%;
         margin: 5rem;
         order: 1 !important;
@@ -334,7 +332,7 @@ animation: loopOnScreen3 3s infinite;
         justify-content: center;
         align-items: center;
         outline-offset: 3rem;
-        outline: .6rem double $mypurple;
+        // outline: .6rem double $mypurple;
         border-radius: 10%;
         
     }
@@ -359,7 +357,6 @@ animation: loopOnScreen3 3s infinite;
     order: 2 !important;
     min-height: 30vh;
     margin-bottom: 6rem;
-    margin-top: 9rem;
     column-gap: 3rem;
     row-gap: 3rem;
     display: flex;
@@ -372,7 +369,7 @@ animation: loopOnScreen3 3s infinite;
 .imageoutercontainer {
 
     position: relative;
-
+    
 
 
     &::before,
@@ -380,26 +377,28 @@ animation: loopOnScreen3 3s infinite;
         content: '';
         display: block;
         position: absolute;
-        border-bottom: 0.2rem dashed $mypink;
-        border-top: 0.2rem dashed $mypink;
+        // border-bottom: 0.2rem dashed $mypink;
+        // border-top: 0.2rem dashed $mypink;
+        
     }
 
     &::before {
         width: 100%;
-        background:$mypurple;        
+        background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
         height: 100%;
         z-index: -1;
     
     }
     &::after {
-        background:  $mypurple;
+        background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
         width: 100vw;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         z-index: -2;
         height: 100%;
-        outline: 3em solid $mypurple;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
     }
 
 }
@@ -414,7 +413,6 @@ and (max-width: 1000px) {
         width: auto;
         min-height: 30vh;
         margin-bottom: 6rem;
-        margin-top: 9rem;
         column-gap: 3rem;
         display: flex;
         align-items: center;
@@ -636,14 +634,15 @@ and (max-width: 1000px) {
   }
   
   .abouttitle::before {
-    background: var(--bg-color);
+    background: linear-gradient($myblue, $mypurple);
+
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;
   }
   
   .abouttitle::after {
     width: 0.125em;
-    background: $myblack;
+    background: $mypurple;
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
       blink 750ms steps(var(--typewriterCharacters)) infinite;

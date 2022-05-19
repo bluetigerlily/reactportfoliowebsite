@@ -7,7 +7,8 @@ import Contact from "./components/Contact";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
-// import ParticleInstance from "./components/Particles";
+
+
 
 import { ParallaxProvider } from 'react-scroll-parallax';
 // Parallax scrolling effects
@@ -32,9 +33,7 @@ function App() {
       </main>
       </ParallaxProvider>  
 
-      {/* <div className="particlesdivclass">
-        <ParticleInstance />
-      </div> */}
+
     </div>
   );
 }

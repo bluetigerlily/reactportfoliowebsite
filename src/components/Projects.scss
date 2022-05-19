@@ -7,17 +7,25 @@
 // $raw-umber: #7e6551ff;
 // $purple-navy: #5e548eff;
 
+
+//variables
+$myblack: #00000f;
+$mypurple: #5e548eff;
+$myblue: #99b2ddff;
+$mypink: #f9dec9ff;
+
+
 .projectsouterdivclass {
     display: flex;
     width: 100%;
     height: auto;
     padding: 1%;
-    color: #f9dec9ff;
+    color: $mypink;
     font-family: 'Merienda', cursive;
     flex-direction: column;
-    background: #5e548eff;
+    background: $mypurple;
     border-radius: 10%;
-    outline: 0.3rem dashed #99b2ddff;
+    outline: 0.3rem dashed $myblue;
     outline-offset: -2.5rem;
     text-align: center;
     justify-content: center;
@@ -82,7 +90,7 @@
   .projectsimgcontainerclass .projectimgclass{
     border-radius: 5%;
     width: 250px;
-    border: .3rem solid #5e548eff;
+    border: .3rem solid $mypurple;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 }
   }
@@ -102,16 +110,16 @@
   .projectsimgcontainerclass .projectimgclass{
     border-radius: 5%;
     width: 180px;
-    border: .3rem solid #5e548eff;
+    border: .3rem solid $mypurple;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 }
   }
 .projectslinkclass {
-    outline: .3rem solid #5e548eff;
+    outline: .3rem solid $mypurple;
     margin: 1.5rem;
     width: 90%;
     height: auto;
-    background-color: #f9dec9ff;
+    background-color: $mypink;
     border-radius: 10%;
     box-shadow: 
     rgb(201, 196, 236) 5px 5px,
@@ -119,23 +127,23 @@
     rgb(167, 156, 223) 15px 15px,
      rgb(127, 119, 165) 20px 20px, 
     rgb(99, 96, 117) 25px 25px;
-    color: #5e548eff;
+    color: $mypurple;
     align-items: center;
     justify-content: center;
 }
 .projectsimgcontainerclass .projectimgclass{
     border-radius: 10%;
-    border: .3rem solid #5e548eff;
+    border: .3rem solid $mypurple;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
 }
 
 
 .projectsimgcontainerclass .projectssubtitlecontainerclass {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px; 
-    border: .2rem solid #5e548eff;
+    border: .2rem solid $mypurple;
     border-radius: 10%;
     margin: 1.5rem; 
-    background: #99b2ddff; 
+    background: $myblue; 
     width: auto;
     padding: 4%;
     min-height: 14rem;

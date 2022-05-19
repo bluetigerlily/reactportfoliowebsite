@@ -10,12 +10,21 @@
 //the parts as needed for easier toggling / changing of 
 //effects
 *, *::before, *::after { box-sizing: border-box }
-
+//my variables
 :root {
     --bg-color:  #f9dec9ff;
     --typewriterSpeed: 6s;
     --typewriterCharacters: 11;
   }
+
+  $myblack: #00000f;
+  $mypurple: #5e548eff;
+  $myblue: #99b2ddff;
+  $mypink: #f9dec9ff;
+  $imageborderradius: 10%;
+
+
+
 
 #aboutcontainerid {
 
@@ -24,7 +33,7 @@
     width: 100%;
     height: auto;
     align-items: center;
-    color: #5e548eff;
+    color: $mypurple;
     font-family: 'Merienda', cursive;
 
 }
@@ -51,20 +60,20 @@
 
     &::before {
         width: 100%;
-        background: #f9dec9ff;
+        background: $mypink;
         height: 100%;
         z-index: -1;    
     }
 
     &::after {
-        background: #f9dec9ff;
+        background: $mypink;
         width: 100vw;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         z-index: -2;
         height: 100%;
-        outline: .3em dashed #5e548eff;  
+        outline: .3em dashed $mypurple;  
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 
     }
@@ -81,14 +90,14 @@
     justify-content: center;
     align-items: center;
     outline-offset: 3rem;
-    outline: .6rem double #5e548eff;
+    outline: .6rem double $mypurple;
     border-radius: 10%;
 }
 
 .inner_poligon{
     order: 0 !important;
     display: flex;
-    background: #f9dec9ff;
+    background: $mypink;
     width: 40rem; 
     height: 40rem; 
     justify-content: center;
@@ -109,7 +118,7 @@
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: #f9dec9ff;
+        background: $mypink;
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -142,7 +151,7 @@ and (min-device-width: 320px) {
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: #f9dec9ff;
+        background: $mypink;
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -159,7 +168,7 @@ and (min-device-width: 320px) {
         column-gap: 2rem;
         justify-content: center;
         align-items: center;
-        outline: .1rem double #5e548eff;
+        outline: .1rem double $mypurple;
         border-radius: 5%;
     }
     
@@ -181,6 +190,7 @@ and (min-device-width: 320px) {
         row-gap: 3rem;
         align-items: center;
     }
+   
     .imageoutercontainer img {
         width: 300px;
         position: relative;
@@ -201,7 +211,7 @@ and (min-device-width: 320px)
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: #f9dec9ff;
+        background: $mypink;
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -218,7 +228,7 @@ and (min-device-width: 320px)
         column-gap: 2rem;
         justify-content: center;
         align-items: center;
-        outline: .1rem double #5e548eff;
+        outline: .1rem double $mypurple;
         border-radius: 5%;
      }
      .imageoutercontainer {
@@ -226,6 +236,8 @@ and (min-device-width: 320px)
         order: 2 !important;
         width: auto;
         min-width: 400px;
+        height: 100%;
+        width: 100%;
         min-height: 30vh;
         margin-bottom: 6rem;
         margin-top: 9rem;
@@ -235,7 +247,6 @@ and (min-device-width: 320px)
         padding: 1rem;
         align-items: center;
     }
-    
         .trailcontainer {
         order: 2 !important;
         visibility: hidden;
@@ -321,7 +332,7 @@ animation: loopOnScreen3 3s infinite;
         justify-content: center;
         align-items: center;
         outline-offset: 3rem;
-        outline: .6rem double #5e548eff;
+        outline: .6rem double $mypurple;
         border-radius: 10%;
         
     }
@@ -361,36 +372,36 @@ animation: loopOnScreen3 3s infinite;
     position: relative;
 
 
+
     &::before,
     &::after {
         content: '';
         display: block;
         position: absolute;
-        border-bottom: .2rem dashed #f9dec9ff;
-        border-top: 0.2rem dashed #f9dec9ff;
+        border-bottom: 0.2rem dashed $mypink;
+        border-top: 0.2rem dashed $mypink;
     }
 
     &::before {
         width: 100%;
-        background:#5e548eff;        
+        background:$mypurple;        
         height: 100%;
         z-index: -1;
     
     }
     &::after {
-        background:  #5e548eff;
+        background:  $mypurple;
         width: 100vw;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         z-index: -2;
         height: 100%;
-        outline: 3em solid #5e548eff;
+        outline: 3em solid $mypurple;
     }
 
 }
 
-$imageborderradius: 10%;
 //change to adjust the curvature of the corners on 
 //the images
 
@@ -454,7 +465,7 @@ and (max-width: 1000px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f9dec9ff;
+    color: $mypink;
     font-weight: 400;
     opacity: 0;
     transition: opacity ease-out 250ms;
@@ -516,7 +527,7 @@ and (max-width: 1000px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f9dec9ff;
+    color: $mypink;
     font-weight: 400;
     opacity: 0;
     transition: opacity ease-out 250ms;
@@ -576,7 +587,7 @@ and (max-width: 1000px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #f9dec9ff;
+    color: $mypink;
     font-weight: 400;
     opacity: 0;
     transition: opacity ease-out 250ms;
@@ -600,6 +611,24 @@ and (max-width: 1000px) {
     height: 15rem;
     position: relative;
     background-color: grey;
+}
+.imageoutercontainer .left {
+    height: 100%;
+    background-color: rgb(0, 0, 0, .6);
+    color: $mypink;
+    cursor: pointer;
+    order: 1;
+}
+.imageoutercontainer .center {
+    flex: 5%;
+    height: 100%;
+}
+.imageoutercontainer .right {
+    height: 100%;
+    background-color: rgb(0, 0, 0, .6);
+    color: $mypink;
+    cursor: pointer;
+    order: 5;
 }
 
 
@@ -627,7 +656,7 @@ and (max-width: 1000px) {
   
   .abouttitle::after {
     width: 0.125em;
-    background: black;
+    background: $myblack;
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
       blink 750ms steps(var(--typewriterCharacters)) infinite;

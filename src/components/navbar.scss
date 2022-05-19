@@ -6,14 +6,19 @@
 // $raw-umber: #7e6551ff;
 // $purple-navy: #5e548eff;
 
+//variables
+$myblack: #00000f;
+$mypurple: #5e548eff;
+$myblue: #99b2ddff;
+$mypink: #f9dec9ff;
 
 .navcontainer{ 
     font-family: 'Merienda', cursive;
-    background: #5e548eff;
+    background: $mypurple;
     cursor: pointer !important;
     font-size: 2vw;
     outline-offset: -.4rem;
-    outline: .1rem dashed #f9dec9ff;
+    outline: .1rem dashed $mypink;
 }
 @media screen and (max-width: 1000px) {
     .navcontainer {
@@ -39,16 +44,16 @@
 }
 
 a {
-    color:     #f9dec9ff;
+    color:     $mypink;
     text-decoration: none;
-    border-bottom: 0.2em solid #5a5266a4;
+    border-bottom: 0.2em solid $mypurple;
     transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
 a:hover,
 a:focus {
-  background: #f9dec9ff;
-  color: #5e548eff;
+  background: $mypink;
+  color: $mypurple;
   text-decoration: underline;
 }
 

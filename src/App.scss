@@ -5,6 +5,13 @@
 // $purple-navy: #5e548eff;
 
 
+
+//variables
+$myblack: #00000f;
+$mypurple: #5e548eff;
+$myblue: #99b2ddff;
+$mypink: #f9dec9ff;
+
 ::-webkit-scrollbar {
   width: 1.5em;
   cursor: pointer;
@@ -12,24 +19,24 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #99b2ddff;
-  border: .1em solid #5e548eff;
+  background: $myblue;
+  border: .1em solid $mypurple;
 
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #f9dec9ff;
-  border: .25em solid #f9dec9ff;
-  outline: .1em solid #5e548eff;
+  background: $mypink;
+  border: .25em solid $mypink;
+  outline: .1em solid $mypurple;
   border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #5e548eff;
+  background: $mypurple;
 }
 
-@supports (scrollbar-color: #99b2ddff #5e548eff) {
+@supports (scrollbar-color: $myblue $mypurple) {
   * {
-    scrollbar-color: #99b2ddff #5e548eff;
+    scrollbar-color: $myblue $mypurple;
     scrollbar-width: auto;
   }
 }
@@ -41,7 +48,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color:  #99b2ddff;
+  background-color:  $myblue;
 
 }
 
@@ -50,7 +57,7 @@
   text-align: center;
   z-index: 1;
   position: relative;
-  background-color:  #99b2ddff;
+  background-color:  $myblue;
   overflow: hidden;
   width: 100%;
   margin: 3%;
@@ -58,7 +65,6 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  // opacity: 0.78;
 }
 
 #navbardivid {

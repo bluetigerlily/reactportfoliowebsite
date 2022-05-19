@@ -1,10 +1,14 @@
 import React from "react";
 import "./About.scss";
+import Carousel from "./Carousel";
+
 
 // import Properties from "../data";
 
 import { Parallax } from 'react-scroll-parallax';
 // parallax import
+
+
 
 
 export default function About() {
@@ -136,47 +140,7 @@ export default function About() {
               </div>
           
 
-          <div className="imageoutercontainer">
-
-            <div className="image">
-  
-              <img
-                className="image__img"
-                alt="Haley Moses full-stack developer portfolio website seeking employment"
-                loading="lazy"
-                src="https://live.staticflickr.com/65535/52010246990_c9d29d50b5_c.jpg"
-              />
-       
-              <div className="image__overlay">
-              I'm a self taught full-stack developer
-              </div>
-            </div>
-
-            <div className="imagetwo">
-              <img
-                className="imagetwo__img"
-                alt="Haley Moses full-stack developer's exerpience"
-                loading="lazy"
-                src="https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top"
-              />
-              <div className="imagetwo__overlay">
-              What I lack in experience. I make up with
-               in Passion, Drive, and Creativity.  
-              </div>
-            </div>
-
-            <div className="imagethree">
-              <img
-                className="imagethree__img"
-                alt="Haley Moses is a Capybara Fanatic"
-                loading="lazy"
-                src="https://p0.pikist.com/photos/875/214/capybara-faunapark-animal-park-rodent-mammal-fur-hairy-fauna-caviidae-thumbnail.jpg"
-              />
-              <div className="imagethree__overlay">
-              Capybaras are my favorite animal!
-              </div>
-            </div>
-         </div>
+        <Carousel />
          
          
          <Parallax translateX={['-8000', '-350']}>

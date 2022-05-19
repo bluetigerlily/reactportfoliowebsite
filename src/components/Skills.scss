@@ -6,25 +6,32 @@
 // $raw-umber: #7e6551ff;
 // $purple-navy: #5e548eff;
 
+
+//variables
+$myblack: #00000f;
+$mypurple: #5e548eff;
+$myblue: #99b2ddff;
+$mypink: #f9dec9ff;
+
 .skillsouterdivclass {
     font-family: 'Merienda', cursive;
     display: flex;
     flex-direction: column;
-    color: #5e548eff;
+    color: $mypurple;
     width: 100%;
     height: auto;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background: #f9dec9ff;
+    background: $mypink;
     border-radius: 10%;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    outline: .4rem #5e548eff dashed;
+    outline: .4rem $mypurple dashed;
     outline-offset: -.7rem;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     a {
-        color: #5e548eff;
+        color: $mypurple;
     }
 }
 

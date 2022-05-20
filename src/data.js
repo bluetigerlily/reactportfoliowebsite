@@ -44,17 +44,30 @@ export const projects = [
       message: "I'm a self taught full-stack developer"
     },
     {
-      className: "imagetwo__img",
+      className: "image__img",
+      alt: "Haley Moses has a Mechanical Engineering Degree",
+      img: "https://d12oja0ew7x0i8.cloudfront.net/image-handler/ts/20210614094458/ri/1000/src/images/Article_Images/ImageForArticle_20492_16236782958233468.jpg",
+      message: `I have a Bachelor's of Science in Mechanical Engineering.`
+    }, 
+    {
+      className: "image__img",
       alt: "Haley Moses full-stack developer's exerpience",
       img: "https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top",
       message: `What I lack in experience. I make up with in Passion, Drive, and Creativity.`
     },
     {
-      className: "imagethree__img",
+      className: "image__img",
+      alt: "Haley Moses has multiple Areas of Talent",
+      img: "https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top",
+      message: `What I lack in experience. I make up with in Passion, Drive, and Creativity.`
+    },
+    
+    {
+      className: "image__img",
       alt: "Haley Moses is a Capybara Fanatic",
       img: "https://p0.pikist.com/photos/875/214/capybara-faunapark-animal-park-rodent-mammal-fur-hairy-fauna-caviidae-thumbnail.jpg",
       message: `Capybaras are my favorite animal!` 
-    }
+    },
   ]
 
   export const codingskills = [

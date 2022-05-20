@@ -2,10 +2,16 @@
   "short_name": "Haley's Portfolio",
   "name": "Haley Moses' Portfolio",
   "icons": [
+    {
+      "src": "./iconpng.png",
+      "sizes": "715x736",
+      "type": "image/png"
+    }
   ],
   "start_url": ".",
   "description": "Portfolio Website for Entry Level Full Stack Developer Haley Moses.",
   "display": "standalone",
+  "scope": "/",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }

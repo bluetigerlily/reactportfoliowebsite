@@ -176,14 +176,6 @@ and (min-device-width: 320px) {
         border-radius: 5%;
     }
     
-    .trailcontainer {
-        order: 2 !important;
-        visibility: hidden;
-        width: 1vw;
-        height: 0;
-        z-index: -2 !important;
-        transform: translateY(40.5em) rotateX(1deg);
-    }
     .imageoutercontainer {
         order: 2 !important;
         width: fit-content;
@@ -406,9 +398,9 @@ animation: loopOnScreen3 3s infinite;
 
 @media screen 
 and (min-width: 320px)
-and (max-width: 1000px) {
+and (max-width: 1490px) {
     .imageoutercontainer {
-        flex-direction: row;
+        flex-direction: column;
         order: 2 !important;
         width: auto;
         min-height: 30vh;
@@ -425,9 +417,11 @@ and (max-width: 1000px) {
     }
     .left {
         font-size: 30px;
+        margin: 1rem;
     }
     .right {
         font-size: 30px;
+        margin: 1rem;
     }
     
 }

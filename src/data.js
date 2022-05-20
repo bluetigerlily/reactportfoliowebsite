@@ -54,14 +54,7 @@ export const projects = [
       alt: "Haley Moses full-stack developer's exerpience",
       img: "https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top",
       message: `What I lack in experience. I make up with in Passion, Drive, and Creativity.`
-    },
-    {
-      className: "image__img",
-      alt: "Haley Moses has multiple Areas of Talent",
-      img: "https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top",
-      message: `What I lack in experience. I make up with in Passion, Drive, and Creativity.`
-    },
-    
+    }, 
     {
       className: "image__img",
       alt: "Haley Moses is a Capybara Fanatic",

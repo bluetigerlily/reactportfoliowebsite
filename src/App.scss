@@ -48,8 +48,7 @@ $mypink: #f9dec9;
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-color:  $myblue;
-
+  background-color: $myblue;
 }
 
 
@@ -57,7 +56,7 @@ $mypink: #f9dec9;
   text-align: center;
   z-index: 1;
   position: relative;
-  background-color:  $myblue;
+background-color: $myblue;
   overflow: hidden;
   width: 100%;
   margin: 3%;
@@ -68,24 +67,12 @@ $mypink: #f9dec9;
 }
 
 #navbardivid {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
   z-index: 2;
   position: sticky;
   top: .1em;
   width: 100%;
 }
 
-#particlesdivid {
-  position: absolute;
-  top: 0;
-  width: fit-content;
-  height: fit-content;
-  left: 0;
-  z-index: 0;
-  cursor: pointer;
-}
 
 
 

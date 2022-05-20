@@ -6,6 +6,7 @@ import { imagesArray } from '../data'
 
 export default function Carousel() {
 
+    //default states for the images
     const [currImg, setCurrImg] = useState(0);
     const [secondImg, setSecondImg] = useState(1);
     const [thirdImg, setThirdImg] = useState(2);

@@ -14,6 +14,7 @@ export default function Carousel() {
             <div className='imageoutercontainer'>
             <div className="image">
           <img 
+          width={500} height={900}
           src={imagesArray[currImg].img} 
           alt={imagesArray[currImg].alt} 
           loading="lazy" 

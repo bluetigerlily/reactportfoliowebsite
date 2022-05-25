@@ -40,13 +40,13 @@ export const projects = [
     {
       className: "image__img",
       alt: "Haley Moses full-stack developer portfolio website seeking employment",
-      img: "https://live.staticflickr.com/65535/52010246990_c9d29d50b5_c.jpg",
+      img: "https://live.staticflickr.com/65535/52010246990_c9d29d50b5_c.jpg?compress=1&resize=355x226&vertical=top",
       message: "I'm a self taught full-stack developer"
     },
     {
       className: "image__img",
       alt: "Haley Moses has a Mechanical Engineering Degree",
-      img: "https://d12oja0ew7x0i8.cloudfront.net/image-handler/ts/20210614094458/ri/1000/src/images/Article_Images/ImageForArticle_20492_16236782958233468.jpg",
+      img: "https://d12oja0ew7x0i8.cloudfront.net/image-handler/ts/20210614094458/ri/1000/src/images/Article_Images/ImageForArticle_20492_16236782958233468.jpg?compress=1&resize=355x226&vertical=top",
       message: `I have a Bachelor's of Science in Mechanical Engineering.`
     }, 
     {

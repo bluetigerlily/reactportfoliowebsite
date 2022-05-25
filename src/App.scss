@@ -42,19 +42,39 @@ $mypink: #f9dec9;
 }
 
 
+
 .containerclass {
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-image: url('./assests/linevector.svg') !important;
+  backface-visibility: visible;
+  background-origin: border-box !important;
+  background-attachment: fixed !important;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: $myblue;
+  
 }
+
 
 
 .appbodyclass {
   text-align: center;
+  background-image: url('./assests/linevector.svg') !important;
+  backface-visibility: visible;
+  background-origin: border-box !important;
+  background-attachment: fixed !important;
+  width: 100%;
+  height: 100%;
   z-index: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
   position: relative;
 background-color: $myblue;
   overflow: hidden;

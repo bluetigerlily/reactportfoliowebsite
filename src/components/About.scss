@@ -111,8 +111,20 @@
     padding: 4vh;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    cursor: pointer;
+
 }
- 
+.inner_poligon:active {
+    will-change: transform;
+    transition:  rotateY(45deg) 500ms ease-in-out;
+    animation: rotateAnimation 2500ms infinite;
+
+}
+@keyframes rotateAnimation {
+	from {transform: rotateY(45deg);}
+	to {transform: rotateY(225deg);}
+}
+
  @media screen and (max-width: 1000px) {
     .inner_poligon {
         flex-direction: column;

@@ -1,8 +1,6 @@
 import React from "react";
 import { projects } from "../data";
 import "./Projects.scss";
-import { Parallax } from 'react-scroll-parallax';
-//parallax import
 import { FaGithub } from 'react-icons/fa';
 
 
@@ -14,7 +12,7 @@ export default function Projects() {
           <div className="projectsouterdivclass" id="projectsouterdivid">
             <div className="projectsinnerdivclass" id="projectsinnerdivid">
               <h1 className="projectstitleclass" id="projectstitleid">
-                Apps I've Built
+                Projects
               </h1>
               <p className="projectsparaclass" id="projectsparaid">
                 Below are just a few of the projects I've completed during my time coding!  My full GitHub can be found here:&nbsp;  
@@ -22,7 +20,6 @@ export default function Projects() {
               </p>
             </div>
 
-        <Parallax translateX={['-3', '0']}>
 
             <div className="projectsmappingdivclass" id="projectsmappingdivid">
 
@@ -52,7 +49,6 @@ export default function Projects() {
               ))}
           
             </div>
-            </Parallax>
           </div>
         </section>
       );

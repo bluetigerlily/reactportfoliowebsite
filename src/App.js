@@ -10,8 +10,6 @@ import Skills from "./components/Skills";
 
 
 
-import { ParallaxProvider } from 'react-scroll-parallax';
-// Parallax scrolling effects
 
 
 function App() {
@@ -22,7 +20,6 @@ function App() {
       <div className="navbardivclass" id="navbardivid">
         <Navbar />
       </div>
-      <ParallaxProvider> 
       <main className='appbodyclass' id='appbodyid'>    
 
         <About />
@@ -31,7 +28,6 @@ function App() {
         <Contact />
 
       </main>
-      </ParallaxProvider>  
 
 
     </div>

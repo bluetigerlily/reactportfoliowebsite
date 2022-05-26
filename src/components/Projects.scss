@@ -38,6 +38,7 @@ $mypink: #f9dec9;
     font-size: 2.5vh;
     width: 100%;
     padding: 5%;
+
 }
 
 .projectsmappingdivclass {
@@ -48,6 +49,7 @@ $mypink: #f9dec9;
     max-width: 1440px;
     justify-content: center;
     align-items: center;
+
     img {
       border-radius: 10%;
     }
@@ -62,6 +64,7 @@ $mypink: #f9dec9;
   .projectimgclass {
     width: 100%;
     padding: 5%;
+    
     max-height: 40rem;
    
   }
@@ -97,7 +100,7 @@ $mypink: #f9dec9;
   }
   .projectsimgcontainerclass .projectimgclass{
     width: 250px;
-    border: .3rem solid $mypurple;
+    
 }
   }
 
@@ -114,7 +117,6 @@ $mypink: #f9dec9;
   }
   .projectsimgcontainerclass .projectimgclass{
     width: 180px;
-    border: .3rem solid $mypurple;
 }
   }
 .projectslinkclass {
@@ -132,13 +134,11 @@ $mypink: #f9dec9;
 
 .projectsimgcontainerclass .projectssubtitlecontainerclass {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px; 
-    border: .2rem solid $mypurple;
-    background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
     width: auto;
     padding: 4%;
     width: 100%;
-    min-height: 14rem;
-    height: auto;
+    min-height: 25rem;
+    height: 25rem;
 
 }
 

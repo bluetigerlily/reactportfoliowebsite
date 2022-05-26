@@ -28,7 +28,7 @@ export const projects = [
       subtitle: "React",
       description:
         `Excursion is a Travel Website made using React, Material UI, React Router, and Axios.  Allows users to Login, Register, and Book a Travel Package. `,
-      image: 'https://live.staticflickr.com/65535/52100564416_a1fe792e0e_n.jpg',
+      image: 'https://live.staticflickr.com/65535/52100546811_38e3d61658_n.jpg',
       link: "https://jocular-madeleine-0bc72c.netlify.app/",
     },
     

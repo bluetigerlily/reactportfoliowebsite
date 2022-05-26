@@ -20,8 +20,9 @@ export default function About() {
               <h1 className="abouttitle" id="abouttitleid">
                 Haley Moses
               </h1>
-
              </div>
+
+
              <div className="svgandparacontainer">
             <div className="inner_poligon">
               <svg width="718" height="454" viewBox="0 0 718 454" fill="none" xmlns="http://www.w3.org/2000/svg">

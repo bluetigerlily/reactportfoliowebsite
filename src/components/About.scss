@@ -75,10 +75,12 @@
         height: 100%;
         // outline: .3em dashed $mypurple;  
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-
+        // box-shadow: 0rem 0em 3rem 2rem rgba(94, 84, 142, 0.5);
+ 
     }
 
 }
+
 .svgandparacontainer {
     display: flex;
     width: full;
@@ -89,12 +91,14 @@
     column-gap: 2rem;
     justify-content: center;
     align-items: center;
+
     // outline-offset: 3rem;
     // outline: .6rem double $mypurple;
     border-radius: 10%;
     padding: 5rem;
     background: linear-gradient(to bottom, #5e548e, #67659e, #7077ad, #7b88bc, #879aca, #8da2d0, #93aad7, #99b2dd, #99b2dd, #99b2dd, #99b2dd, #99b2dd), url(../assests/leather.svg);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    // box-shadow: 0rem 0em 3rem 2rem rgba(94, 84, 142, 0.5);
 
 }
 
@@ -366,6 +370,7 @@ animation: loopOnScreen3 3s infinite;
     display: flex;
     flex-direction: row;
     align-items: center;
+    
 }
 .imageoutercontainer img {
     max-width: fit-content; 
@@ -373,7 +378,7 @@ animation: loopOnScreen3 3s infinite;
 .imageoutercontainer {
 
     position: relative;
-    
+
 
 
     &::before,
@@ -384,6 +389,8 @@ animation: loopOnScreen3 3s infinite;
         // border-bottom: 0.2rem dashed $mypink;
         // border-top: 0.2rem dashed $mypink;
         
+
+        
     }
 
     &::before {
@@ -391,6 +398,9 @@ animation: loopOnScreen3 3s infinite;
         background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
         height: 100%;
         z-index: -1;
+        
+        
+        
     
     }
     &::after {
@@ -402,6 +412,9 @@ animation: loopOnScreen3 3s infinite;
         z-index: -2;
         height: 100%;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        // box-shadow: 0rem 0em 3rem 2rem rgba(94, 84, 142, 0.5);
+        
+
 
     }
 

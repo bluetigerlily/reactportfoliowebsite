@@ -16,7 +16,7 @@ export const projects = [
     },
     {
       title: "React Jamming Spotify Playlist Application",
-      subtitle: "React with API Integration",
+      subtitle: "React with Spotify API",
       description:
         `React Web Application called Jamming which allows users to search for music using the Spotify API and create a custom playlist and also save it to their Spotify account.
           Showcases knowledge of React Components, Passing State Properties, and using Api's.`,
@@ -25,12 +25,11 @@ export const projects = [
     },
     {
       title: "Excursion - Travel Website",
-      subtitle: "HTML & CSS",
+      subtitle: "React",
       description:
-        `Excursion is a Travel Website made using HTML and CSS.  Showcases knowledge and use of HTML, CSS, and hosting on Github Pages.  
-        Also demonstates ability to follow a design document, as this was a project from Codeacademy.com.`,
-      image: "https://live.staticflickr.com/65535/52009795018_4988047345_n.jpg",
-      link: "https://lustrous-sfogliatella-351fd1.netlify.app/",
+        `Excursion is a Travel Website made using React, Material UI, React Router, and Axios.  Allows users to Login, Register, and Book a Travel Package. `,
+      image: 'https://live.staticflickr.com/65535/52100564416_a1fe792e0e_n.jpg',
+      link: "https://jocular-madeleine-0bc72c.netlify.app/",
     },
     
 
@@ -74,12 +73,9 @@ export const projects = [
   ["Hibernate", <SiHibernate />],
   ["Python", <FaPython />],
   ["JUnit Testing", <SiJunit5 />],
-  ["Log4J Data Logging", ],
   ["Cypress", <SiCypress />],
   ["AWS", <FaAws />],
-  ["Firebase", <SiFirebase />], 
   ["JQuery", <SiJquery />],
-  ["JDBC", ],
   ["APIs", <FaFoursquare />],
   ["Node.js", <FaNode />],
   ["Maven", <SiApachemaven />],

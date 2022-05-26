@@ -72,9 +72,9 @@ export default function Contact() {
             name="contact"
             onSubmit={handleSubmit}
             className="contactform">
-            <h2 className="contactformtitle">
+            <h1 className="contactformtitle">
               Contact Me
-            </h2>
+            </h1>
             <p className="paramessageclass">
               If you think I'd be a good fit for your position or would like to just learn more,
                please reach out to me using the form below.  Thank you for
@@ -131,7 +131,7 @@ export default function Contact() {
 
         <div className="footer">
           <div className="linkedincontainer">
-            <a href="https://www.linkedin.com/feed/" id="linkedin" target="_blank" rel="noreferrer"><FaLinkedin /></a>
+            <a href="https://www.linkedin.com/in/haley-moses-38662a94/" id="linkedin" target="_blank" rel="noreferrer"><FaLinkedin /></a>
           </div>
           <div className="githubcontainer">
             <a href="https://github.com/bluetigerlily" id="linkedin" target="_blank" rel="noreferrer"><FaGithub /></a>

@@ -45,7 +45,7 @@ export const projects = [
     {
       className: "image__img",
       alt: "Haley Moses has a Mechanical Engineering Degree",
-      img: "https://d12oja0ew7x0i8.cloudfront.net/image-handler/ts/20210614094458/ri/1000/src/images/Article_Images/ImageForArticle_20492_16236782958233468.jpg?compress=1&resize=355x226&vertical=top",
+      img: "https://live.staticflickr.com/65535/52101125909_50d0ae8b8b_n.jpg",
       message: `I have a Bachelor's of Science in Mechanical Engineering.`
     }, 
     {

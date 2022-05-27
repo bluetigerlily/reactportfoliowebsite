@@ -107,6 +107,8 @@
     display: flex;
     background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
     width: 40rem; 
+    min-width: 40rem;
+    min-height: 40rem;
     height: 40rem; 
     justify-content: center;
     align-items: center;
@@ -133,6 +135,8 @@
     .inner_poligon {
         flex-direction: column;
         width: 25rem; 
+        min-width: 25rem;
+        min-height: 25rem;
         height: 25rem;  
         min-inline-size: 10em;
         padding: 9vh;
@@ -166,7 +170,9 @@ and (min-device-width: 320px) {
     .inner_poligon {
         flex-direction: column;
         width: 15rem; 
+        min-width: 15rem;
         height: 15rem;  
+        min-height: 15rem;
         min-inline-size: 10em;
         padding: 9vh;
         order: 0 !important;
@@ -218,7 +224,9 @@ and (min-device-width: 320px)
     .inner_poligon {
         flex-direction: column;
         width: 15rem; 
+        min-width: 15rem;
         height: 15rem;  
+        min-height: 15rem;
         min-inline-size: 10em;
         padding: 9vh;
         order: 0 !important;

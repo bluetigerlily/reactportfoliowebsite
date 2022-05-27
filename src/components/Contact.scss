@@ -53,48 +53,9 @@ $mypink: #f9dec9;
     }
 }
 
-.addressoutercontainer {
-    display: flex;
-    flex-direction: column;
-    order: 0 !important;
 
-}
-.addresstitleclass {
-    font-size: 140%;
-    order: 0;
-    
-}
-.addressclass {
-    font-size: 130%;
-    order: 1;
-}
 
-.emailcontainerclass {
-    order: 1 !important;
-    display: flex;
-    flex-direction: column;
-}
-.emailtitleclass {
-    font-size: 140%;
-    order: 0;    
-}
-.emailclass {
-    font-size: 130%;
-    order: 1;
-}
-.phonecontainerclass {
-    order: 2 !important;
-    display: flex;
-    flex-direction: column;
-}
-.phonetitleclass {
-    order: 0;
-    font-size: 140%;
-}
-.phoneclass {
-    order: 1;
-    font-size: 130%;
-}
+
 .contactform {
     flex-direction: column;
     order: 2;
@@ -116,31 +77,27 @@ label {
     color:  $mypink;
     font-weight: bold;
     display: block;
-    float: left;
     background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
     height: 3rem;
     width: 7rem;
     font-size: 1.3rem;    
     margin-right: .3rem;
     margin-bottom: .6rem;
+    margin-top: 1rem;
     border-radius: .25rem;
     padding-top: .35rem;
   }
   label:after { content: ": " }
   .inputcontainer {
       display: flex;
-      justify-content: center;
-      align-items: center; 
+      justify-content: left;
+      align-items: left; 
       
   }
 @media screen and (max-width: 1000px) {
     label {
     color:  $mypink;
     font-weight: bold;
-    display: block;
-    justify-items: center;
-    justify-content: center;
-    float: left;
     background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
     height: 30px;
     width: 80px;
@@ -153,6 +110,7 @@ label {
     .contactform {
         padding: 1vh;
         margin: 1vw;
+        min-width: 15rem;
     }
 }
 input[type=text]{
@@ -163,26 +121,27 @@ input[type=email] {
     height: 3rem;
     width: 15rem;
     }
-textarea{
+textarea[type=text] {   
     height: fit-content;
     max-width: 15rem;
+    width: 15rem;
     min-height: 3rem;
     min-width: 15rem;
     }
 @media screen and (max-width: 1000px) {
 input[type=text]{
     height: 2.3rem;
-    width: 12rem;
+    width: 15rem;
     }
 input[type=email] {
     height: 2.3rem;
-    width: 12rem;
+    width: 15rem;
     }
-textarea{
+textarea[type=text]{
     height: fit-content;
-    max-width: 12rem;
-    min-height: 2.3rem;
-    min-width: 12rem;
+    max-width: 15rem;
+    min-width: 15rem;
+    width: 15rem;
     }
 }
 .contactoutercontainerclass:hover {
@@ -195,7 +154,6 @@ textarea{
 .paramessageclass {
     order: 1;
 }
-
 
 
 .footer {
@@ -223,12 +181,12 @@ textarea{
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    min-width: 15rem;
     max-width: 1440px;
     transform-style: flat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 @media screen and (max-width: 1000px) {
@@ -242,13 +200,35 @@ textarea{
 
 .messageclass {
     display: flex;
-    align-items: center;
-    justify-items: center;
+    align-items: left;
     justify-content: center;
     margin: 1vw;
-    min-width: 100%;
+    min-width: 15rem;
+    width: 15rem;
+    max-width: 15rem;
     order: 2;
+    flex-direction: column;
+    
 }
+textarea {
+    min-height: 8rem;
+    max-width: 15rem;
+    min-width: 15rem;
+    background: $myblue;
+    color: $mypurple;
+    font-size: 1rem;
+}
+#email {
+    background: $myblue;
+    color: $mypurple;
+    font-size: 1rem;
+}
+#name {
+    background: $myblue;
+    color: $mypurple;
+    font-size: 1rem;
+}
+
 .submitbuttonclass {
     background: $mypurple;
     border-radius: .5rem;
@@ -276,8 +256,8 @@ textarea{
         }
     textarea{
         height: fit-content;
-        max-width: 12rem;
-        min-height: 3rem;
+        max-width: 10rem;
+        min-height: 6em;
         min-width: 10rem;
         }
         label {

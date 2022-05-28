@@ -125,6 +125,7 @@ input[type=email] {
 textarea[type=text] {   
     height: fit-content;
     max-width: 15rem;
+    align-items: left;
     width: 15rem;
     min-height: 3rem;
     min-width: 15rem;
@@ -202,7 +203,6 @@ textarea[type=text]{
 
 .messageclass {
     display: flex;
-    justify-content: center;
     margin: 1vw;
     min-width: 15rem;
     width: 15rem;
@@ -217,7 +217,6 @@ textarea[type=text]{
 textarea {
     min-height: 8rem;
     max-width: 15rem;
-    align-items: left;
     min-width: 15rem;
     background: $myblue;
     color: $mypurple;
@@ -232,6 +231,11 @@ textarea {
     background: $myblue;
     color: $mypurple;
     font-size: 1rem;
+}
+#message {
+    background: $myblue;
+    color: $mypurple;
+    font-size: 1rem;    
 }
 
 .submitbuttonclass {

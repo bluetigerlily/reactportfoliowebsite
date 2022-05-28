@@ -75,7 +75,6 @@ $mypink: #f9dec9;
 }
 label {
     color:  $mypink;
-    font-weight: bold;
     display: block;
     background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
     height: 3rem;
@@ -97,7 +96,6 @@ label {
 @media screen and (max-width: 1000px) {
     label {
     color:  $mypink;
-    font-weight: bold;
     background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
     height: 30px;
     width: 80px;
@@ -197,7 +195,6 @@ textarea[type=text]{
 }
 
 .messageclass {
-    margin: 1vw;
     min-width: 15rem;
     width: 15rem;
     max-width: 15rem;

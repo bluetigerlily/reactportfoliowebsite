@@ -189,13 +189,7 @@ textarea[type=text]{
 }
 
 
-.messageclass {
-    margin: 1vw;
-    min-width: 15rem;
-    width: 15rem;
-    max-width: 15rem;
-    align-items: center;
-}
+
 
 textarea {
     min-height: 8rem;
@@ -241,6 +235,19 @@ textarea {
     input[type=text]{
         height: 1.5rem;
         width: 10rem;
+        }
+        .inputcontainer {
+            order: 2;
+            border-radius: 1rem;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            min-width: 15rem;
+            max-width: 1440px;
+            transform-style: flat;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     input[type=email] {
         height: 1.5rem;

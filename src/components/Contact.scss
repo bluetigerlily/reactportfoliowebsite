@@ -197,14 +197,11 @@ textarea[type=text]{
 }
 
 .messageclass {
-    display: flex;
     margin: 1vw;
     min-width: 15rem;
     width: 15rem;
     max-width: 15rem;
     order: 2;
-    flex-direction: column;
-    
 }
 
 textarea {

@@ -105,6 +105,7 @@ label {
     margin-right: .3rem;
     margin-bottom: .3rem;
     border-radius: .25rem;
+    align-items: left !important;
     padding-top: .1rem;
   }
     .contactform {
@@ -210,9 +211,13 @@ textarea[type=text]{
     flex-direction: column;
     
 }
+.messagelabel {
+    align-items: left !important;
+}
 textarea {
     min-height: 8rem;
     max-width: 15rem;
+    align-items: left;
     min-width: 15rem;
     background: $myblue;
     color: $mypurple;

@@ -32,13 +32,25 @@ $mypink: #f9dec9;
   background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   align-items: left;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   margin: 5rem;
   background-attachment: fixed;
 }
-
+.videodiv {
+  order: 1;
+  width: 50%;
+  margin: 1rem;
+  padding: 1rem;
+}
+.projectsparaclass {
+  order: 1;
+  width: 40%;
+}
 #projectstitleid {
-  font-size: 8rem;
+  font-size: 6rem;
+  order: 0;
 }
 
 @media screen and (max-width: 1000px) {

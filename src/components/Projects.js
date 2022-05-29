@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../data";
 import "./Projects.scss";
 import { FaGithub } from 'react-icons/fa';
-
+import dashboard from '../assests/dashboard.mp4'
 
 
 
@@ -11,6 +11,7 @@ export default function Projects() {
         <section id="projects" className="projectssectionclass">
           <div className="projectsouterdivclass" id="projectsouterdivid">
             <div className="projectsinnerdivclass" id="projectsinnerdivid">
+              <div className="projectstitlepara">
               <h1 className="projectstitleclass" id="projectstitleid">
                 Projects
               </h1>
@@ -18,6 +19,20 @@ export default function Projects() {
                 Below are just a few of the projects I've completed during my time coding!  My full GitHub can be found here:&nbsp;  
                  <a href="https://github.com/bluetigerlily" id="github" target="_blank" rel="noreferrer"><FaGithub /></a>.
               </p>
+              </div>
+                <video
+                className="videodiv"
+                src={dashboard}
+                controls
+                autoPlay={true}
+                loop
+                allowFullScreen
+                title="dashboard"
+                type="video/mp4"
+                alt='...'
+                 />
+                 {" "}
+             
             </div>
 
 

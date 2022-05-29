@@ -19,52 +19,57 @@ class Carouselleftright extends React.Component {
         this.props.parentCallback(event.target.isToggled);
         event.preventDefault();
     }
-
-
+ 
 render() {
+
     return (
             <div className='imageoutercontainer' onClick={this.onToggle} onLoad={this.onToggle} onMouseLeave={this.onToggle}>
-            <div className="image">
+        
+    
+    <div className="image">
           <img 
           src={imagesArray[this.state.currImg].img} 
           alt={imagesArray[this.state.currImg].alt} 
-          className={imagesArray[this.state.currImg].className} 
+          className={imagesArray[this.state.currImg].className}
+          id={'s1'}
           />
-          
           <div className="image__overlay"> 
               
              <p>{imagesArray[this.state.currImg].message}</p>
 
              </div>
-            </div>
-            <div className="image">
+
+    </div>
+
+    <div className="image">
+ 
           <img 
           src={imagesArray[this.state.secondImg].img} 
           alt={imagesArray[this.state.secondImg].alt} 
           className={imagesArray[this.state.secondImg].className} 
+          id={'s2'}
           />
-          
-          <div className="image__overlay"> 
-              
+          <div className="image__overlay">      
              <p>{imagesArray[this.state.secondImg].message}</p>
+          </div>
+    
 
-             </div>
-            </div>
-            <div className="image">
+    </div>
+
+    <div className="image">
           <img 
           src={imagesArray[this.state.thirdImg].img} 
           alt={imagesArray[this.state.thirdImg].alt} 
-          className={imagesArray[this.state.thirdImg].className} 
+          className={imagesArray[this.state.thirdImg].className}
+          id={'s3'}
           />
-          
           <div className="image__overlay"> 
-              
              <p>{imagesArray[this.state.thirdImg].message}</p>
-
              </div>
-            </div>
+    </div>
 
-        <div className='left' onClick={() => {
+        <button className={'left'} onClick={() => {
+        
         if (this.state.currImg > 0) {
             this.setState({currImg: this.state.currImg - 1});
         } else { 
@@ -79,18 +84,19 @@ render() {
             this.setState({thirdImg: this.state.thirdImg -1});
         } else {
             this.setState({thirdImg: (imagesArray.length-1)});
-        }
-        }}>
-       
-           
+        } 
+        }}
+        >   
     <MdOutlineKeyboardArrowLeft  style={{
                 fontSize: 50,
+                color: '#f9dec9',
             }}/>
             
 
-        </div>
+        </button>
         
-        <div className='right' onClick={() => {
+        <button className={'right'} onClick={() => {
+
             if (this.state.currImg < imagesArray.length - 1)
             {
                 this.setState({currImg: this.state.currImg + 1});
@@ -107,15 +113,15 @@ render() {
             } else {
                 this.setState({thirdImg: 0});
             }
-        }}>
-                
-
+        }}
+       >
             <MdOutlineKeyboardArrowRight style={{
                 fontSize: 50,
+                color: '#f9dec9',
              }}/>
                 
                 
-        </div>
+        </button>
 
      </div>
     )

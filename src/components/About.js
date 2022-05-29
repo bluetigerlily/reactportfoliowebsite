@@ -57,7 +57,7 @@ render() {
 
              <div className="svgandparacontainer">
             <div className="inner_poligon">
-              <img src={bubblegumgif} alt="loading..."></img>
+              <img src={bubblegumgif} className="bubblegumgif" alt="loading..."></img>
             </div>
                 <div className="paracontainer">
             <p className="aboutfirstpara" id="aboutfirstparaid">

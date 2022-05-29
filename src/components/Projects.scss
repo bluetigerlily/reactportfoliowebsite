@@ -25,14 +25,26 @@ $mypink: #f9dec9;
     text-align: center;
     justify-content: center;
     align-items: center;
-    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    
   }
 
- 
+ .projectsinnerdivclass {
+  background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  align-items: left;
+  text-align: center;
+  margin: 5rem;
+  background-attachment: fixed;
+}
 
 #projectstitleid {
-  font-size: 3.5rem;
+  font-size: 8rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #projectstitleid {
+    font-size: 3rem;
+  }
 }
 .projectsinnerdivclass{
     font-size: 2.5vh;
@@ -50,9 +62,7 @@ $mypink: #f9dec9;
     justify-content: center;
     align-items: center;
 
-    img {
-      border-radius: 10%;
-    }
+
     a {
       border-radius: 0%;
     }
@@ -64,7 +74,6 @@ $mypink: #f9dec9;
   .projectimgclass {
     width: 100%;
     padding: 5%;
-    
     max-height: 40rem;
    
   }
@@ -74,7 +83,11 @@ $mypink: #f9dec9;
     width: 100%;
   }
  
-
+@media screen and (max-width: 980px) {
+  .projectimgclass {
+    max-height: 30rem;
+  }
+}
 @media screen and (max-width: 1504px) {
     .projectsmappingdivclass {
         flex-direction: column;
@@ -100,7 +113,6 @@ $mypink: #f9dec9;
   }
   .projectsimgcontainerclass .projectimgclass{
     width: 250px;
-    
 }
   }
 
@@ -125,7 +137,8 @@ $mypink: #f9dec9;
     width: 100%;
     height: auto;
     background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
-  
+    background-attachment: fixed;
+
     color: $mypurple;
     align-items: center;
     justify-content: center;
@@ -138,7 +151,6 @@ $mypink: #f9dec9;
     padding: 4%;
     width: 100%;
     min-height: 25rem;
-    height: 25rem;
 
 }
 

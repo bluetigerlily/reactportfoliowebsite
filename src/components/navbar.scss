@@ -17,8 +17,8 @@ $mypink: #f9dec9;
     background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
     cursor: pointer !important;
     font-size: 2vw;
-    // outline-offset: -.4rem;
-    // outline: .1rem dashed $mypink;
+    background-attachment: relative;
+
 }
 @media screen and (max-width: 1000px) {
     .navcontainer {

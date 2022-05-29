@@ -2,7 +2,6 @@ import React from "react";
 import "./Contact.scss";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-
 export default function Contact() {
     const [name, setName] = React.useState("");
     const [email, setEmail] = React.useState("");
@@ -30,43 +29,9 @@ export default function Contact() {
     return (
       <section id="contact" className="relative">
         <div className="contactoutercontainerclass">
-          {/* <div className="mapaddressemailphonecontainerclass">
-            <iframe
-              width="100%"
-              height="100%"
-              title="map"
-              className="mapframeclass"
-              frameBorder={0}
-              marginHeight={0}
-              marginWidth={0}
-              style={{ filter: "opacity(0.7)" }}
-              src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj_nNO9cjQYYRakWWFfWVjHg&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8lalalalla"
-            />
-            <div className="informationoutercontainerclass">
-              <div className="addressoutercontainer">
-                <h2 className="addresstitleclass">
-                  ADDRESS
-                </h2>
-                <p className="addressclass">
-           
-                </p>
-              </div>
-              <div className="emailcontainerclass">
-                <h2 className="emailtitleclass">
-                  EMAIL
-                </h2>
-                {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
-                {/* <a className="emailclass">
-                </a>
-                </div>
-                <div className="phonecontainerclass">
-                <h2 className="phonetitleclass">
-                  PHONE
-                </h2>
-                <p className="phoneclass"></p>
-              </div>
-            </div>
-          </div> */} 
+          <div className="contactSvg">
+          </div>
+          <div className="formcontainer">
           <form
             data-netlify="true"
             name="contact"
@@ -140,6 +105,7 @@ export default function Contact() {
 
 
         </form>
+        </div>
         </div>
       </section>
     );

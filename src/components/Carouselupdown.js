@@ -62,7 +62,7 @@ render() {
              </div>
             </div>
 
-        <div className='up' onClick={() => {
+        <button className='up' onClick={() => {
         if (this.state.currImg > 0) {
             this.setState({currImg: this.state.currImg - 1});
         } else { 
@@ -83,12 +83,13 @@ render() {
            
     <MdOutlineKeyboardArrowUp  style={{
                 fontSize: 50,
+                color: '#f9dec9',
             }}/>
             
 
-        </div>
+        </button>
         
-        <div className='down' onClick={() => {
+        <button className='down' onClick={() => {
             if (this.state.currImg < imagesArray.length - 1)
             {
                 this.setState({currImg: this.state.currImg + 1});
@@ -106,14 +107,13 @@ render() {
                 this.setState({thirdImg: 0});
             }
         }}>
-                
-
             <MdOutlineKeyboardArrowDown style={{
                 fontSize: 50,
+                color: '#f9dec9',
              }}/>
                 
                 
-        </div>
+        </button>
 
      </div>
     )

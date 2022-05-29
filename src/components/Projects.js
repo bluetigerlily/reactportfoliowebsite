@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../data";
 import "./Projects.scss";
 import { FaGithub } from 'react-icons/fa';
-import dashboard from '../assests/dashboard.mp4'
+import dashboard from '../assests/dashboard.gif'
 
 
 
@@ -20,19 +20,12 @@ export default function Projects() {
                  <a href="https://github.com/bluetigerlily" id="github" target="_blank" rel="noreferrer"><FaGithub /></a>.
               </p>
               </div>
-                <video
+                <img
                 className="videodiv"
                 src={dashboard}
-                controls
-                autoPlay={true}
-                loop
-                allowFullScreen
                 title="dashboard"
-                type="video/mp4"
                 alt='...'
-                 />
-                 {" "}
-             
+                 />             
             </div>
 
 

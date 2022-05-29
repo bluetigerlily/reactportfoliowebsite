@@ -3,13 +3,14 @@ import { codingskills } from "../data";
 import "./Skills.scss";
 import { FaHackerrank } from "react-icons/fa";
 import { SiCodecademy } from "react-icons/si";
-
+import womanstanding from '../assests/womanstanding.gif';
 
 
 export default function Skills() {
     return (
         <section id="skills">
           <div className="skillsouterdivclass" id="skillsouterdivid">
+            <div className="titleparaskills">
             <div className="skillsinnerdivclass" id="skillsinnerdivid">
               <h1 className="skillstitleclass" id="skillstitleid">
                 Skills &amp; Technologies
@@ -23,6 +24,7 @@ export default function Skills() {
                  Below are some of the Skills and Technologies I've learned during my time Programming:  
               </p>
             </div>
+
             <div className="skillsmappingdivcontainerclass" id="skillsmappingdivcontainerid">
               {codingskills.map((skill) => (
                 <div key={skill} className="skillsmappinginngclass">
@@ -33,6 +35,15 @@ export default function Skills() {
                   </div>
                 </div>
               ))}
+            </div>
+            </div>
+            <div className="skillsvid">
+            <img
+                className="skillsdiv"
+                src={womanstanding}
+                title="woman standing"
+                alt='...'
+                 />           
             </div>
           </div>
         </section>

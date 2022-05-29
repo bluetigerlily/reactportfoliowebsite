@@ -123,6 +123,14 @@ border-style: none !important;
             justify-self: center;
             font-size: 1rem;
         }
+        .skillsvid {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 0;
+            height: 0;
+            order: 0;
+        }
 }
 
 @media only screen 

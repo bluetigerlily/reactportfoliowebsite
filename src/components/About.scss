@@ -9,7 +9,9 @@
 //some other variables throughout the code defined above
 //the parts as needed for easier toggling / changing of 
 //effects
-*, *::before, *::after { box-sizing: border-box }
+*, *::before, *::after { 
+    box-sizing: border-box 
+}
 //my variables
 :root {
     --typewriterSpeed: 6s;
@@ -26,7 +28,6 @@
 
 
 
-
 #aboutcontainerid {
 
     display: flex;
@@ -36,7 +37,6 @@
     align-items: center;
     color: $mypurple;
     font-family: 'Merienda', cursive;
-
 }
 
 #aboutinnercontainerid {
@@ -50,8 +50,6 @@
     background-attachment: fixed;
 
 
-
-
     &::before,
     &::after {
         content: '';
@@ -63,7 +61,7 @@
         width: 100%;
         background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
         height: 100%;
-        z-index: -1;    
+        z-index: 0;    
     }
     &::after {
         background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
@@ -71,7 +69,7 @@
         left: 50%;
         top: 0;
         transform: translateX(-50%);
-        z-index: -2;
+        z-index: -1;
         height: 100%;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
  
@@ -94,6 +92,7 @@
     background: linear-gradient(to bottom, #5e548e, #67659e, #7077ad, #7b88bc, #879aca, #8da2d0, #93aad7, #99b2dd, #99b2dd, #99b2dd, #99b2dd, #99b2dd), url(../assests/leather.svg);
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     background-attachment: fixed;
+    z-index: 2;
 
 }
 

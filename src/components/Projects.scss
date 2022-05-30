@@ -100,6 +100,17 @@ $mypink: #f9dec9;
     max-height: 30rem;
   }
 }
+@media screen and (max-width: 742px) {
+  .videodiv {
+  order: 1;
+  width: 0;
+  height: 0;
+  margin: 1rem;
+  padding: 1rem;
+  visibility: hidden;
+}
+  
+}
 @media screen and (max-width: 1504px) {
     .projectsmappingdivclass {
         flex-direction: column;
@@ -126,6 +137,7 @@ $mypink: #f9dec9;
   .projectsimgcontainerclass .projectimgclass{
     width: 250px;
 }
+
   }
 
   @media only screen 
@@ -141,6 +153,13 @@ $mypink: #f9dec9;
   }
   .projectsimgcontainerclass .projectimgclass{
     width: 180px;
+}
+.videodiv {
+  order: 1;
+  width: 0;
+  margin: 1rem;
+  padding: 1rem;
+  visibility: hidden;
 }
   }
 .projectslinkclass {

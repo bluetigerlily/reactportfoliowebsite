@@ -689,23 +689,3 @@ and (max-width: 1490px) {
     90% { transform: translate(2px, 2px)   rotate(0deg);  }
     100%{ transform: translate(1px, -2px)  rotate(-1deg); }
   }
-
-  .image:focus, .image:hover {
-    animation: wobble 1s 1;
-}
-
-@keyframes wobble {
-    25% {
-      transform: rotate(15deg);
-    }
-    50% {
-      transform: rotate(-30deg);
-    }
-    75% {
-      transform: rotate(5deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-  

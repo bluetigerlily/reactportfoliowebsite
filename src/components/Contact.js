@@ -57,6 +57,7 @@ export default function Contact() {
                 className="nameinputclass"
                 placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
+                required
               />
             </div>
             <div className="emailclass">
@@ -70,6 +71,7 @@ export default function Contact() {
                 className="emailinputclass"
                 placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
+                required
               />
             </div>
             <div className="messageclass">
@@ -83,7 +85,7 @@ export default function Contact() {
                 name="message"
                 placeholder="Leave a message"
                 className="messageinputclass"
-                onChange={(e) => setMessage(e.target.value)}
+                onChange={(e) => setMessage(e.target.value)} 
               />
             </div>
             <button

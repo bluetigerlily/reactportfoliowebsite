@@ -84,21 +84,37 @@ border-style: none !important;
     justify-content: center;    
 }
 
+
 @media screen and (max-width: 1000px) {
     .skillsmappingdivcontainerclass {
     flex-direction: column;
     flex-flow: wrap;
+    align-items: center;
+    }
+    .skillsinnerdivclass {
+    text-align: center;
     }
     .skillsparadescriptionclass {
         display: flex;
         flex-flow: wrap;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }
     .skillsouterdivclass {
         width: 100%;
         margin: none;
         justify-self: center;
+    }
+
+    .skillsvid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 0;
+        visibility: hidden;
+        height: 0;
+        order: 0;
     }
 
 }
@@ -128,6 +144,7 @@ border-style: none !important;
             flex-direction: row;
             justify-content: center;
             width: 0;
+            visibility: hidden;
             height: 0;
             order: 0;
         }
@@ -157,6 +174,15 @@ border-style: none !important;
         margin: none;
         justify-self: center;
         font-size: 1rem;
+    }
+    .skillsvid {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 0;
+        visibility: hidden;
+        height: 0;
+        order: 0;
     }
   }
 

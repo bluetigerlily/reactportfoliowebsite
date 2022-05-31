@@ -71,7 +71,7 @@
         transform: translateX(-50%);
         z-index: -1;
         height: 100%;
-        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
  
     }
 
@@ -90,7 +90,7 @@
     border-radius: 10%;
     padding: 5rem;
     background: linear-gradient(to bottom, #5e548e, #67659e, #7077ad, #7b88bc, #879aca, #8da2d0, #93aad7, #99b2dd, #99b2dd, #99b2dd, #99b2dd, #99b2dd), url(../assests/leather.svg);
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     background-attachment: fixed;
     z-index: 2;
 
@@ -109,8 +109,7 @@
     clip-path: circle(50% at 50% 50%); 
     max-width: 1440px;
     padding: 4vh;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     cursor: pointer;
     background-attachment: fixed;
 
@@ -272,7 +271,7 @@ and (min-device-width: 320px)
     width: 100%;
     height: 95%;
     border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-    box-shadow: .02rem .4rem rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     transition: all .4s ease;
     transform-style: flat;
     transition: transform 3s;
@@ -285,7 +284,7 @@ and (min-device-width: 320px)
 }
 #aboutfirstparaid:hover {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-    box-shadow: 1rem .5rem rgba(0,0,0,.25);
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
 }
 @media screen and (max-width: 1000px) {
     .svgandparacontainer {
@@ -299,7 +298,6 @@ and (min-device-width: 320px)
         justify-content: center;
         align-items: center;
         outline-offset: 3rem;
-        // outline: .6rem double $mypurple;
         border-radius: 10%;
         
     }
@@ -312,7 +310,7 @@ and (min-device-width: 320px)
         width: 100%;
         height: 95%;
         border-radius: 0% 0% 0% 0% / 0% 0% 0% 0% ;
-        box-shadow: .02rem .4rem rgba(0, 0, 0, 0.15);
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
         transition: all .4s ease;
         transform-style: flat;
         transition: transform 3s;
@@ -335,7 +333,7 @@ and (min-device-width: 320px)
 }
 .imageoutercontainer img {
     max-width: fit-content; 
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
 
 }
  .imageone__img {
@@ -489,7 +487,7 @@ and (max-width: 1490px) {
     position: relative;
     background-color: grey;
     order: 2;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     border-radius: $imageborderradius;
     margin: 1rem;
 
@@ -546,7 +544,7 @@ and (max-width: 1490px) {
     position: relative;
     background-color: grey;
     order: 2;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     border-radius: $imageborderradius;
     margin: 1rem;
 }
@@ -681,32 +679,4 @@ and (max-width: 1490px) {
       opacity: 1;
       transform: translateY(0);
     }
-  }
-
-
-  button.right:hover {
-      animation: shake 1s 1;
-  }
-  button.left:hover {
-      animation: shake 1s 1;
-  }
-  button.up:hover {
-      animation: shake 1s 1;
-  }
-  button.down:hover {
-      animation: shake 1s 1;
-  }
-
-  @keyframes shake {
-    0%  { transform: translate(2px, 1px)   rotate(0deg);  }
-    10% { transform: translate(-1px, -2px) rotate(-2deg); }
-    20% { transform: translate(-3px, 0px)  rotate(3deg);  }
-    30% { transform: translate(0px, 2px)   rotate(0deg);  }
-    40% { transform: translate(1px, -1px)  rotate(1deg);  }
-    50% { transform: translate(-1px, 2px)  rotate(-1deg); }
-    60% { transform: translate(-3px, 1px)  rotate(0deg);  }
-    70% { transform: translate(2px, 1px)   rotate(-2deg); }
-    80% { transform: translate(-1px, -1px) rotate(4deg);  }
-    90% { transform: translate(2px, 2px)   rotate(0deg);  }
-    100%{ transform: translate(1px, -2px)  rotate(-1deg); }
   }

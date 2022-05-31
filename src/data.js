@@ -37,25 +37,25 @@ export const projects = [
 
   export const imagesArray = [
     {
-      className: "image__img",
+      className: "imageone__img",
       alt: "Haley Moses full-stack developer portfolio website seeking employment",
       img: "https://live.staticflickr.com/65535/52010246990_c9d29d50b5_c.jpg?compress=1&resize=355x226&vertical=top",
       message: "I'm a self taught full-stack developer"
     },
     {
-      className: "image__img",
+      className: "imagetwo__img",
       alt: "Haley Moses has a Mechanical Engineering Degree",
       img: "https://live.staticflickr.com/65535/52101125909_50d0ae8b8b_n.jpg",
       message: `I have a Bachelor's of Science in Mechanical Engineering.`
     }, 
     {
-      className: "image__img",
+      className: "imagethree__img",
       alt: "Haley Moses full-stack developer's exerpience",
       img: "https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top",
       message: `What I lack in experience. I make up with in Passion, Drive, and Creativity.`
     }, 
     {
-      className: "image__img",
+      className: "imagefour__img",
       alt: "Haley Moses is a Capybara Fanatic",
       img: "https://p0.pikist.com/photos/875/214/capybara-faunapark-animal-park-rodent-mammal-fur-hairy-fauna-caviidae-thumbnail.jpg",
       message: `Capybaras are my favorite animal!` 

@@ -16,9 +16,8 @@ export default function Navbar() {
               duration={500}
               spy={true}
               >
-            <a href='#about' className="aboutbtn" id="aboutbtnnav">
               About Me
-            </a>
+           
             </Link>
           </li>
       
@@ -30,9 +29,7 @@ export default function Navbar() {
               duration={500}
               spy={true}
               >
-            <a href="#projects" className="projectsbtn" id="projectsbtnnav" >
               Projects
-            </a>
             </Link>
             </li>
 
@@ -43,9 +40,7 @@ export default function Navbar() {
               duration={500}
               spy={true}
               >
-            <a href="#skills" className="skillsbtn" id="skillsbtnnav">
               Skills
-            </a>
             </Link>
             </li>
 
@@ -56,9 +51,7 @@ export default function Navbar() {
               duration={500}
               spy={true}
               >
-            <a href="#contact" className="contactbtn" id="contactbtnnav">
               Contact Me
-            </a>
             </Link>
           </li>
 

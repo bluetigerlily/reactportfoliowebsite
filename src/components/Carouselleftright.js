@@ -1,23 +1,33 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './About.scss'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'; 
 import { imagesArray } from '../data'
+import { SiThespritersresource } from 'react-icons/si';
 
 class Carouselleftright extends React.Component {
 
  
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             currImg: 0,
             secondImg: 1,
             thirdImg: 2,
         }
+        this.clickThroughright = null;
+        this.setClickThroughRight = element => {
+            this.clickThroughright = element;
+        };
     }
     //default states for the images
     onToggle = (event) => {
         this.props.parentCallback(event.target.isToggled);
         event.preventDefault();
+    }
+
+
+    //timed scrolling through states for the carousel for the right input
+    onTimerright = () => {
     }
  
 render() {
@@ -68,7 +78,7 @@ render() {
              </div>
     </div>
 
-        <button className={'left'} onClick={() => {
+        <button type={'button'} className={'left'} onClick={() => {
         
         if (this.state.currImg > 0) {
             this.setState({currImg: this.state.currImg - 1});
@@ -95,7 +105,7 @@ render() {
 
         </button>
         
-        <button className={'right'} onClick={() => {
+        <button ref={this.onTimerright} className={'right'} onClick={() => {
 
             if (this.state.currImg < imagesArray.length - 1)
             {

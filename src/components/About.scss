@@ -330,12 +330,48 @@ and (min-device-width: 320px)
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    
+    scroll-behavior: smooth;
+    position: relative;
+    overflow: hidden;
 }
 .imageoutercontainer img {
     max-width: fit-content; 
+
 }
+ .imageone__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: $imageborderradius;
+}
+
+.imagetwo__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: $imageborderradius; 
+}
+
+.imagethree__img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        border-radius: $imageborderradius; 
+}
+
+.imagefour__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: $imageborderradius; 
+}
+
+
+
 
 @media screen and (min-width: 1490px) {
     
@@ -355,12 +391,13 @@ and (min-device-width: 320px)
 
     &::before {
         width: 100%;
-        background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
+        // background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
         height: 100%;
         z-index: -1;
+
     }
     &::after {
-        background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
+        // background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
         width: 100vw;
         left: 50%;
         top: 0;

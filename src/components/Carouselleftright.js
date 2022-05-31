@@ -14,13 +14,7 @@ class Carouselleftright extends React.Component {
         }
     }
     //default states for the images
-  
- 
-     
 
-   
-   
-    
      
     //timed scrolling through states for the carousel for the right input
     getData() {
@@ -47,7 +41,7 @@ class Carouselleftright extends React.Component {
     }
 
     componentDidMount = () => {
-        this.setDataRef = setInterval(() => this.getData(), 3000); 
+        this.setDataRef = setInterval(() => this.getData(), 5000); 
     };
     componentWillUnmount() { 
         clearInterval(this.setDataRef) 

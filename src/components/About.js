@@ -1,7 +1,6 @@
 import React from "react";
 import "./About.scss";
 import Carouselleftright from "./Carouselleftright";
-import Carouselupdown from "./Carouselupdown";
 
 import bubblegumgif from '../assests/bubblegumgif.gif'
 
@@ -9,39 +8,6 @@ import bubblegumgif from '../assests/bubblegumgif.gif'
 
 
  class About extends React.Component {
-
-  constructor()  {
-    super();
-    this.state = {
-      isToggled: false,
-      isMounted: true,
-    }
-
-  }
-
-   handleCallBack = (isToggled) => {
-    if (window.innerWidth < 1500) {
-      this.setState({isToggled: true});
-   
-    } 
-   }
-
-   componentDidMount() {
-     if(this.state.isMounted) {
-    this.timerID = setInterval(
-      () => this.tick(),
-      10000
-    );
-     }
-  }
-
-
-  tick() {
-    this.setState({
-      isToggled: false,
-    });
-  }
-  
 
 render() {
     return (
@@ -66,8 +32,7 @@ render() {
               </p>
                 </div>
               </div>
-          
-      {(this.state.isToggled === true) ? (<Carouselupdown parentCallback={this.handleCallBack}  />) : (<Carouselleftright parentCallback={this.handleCallBack} />)}
+            <Carouselleftright  />
           </div>
         </section>
       );

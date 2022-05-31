@@ -1,6 +1,5 @@
 import React from 'react';
 import './About.scss'
-import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'; 
 import { imagesArray } from '../data'
 
 class Carouselleftright extends React.Component {
@@ -13,26 +12,53 @@ class Carouselleftright extends React.Component {
             secondImg: 1,
             thirdImg: 2,
         }
-        this.clickThroughright = null;
-        this.setClickThroughRight = element => {
-            this.clickThroughright = element;
-        };
     }
     //default states for the images
-    onToggle = (event) => {
-        this.props.parentCallback(event.target.isToggled);
-        event.preventDefault();
-    }
-
-
-    //timed scrolling through states for the carousel for the right input
-    onTimerright = () => {
-    }
+  
  
+     
+
+   
+   
+    
+     
+    //timed scrolling through states for the carousel for the right input
+    getData() {
+       
+
+              
+        if (this.state.currImg < imagesArray.length - 1)
+        {
+            this.setState({currImg: this.state.currImg + 1});
+        }  else { 
+            this.setState({currImg: 0});
+        }
+        if (this.state.secondImg < imagesArray.length -1) {
+            this.setState({secondImg: this.state.secondImg+1});
+        } else {
+            this.setState({secondImg: 0});
+        }
+        if (this.state.thirdImg < imagesArray.length -1) {
+            this.setState({thirdImg: this.state.thirdImg+1});
+        } else {
+            this.setState({thirdImg: 0});
+        }
+      
+    }
+
+    componentDidMount = () => {
+        this.setDataRef = setInterval(() => this.getData(), 3000); 
+    };
+    componentWillUnmount() { 
+        clearInterval(this.setDataRef) 
+     }
+
+
+
 render() {
 
     return (
-            <div className='imageoutercontainer' onClick={this.onToggle} onLoad={this.onToggle} onMouseLeave={this.onToggle}>
+            <div className='imageoutercontainer' >
         
     
     <div className="image">
@@ -77,7 +103,7 @@ render() {
              </div>
     </div>
 
-        <button type={'button'} className={'left'} onClick={() => {
+        <div className={'left'} onClick={() => {
         
         if (this.state.currImg > 0) {
             this.setState({currImg: this.state.currImg - 1});
@@ -96,15 +122,12 @@ render() {
         } 
         }}
         >   
-    <MdOutlineKeyboardArrowLeft  style={{
-                fontSize: 50,
-                color: '#f9dec9',
-            }}/>
+
             
 
-        </button>
+        </div>
         
-        <button ref={this.onTimerright} className={'right'} onClick={() => {
+        <div className={'right'} onClick={() => {
 
             if (this.state.currImg < imagesArray.length - 1)
             {
@@ -123,14 +146,8 @@ render() {
                 this.setState({thirdImg: 0});
             }
         }}
-       >
-            <MdOutlineKeyboardArrowRight style={{
-                fontSize: 50,
-                color: '#f9dec9',
-             }}/>
-                
-                
-        </button>
+    >
+        </div>
 
      </div>
     )

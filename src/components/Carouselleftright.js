@@ -1,8 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './About.scss'
 import { MdOutlineKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md'; 
 import { imagesArray } from '../data'
-import { SiThespritersresource } from 'react-icons/si';
 
 class Carouselleftright extends React.Component {
 

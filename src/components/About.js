@@ -19,6 +19,10 @@ render() {
                 Haley Moses
               </h1>
              </div>
+             <div className="geardiv">
+               <p className="gearpone">Bringing Your Dreams To Life</p>
+               <p className="gearptwo">Full Stack Developer</p>
+             </div>
 
 
              <div className="svgandparacontainer">

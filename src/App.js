@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.scss";
 
+
 //component imports
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -13,8 +14,10 @@ import Skills from "./components/Skills";
 
 function App() {
   
-
   return (
+
+  
+
     <div className="containerclass" id="containerid">
 
      
@@ -34,5 +37,5 @@ function App() {
 
     </div>
   );
-  }
+}
 export default App;

@@ -257,9 +257,7 @@ textarea {
 }
 
 .submitbuttonclass {
-    background: $mypurple;
     border-radius: .5rem;
-    border: 0;
     box-sizing: border-box;
     color: $mypink;
     cursor: pointer;
@@ -268,8 +266,28 @@ textarea {
     min-width: 60%;
     order: 3;
     margin: 1vw;
-    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+    position: relative;
+    border: 2px solid $mypink;
+    background: none;
+    z-index: 1;
 
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 100%;
+        background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+        top: .5rem;
+        left: .5rem;
+        border-radius: .5rem;
+        z-index: -1;
+    }
+}
+.submitbuttonclass:hover, .submitbuttonclass:active {
+    &:before {
+        top: 0;
+        left: 0;
+    }
 }
 @media only screen 
   and (max-device-width: 320px) { 

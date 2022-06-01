@@ -23,7 +23,7 @@ export default function Projects() {
                 <img
                 className="videodiv"
                 src={dashboard}
-                title="dashboard"
+                title="Be sure to check out my GitHub to see some more Awesome Projects I have!"
                 alt='...'
                  />             
             </div>

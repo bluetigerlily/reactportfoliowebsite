@@ -83,11 +83,11 @@ $mypink: #f9dec9;
     border-radius: 0;
   }
   
-  .projectimgclass {
+  .projectimgclass img{
     width: 100%;
     padding: 5%;
     max-height: 40rem;
-   
+    aspect-ratio: auto;
   }
   .projectsparaclass {
     padding: 0;

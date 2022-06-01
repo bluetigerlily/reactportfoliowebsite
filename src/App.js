@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./App.scss";
 
 //component imports
@@ -12,6 +12,8 @@ import Skills from "./components/Skills";
 
 
 function App() {
+  
+
   return (
     <div className="containerclass" id="containerid">
 
@@ -20,6 +22,7 @@ function App() {
         <Navbar />
       </div>
       <main className='appbodyclass' id='appbodyid'>    
+      
 
         <About />
         <Projects />
@@ -31,6 +34,5 @@ function App() {
 
     </div>
   );
-}
-
+  }
 export default App;

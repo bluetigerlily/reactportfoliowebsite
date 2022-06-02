@@ -20,7 +20,11 @@ $mypink: rgba(249, 222, 201, 1);
     flex-direction: row;
     color: $mypurple;
     justify-content: center;
-    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+    background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
+    rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
+    rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
+     rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
+      rgba(153, 178, 221, .8));    
     box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     justify-content: center;
     align-items: center;
@@ -44,7 +48,7 @@ $mypink: rgba(249, 222, 201, 1);
     background-position: center;
     opacity: 0.7;
     box-shadow: 0.5rem 0.5rem $mypink, -0.5rem -0.5rem $mypurple;
-
+    z-index: -1;
 }
 
 .formcontainer {
@@ -121,9 +125,11 @@ $mypink: rgba(249, 222, 201, 1);
 }
 label {
     color:  $mypink;
+    border: 2px solid $mypink;
     font-weight: bold;
     display: block;
-    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+    font-weight: bold;
+    background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
     height: 3rem;
     width: 7rem;
     font-size: 1.3rem;    
@@ -143,8 +149,9 @@ label {
 @media screen and (max-width: 1000px) {
     label {
     color:  $mypink;
+    border: 2px solid $mypink;
     font-weight: bold;
-    background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+    background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
     height: 30px;
     width: 80px;
     font-size: 1rem;
@@ -238,22 +245,22 @@ textarea {
     min-height: 8rem;
     max-width: 15rem;
     min-width: 15rem;
-    background: $myblue;
+    background: $mypink;
     color: $mypurple;
     font-size: 1rem;
 }
 #email {
-    background: $myblue;
+    background: $mypink;
     color: $mypurple;
     font-size: 1rem;
 }
 #name {
-    background: $myblue;
+    background: $mypink;
     color: $mypurple;
     font-size: 1rem;
 }
 #message {
-    background: $myblue;
+    background: $mypink;
     color: $mypurple;
     font-size: 1rem;    
 }
@@ -278,7 +285,7 @@ textarea {
         content: '';
         height: 100%;
         width: 100%;
-        background: linear-gradient($mypurple, $myblue), url(../assests/leather.svg);
+        background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
         top: .5rem;
         left: .5rem;
         border-radius: .5rem;

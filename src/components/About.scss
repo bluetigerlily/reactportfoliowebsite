@@ -89,15 +89,18 @@
     text-align: center;
     color: $mypurple;
     z-index: -2;
-    // animation: rotation 5s infinite linear;
+    background-attachment: local scroll;
 }
 .gearpone {
    font-size: 3rem;
+   font-family: 'Rajdhani', sans-serif;
+   font-weight: bold;
 }
 .gearptwo {
     font-size: 2rem;
     margin-top: 9rem;
-
+    font-weight: bold;
+    font-family: 'Rajdhani', sans-serif;
 }
 @media screen and (max-width: 1585px) {
 .geardiv {
@@ -662,7 +665,7 @@ and (max-width: 1490px) {
 
 .abouttitle {
     position: relative;
-    font-family: "Source Code Pro", monospace;
+    font-family: 'Spline Sans Mono', monospace;
     width: max-content;
   }
   

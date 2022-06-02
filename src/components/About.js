@@ -19,7 +19,9 @@ render() {
                 Haley Moses
               </h1>
              </div>
+             <div className="gearandparacontainer">
              <div className="geardiv">
+             </div>
                <p className="gearptwo">A Full Stack Experience</p>
                <p className="gearpone">That Brings It All Together</p>
              </div>

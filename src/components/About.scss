@@ -17,11 +17,10 @@
     --typewriterSpeed: 6s;
     --typewriterCharacters: 11;
   }
-
   $myblack: hsl(240, 100%, 3%);
-  $mypurple: #5e548e;
-  $myblue: #99b2dd;
-  $mypink: #f9dec9;
+  $mypurple: rgba(94, 84, 142, 1);
+  $myblue: rgba(153, 178, 221, 1);
+  $mypink: rgba(249, 222, 201, 1);
 
   //change to adjust the curvature of the images
   $imageborderradius: 10%;
@@ -47,7 +46,7 @@
     font-weight: 600;
     font-size: clamp(2vw, 5vw, 5rem);
     background-attachment: fixed;
-    margin-bottom: 20rem;
+    margin-bottom: 0rem;
 
     &::before,
     &::after {
@@ -58,12 +57,12 @@
 
     &::before {
         width: 100%;
-        background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+        background: linear-gradient(rgba(249, 222, 201, 0.57), rgba(153, 178, 221, .8));
         height: 100%;
         z-index: 0;    
     }
     &::after {
-        background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+        background: linear-gradient(rgba(249, 222, 201, .9), rgba(153, 178, 221, 0.8));
         width: 100vw;
         left: 50%;
         top: 0;
@@ -74,7 +73,18 @@
     }
 
 }
+.gearandparacontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    text-align: center;
+    margin-bottom: 8rem;
+
+}
 .geardiv {
+    position: absolute;
     background-image: url('../assests/gear.svg');
     background-repeat: no-repeat;
     background-color: $myblue;
@@ -82,14 +92,20 @@
     position: absolute;
     width: 50rem;
     height: 50rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     color: $mypurple;
     z-index: -2;
-    background-attachment: local scroll;
+    animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }
 }
 .gearpone {
    font-size: 3rem;
@@ -98,16 +114,27 @@
 }
 .gearptwo {
     font-size: 2rem;
-    margin-top: 9rem;
     font-weight: bold;
     font-family: 'Rajdhani', sans-serif;
 }
 @media screen and (max-width: 1585px) {
-.geardiv {
+.gearandparacontainer {
     visibility: hidden;
+    margin-bottom: 0rem;
+    margin-top: 0;
+}
+.geardiv{
+    height: 0;
+    width: 0;
+}
+.gearpone {
+    font-size: 0rem;
+}
+.gearptwo {
+    font-size: 0rem;
 }
 #aboutinnercontainerid {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
 }
 }
 
@@ -122,17 +149,20 @@
     justify-content: center;
     align-items: center;
     padding: 5rem;
-    background: linear-gradient(to bottom, #5e548e, #67659e, #7077ad, #7b88bc, #879aca, #8da2d0, #93aad7, #99b2dd, #99b2dd, #99b2dd, #99b2dd, #99b2dd), url(../assests/leather.svg);
+    background: linear-gradient(to bottom, rgba(94, 84, 142, 1), rgba(103, 101, 158, 1),
+     rgba(112, 119, 173, 1), rgba(123, 136, 188, 1), rgba(135, 154, 202, 1), 
+     rgba(141, 162, 208, 1), rgba(147, 170, 215, 1), rgba(153, 178, 221, 1),
+      rgba(153, 178, 221, 1), rgba(153, 178, 221, 1), rgba(153, 178, 221, 1),
+       rgba(153, 178, 221, 1)), url(../assests/leather.svg);
     box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
-    background-attachment: fixed;
     z-index: 2;
-
+    background-attachment: fixed;
 }
 
 .inner_poligon{
     order: 0 !important;
     display: flex;
-    background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
+    background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1)), url(../assests/leather.svg);
     width: 40rem; 
     min-width: 40rem;
     min-height: 40rem;
@@ -145,6 +175,7 @@
     box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     cursor: pointer;
     background-attachment: fixed;
+
 
 
 }
@@ -170,7 +201,7 @@
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
+        background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1)), url(../assests/leather.svg);
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -311,7 +342,7 @@ and (min-device-width: 320px)
     max-width: 1440px;
     min-height: 40vh;
     padding: 1vh;
-    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+    background: linear-gradient(rgba(249, 222, 201, 1), rgba(153, 178, 221, 1)), url(../assests/leather.svg);
     background-attachment: fixed;
 
 }
@@ -319,6 +350,7 @@ and (min-device-width: 320px)
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
     box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
 }
+
 @media screen and (max-width: 1000px) {
     .svgandparacontainer {
         flex-direction: column;
@@ -364,6 +396,25 @@ and (min-device-width: 320px)
     scroll-behavior: smooth;
     position: relative;
 }
+
+@keyframes mover {
+    0% {
+      transform: translateX(-100%);
+    }
+   
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @media screen and (min-width: 1490px ){
+    .image {
+        position: absolute;
+        transform: translateX(calc(var(--offset)));
+        transition: all 0.3 ease-out;
+        animation: mover linear 15s infinite;
+    }
+}
+
 .imageoutercontainer img {
     max-width: fit-content; 
     box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
@@ -400,7 +451,13 @@ and (min-device-width: 320px)
     display: block;
     border-radius: $imageborderradius; 
 }
-
+.imagefive__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: $imageborderradius;
+}
 
 
 
@@ -626,42 +683,6 @@ and (max-width: 1490px) {
     position: relative;
     background-color: grey;
 }
-.imageoutercontainer .left {
-    height: 100%;
-    background-color: rgb(0, 0, 0, .6);
-    color: $mypink;
-    cursor: pointer;
-    order: 1;
-}
-.imageoutercontainer .center {
-    flex: 5%;
-    height: 100%;
-}
-.imageoutercontainer .right {
-    height: 100%;
-    background-color: rgb(0, 0, 0, .6);
-    color: $mypink;
-    cursor: pointer;
-    order: 5;
-}
-.imageoutercontainer .up {
-    height: 100%;
-    background-color: rgb(0, 0, 0, .6);
-    color: $mypink;
-    cursor: pointer;
-    order: 1;
-}
-.imageoutercontainer .center {
-    flex: 5%;
-    height: 100%;
-}
-.imageoutercontainer .down {
-    height: 100%;
-    background-color: rgb(0, 0, 0, .6);
-    color: $mypink;
-    cursor: pointer;
-    order: 5;
-}
 
 .abouttitle {
     position: relative;
@@ -680,7 +701,7 @@ and (max-width: 1490px) {
   }
   
   .abouttitle::before {
-    background: linear-gradient($mypink, $myblue);
+    background: linear-gradient(rgba(249, 222, 201, 1), rgba(153, 178, 221, 1));
 
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;

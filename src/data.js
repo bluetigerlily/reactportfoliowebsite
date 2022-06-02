@@ -61,7 +61,7 @@ export const projects = [
       message: `My favorite animal is the Capybara, the world's largest Rodent.` 
     },
     {
-      className: "imagefour__img",
+      className: "imagefive__img",
       alt: "What I'm interested in.",
       img: "https://live.staticflickr.com/65535/52110617287_0b3eed4bec_c.jpg",
       message: `I want to find work in the Tech Industry where I can use my talents to solve problems, grow, and learn.`,

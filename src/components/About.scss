@@ -77,6 +77,7 @@
 .geardiv {
     background-image: url('../assests/gear.svg');
     background-repeat: no-repeat;
+    background-color: $myblue;
     background-size: contain;
     position: absolute;
     width: 50rem;
@@ -88,13 +89,15 @@
     text-align: center;
     color: $mypink;
     z-index: -2;
-    animation: rotation 5s infinite linear;
+    // animation: rotation 5s infinite linear;
 }
 .gearpone {
    font-size: 3rem;
 }
 .gearptwo {
     font-size: 2rem;
+    margin-top: 9rem;
+
 }
 @media screen and (max-width: 1585px) {
 .geardiv {
@@ -104,14 +107,7 @@
     margin-bottom: 3rem;
 }
 }
-@keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(359deg);
-    }
-  }
+
 .svgandparacontainer {
     display: flex;
     width: full;

@@ -48,12 +48,14 @@ $mypink: rgba(249, 222, 201, 1);
     background-position: center;
     opacity: 0.7;
     box-shadow: 0.5rem 0.5rem $mypink, -0.5rem -0.5rem $mypurple;
-    z-index: -1;
 }
 
 .formcontainer {
     order: 0;
     width: 55;
+}
+.contactformtitle {
+    font-size: 3rem;
 }
 .paramessageclass {
     padding: 1rem;
@@ -126,9 +128,7 @@ $mypink: rgba(249, 222, 201, 1);
 label {
     color:  $mypink;
     border: 2px solid $mypink;
-    font-weight: bold;
     display: block;
-    font-weight: bold;
     background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
     height: 3rem;
     width: 7rem;

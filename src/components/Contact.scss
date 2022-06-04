@@ -1,16 +1,17 @@
 /* font-family: 'Merienda', cursive; */
 
-// $black: #000000;
+// $rich form black: #080708;
 // $champagne-pink: #f9dec9;
 // $wild-blue-yonder: #99b2dd;
-// $raw-umber: #7e6551;
 // $purple-navy: #5e548e;
+// $paradise pink: #EF476F;
 
 //my variables
-$myblack: hsl(240, 100%, 3%);
+$myblack: rgba(8, 7, 8, 1);
 $mypurple: rgba(94, 84, 142, 1);
 $myblue: rgba(153, 178, 221, 1);
 $mypink: rgba(249, 222, 201, 1);
+$myred: rgba(238, 71, 111, 1);
 
 
 .contactoutercontainerclass {
@@ -270,19 +271,22 @@ textarea {
 }
 
 #email {
-    background: radial-gradient(circle, rgba(148,187,233,1) 97%,  rgba(94,84,142,1) 100%);
+    background: none;
     color: $mypurple;
     font-size: 1rem;
+    border: .2rem solid $mypurple;
 }
 #name {
-    background: radial-gradient(circle, rgba(148,187,233,1) 97%,  rgba(94,84,142,1) 100%);
+    background: none;
     color: $mypurple;
     font-size: 1rem;
+    border: .2rem solid $mypurple;
 }
 #message {
-    background: radial-gradient(circle, rgba(148,187,233,1) 97%,  rgba(94,84,142,1) 100%);
+    background: none;
     color: $mypurple;
     font-size: 1rem;    
+    border: .2rem solid $mypurple;
 }
 
 .submitbuttonclass {

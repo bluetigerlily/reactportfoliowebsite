@@ -1,19 +1,19 @@
 
 /* font-family: 'Merienda', cursive; */
 
-// $black: #000000ff;
-// $champagne-pink: #f9dec9ff;
-// $wild-blue-yonder: #99b2ddff;
-// $raw-umber: #7e6551ff;
-// $purple-navy: #5e548eff;
+// $rich form black: #080708;
+// $champagne-pink: #f9dec9;
+// $wild-blue-yonder: #99b2dd;
+// $purple-navy: #5e548e;
+// $paradise pink: #EF476F;
 
 
 //variables
-$myblack: hsl(240, 100%, 3%);
+$myblack: rgba(8, 7, 8, 1);
 $mypurple: rgba(94, 84, 142, 1);
 $myblue: rgba(153, 178, 221, 1);
 $mypink: rgba(249, 222, 201, 1);
-
+$myred: rgba(238, 71, 111, 1);
 
 
 .projectsouterdivclass {
@@ -47,8 +47,9 @@ $mypink: rgba(249, 222, 201, 1);
   order: 1;
   width: 50%;
   margin: 1rem;
-  padding: 1rem;
+  margin: 1rem;
   z-index: -1;
+  border: 1rem solid $mypurple;
 }
 .projectsparaclass {
   order: 1;
@@ -85,7 +86,7 @@ $mypink: rgba(249, 222, 201, 1);
       border-radius: 0%;
     }
   }
-  .projectsmappingdivclass:hover {
+  .projectsmappingdivclass:hover, .projectsmappingdivclass:active, .projectsmappingdivclass:focus-within {
     border-radius: 0;
   }
   
@@ -95,7 +96,12 @@ $mypink: rgba(249, 222, 201, 1);
     max-height: 40rem;
     aspect-ratio: auto;
   }
-  
+  .projectsimgcontainerclass {
+    opacity: .95;
+  }
+  .projectsimgcontainerclass:hover, .projectsimgcontainerclass:active, .projectsimgcontainerclass:focus-within {
+    opacity: 1;
+  }   
   .projectimgclass {
     margin-top: 5%;
     border: .8rem solid $mypurple;

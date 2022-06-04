@@ -34,6 +34,7 @@ export default function Projects() {
               {projects.map((project) => (
                 <a
                   href={project.link}
+                  target={project.target}
                   key={project.image}
                   className="projectslinkclass">
                   <div className="projectsimgcontainerclass">
@@ -42,6 +43,7 @@ export default function Projects() {
                       className="projectimgclass"
                       loading="lazy"
                       src={project.image}
+                      target={project.target}
                     />
                     <div className="projectssubtitlecontainerclass">
                       <h2 className="projectssubtitleclass">

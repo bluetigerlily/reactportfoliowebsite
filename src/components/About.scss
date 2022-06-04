@@ -1,10 +1,10 @@
 /* font-family: 'Merienda', cursive; */
 
-// $black: #000000;
+// $rich form black: #080708;
 // $champagne-pink: #f9dec9;
 // $wild-blue-yonder: #99b2dd;
-// $raw-umber: #7e6551;
 // $purple-navy: #5e548e;
+// $paradise pink: #EF476F;
 
 //some other variables throughout the code defined above
 //the parts as needed for easier toggling / changing of 
@@ -17,10 +17,11 @@
     --typewriterSpeed: 6s;
     --typewriterCharacters: 11;
   }
-  $myblack: hsl(240, 100%, 3%);
+  $myblack: rgba(8, 7, 8, 1);
   $mypurple: rgba(94, 84, 142, 1);
   $myblue: rgba(153, 178, 221, 1);
   $mypink: rgba(249, 222, 201, 1);
+  $myred: rgba(238, 71, 111, 1);
 
   //change to adjust the curvature of the images
   $imageborderradius: 10%;
@@ -142,7 +143,7 @@
   background: linear-gradient(
     45deg,
     $mypurple,
-    $mypurple,
+    $mypurple
   );
   position: absolute;
   top: -2px;
@@ -181,12 +182,35 @@
   top: 0;
   border-radius: 10%;
 }
-button {
+.button-85 {
     
     a:hover,
     a:focus {
         background: $mypurple !important;
         color: $mypink;
+}
+a:hover::before,
+a:focus::before
+ {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      $mypink,
+      $mypink,
+      $myblue,
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10%;
 }
 }
 @media screen and (max-width: 1585px) {

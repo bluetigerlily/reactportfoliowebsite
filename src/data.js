@@ -13,6 +13,7 @@ export const projects = [
         creating accounts, and also showcases JUnit Testing, Log4J Logging, and Best Practices against SQL Injection Attacks. `,
       image: "https://live.staticflickr.com/65535/52008691617_d1914b4fce_n.jpg",
       link: "https://github.com/bluetigerlily/portfolio/tree/main/projects/BicycleStore",
+      target: '_blank',
     },
     {
       title: "React Jamming Spotify Playlist Application",
@@ -22,6 +23,7 @@ export const projects = [
           Showcases knowledge of React Components, Passing State Properties, and using Api's.`,
       image: "https://live.staticflickr.com/65535/52009983884_9ea580af4e_n.jpg",
       link: "https://bespoke-paprenjak-7522cb.netlify.app/",
+      target: '_blank',
     },
     {
       title: "Excursion - Travel Website",
@@ -30,6 +32,7 @@ export const projects = [
         `Excursion is a Travel Website made using React, Material UI, React Router, and Axios.  Allows users to Login, Register, and Book a Travel Package. `,
       image: 'https://live.staticflickr.com/65535/52100546811_38e3d61658_n.jpg',
       link: "https://jocular-madeleine-0bc72c.netlify.app/",
+      target: '_blank',
     },
     
 

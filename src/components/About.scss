@@ -751,7 +751,7 @@ and (max-width: 1490px) {
   }
   
   .abouttitle::before {
-    background: linear-gradient(rgba(249, 222, 201, 1), rgba(153, 178, 221, 1));
+    background: linear-gradient(#d6cecf, #afbcd8);
 
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;

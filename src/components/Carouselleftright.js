@@ -17,51 +17,6 @@ class Carouselleftright extends React.Component {
     }
     //default states for the images
 
-     
-    //timed scrolling through states for the carousel for the right input
-    // getData() {
-       
-
-              
-    //     if (this.state.currImg < imagesArray.length - 1)
-    //     {
-    //         this.setState({currImg: this.state.currImg + 1});
-    //     }  else { 
-    //         this.setState({currImg: 0});
-    //     }
-    //     if (this.state.secondImg < imagesArray.length -1) {
-    //         this.setState({secondImg: this.state.secondImg+1});
-    //     } else {
-    //         this.setState({secondImg: 0});
-    //     }
-    //     if (this.state.thirdImg < imagesArray.length -1) {
-    //         this.setState({thirdImg: this.state.thirdImg+1});
-    //     } else {
-    //         this.setState({thirdImg: 0});
-    //     }
-    //     if (this.state.fourthImg < imagesArray.length - 1) {
-    //         this.setState({fourthImg: this.state.fourthImg});
-    //     }
-    //     else {
-    //         this.setState({fourthImg: 0});
-    //     }
-    
-    //     if (this.state.fifthImg < imagesArray.length - 1) {
-    //     this.setState({fifthImg: this.state.fifthImg});
-    //      }
-    //     else {
-    //     this.setState({fifthImg: 0});
-    //     }
-    // }
-    
-
-    // componentDidMount = () => {
-    //     this.setDataRef = setInterval(() => this.getData(), 10000); 
-    // };
-    // componentWillUnmount() { 
-    //     clearInterval(this.setDataRef) 
-    //  }
-
 
 
 render() {
@@ -71,8 +26,25 @@ render() {
 <div className='imageoutercontainer' >
         
     
+<div className="image" style={{
+        'display': 'block',
+    }}>
+          <img 
+          src={imagesArray[this.state.fourthImg].img} 
+          alt={imagesArray[this.state.fourthImg].alt} 
+          className={imagesArray[this.state.fourthImg].className}
+          id={'s4'}
+          loading={'lazy'}
+          />
+          <div className="image__overlay"> 
+              
+             <p>{imagesArray[this.state.fourthImg].message}</p>
+
+             </div>
+
+    </div>
+    
     <div className="image" style={{
-        '--offset': (this.state.currImg),
         'display': 'block',
     }}>
           <img 
@@ -80,7 +52,7 @@ render() {
           alt={imagesArray[this.state.currImg].alt} 
           className={imagesArray[this.state.currImg].className}
           id={'s1'}
-          loading="lazy"
+          loading={'lazy'}
           />
           <div className="image__overlay"> 
               
@@ -91,7 +63,6 @@ render() {
     </div>
 
     <div className="image"  style={{
-        '--offset': (this.state.secondImg),
         'display': 'block',
     }}>
           <img 
@@ -99,7 +70,7 @@ render() {
           alt={imagesArray[this.state.secondImg].alt} 
           className={imagesArray[this.state.secondImg].className} 
           id={'s2'}
-          loading="lazy"
+          loading={'lazy'}
           />
           <div className="image__overlay">      
              <p>{imagesArray[this.state.secondImg].message}</p>
@@ -109,7 +80,6 @@ render() {
     </div>
 
     <div className="image"  style={{
-        '--offset': (this.state.thirdImg),
         'display': 'block',
         
     }}>
@@ -118,7 +88,7 @@ render() {
           alt={imagesArray[this.state.thirdImg].alt} 
           className={imagesArray[this.state.thirdImg].className}
           id={'s3'}
-          loading="lazy"
+          loading={'lazy'}
           />
           <div className="image__overlay"> 
              <p>{imagesArray[this.state.thirdImg].message}</p>
@@ -126,28 +96,8 @@ render() {
         </div>
     </div>
 
-    <div className="image" style={{
-        '--offset': (this.state.fourthImg),
-        'display': 'block',
-    }}>
-          <img 
-          src={imagesArray[this.state.fourthImg].img} 
-          alt={imagesArray[this.state.fourthImg].alt} 
-          className={imagesArray[this.state.fourthImg].className}
-          id={'s4'}
-          loading="lazy"
-          />
-          <div className="image__overlay"> 
-              
-             <p>{imagesArray[this.state.fourthImg].message}</p>
-
-             </div>
-
-    </div>
-
 
     <div className="image" style={{
-        '--offset': (this.state.fifthImg),
         'display': 'block',
     }}>
           <img 
@@ -155,7 +105,7 @@ render() {
           alt={imagesArray[this.state.fifthImg].alt} 
           className={imagesArray[this.state.fifthImg].className}
           id={'s5'}
-          loading="lazy" 
+          loading={'lazy'}
           />
           <div className="image__overlay"> 
               

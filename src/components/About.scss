@@ -200,15 +200,15 @@ button {
     height: 40rem;
 }
 .gearpone {
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 .gearptwo {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 
 }
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1100px) {
     .gearandparacontainer {    
     
         margin-bottom: 8rem;
@@ -223,6 +223,34 @@ button {
     }
     .gearptwo {
         font-size: 1rem;
+    }
+    .button-85 {
+        width: 50%;
+        height: 50%;
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .gearandparacontainer {    
+    
+        margin-bottom: 4rem;
+    
+    }
+    .geardiv{
+        width: 22rem;
+        height: 22rem;
+    }
+    .gearpone {
+        font-size: 1.5rem;
+    }
+    .gearptwo {
+        font-size: 1rem;
+    }
+    .button-85 {
+        width: 50%;
+        height: 50%;
+        font-size: .5rem;
     }
 }
 @media screen and (max-width: 630px) {
@@ -537,23 +565,21 @@ and (min-device-width: 320px)
     position: relative;
 }
 
-@keyframes mover {
-    0% {
-      transform: translateX(-100%);
-    }
-   
-    100% {
-      transform: translateX(100%);
-    }
-  }
+
   @media screen and (min-width: 1490px ){
-    .image {
-        position: absolute;
-        transform: translateX(calc(var(--offset)));
-        transition: all 0.3 ease-out;
-        animation: mover linear 15s infinite;
+    
+@keyframes mover {
+    from {
+        transform: translate(0, 0);
+      }
+      to {
+        transform: translate(calc(-100% + (5 * 300px)));
+      }
     }
-}
+    .image {
+        animation: mover 30s linear infinite alternate;
+        } 
+  }
 
 .imageoutercontainer img {
     max-width: fit-content; 

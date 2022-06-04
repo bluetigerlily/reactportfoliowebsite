@@ -146,6 +146,11 @@ label {
       align-items: center; 
       
   }
+  .nameandemailclass {
+      display: flex;
+      flex-direction: row;
+      column-gap: 1rem;
+  }
 @media screen and (max-width: 1000px) {
     label {
     color:  $mypink;
@@ -161,6 +166,17 @@ label {
     align-items: left !important;
     padding-top: .1rem;
   }
+  
+}
+@media screen and (max-width: 1000px) {
+    textarea {
+        min-height: 8rem;
+        max-width: 15rem !important;
+        min-width: 15rem !important;
+        background: $mypink;
+        color: $mypurple;
+        font-size: 1rem;
+    }
 }
 input[type=text]{
     height: 3rem;
@@ -192,7 +208,14 @@ textarea[type=text]{
     min-width: 15rem;
     width: 15rem;
     }
+    .nameandemailclass {
+        flex-direction: column;
+    }
+
+
+  
 }
+
 .contactoutercontainerclass:hover {
     border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
 }
@@ -238,17 +261,15 @@ textarea[type=text]{
     align-items: center;
 }
 
-
-
-
 textarea {
     min-height: 8rem;
     max-width: 15rem;
-    min-width: 15rem;
+    min-width: 31rem;
     background: $mypink;
     color: $mypurple;
     font-size: 1rem;
 }
+
 #email {
     background: $mypink;
     color: $mypurple;

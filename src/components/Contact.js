@@ -47,6 +47,7 @@ export default function Contact() {
                 your time!
             </p>
             <div className="inputcontainer">
+            <div className="nameandemailclass">
             <div className="nameclass">
               <label htmlFor="name" className="namelabel">
                 Name
@@ -74,6 +75,7 @@ export default function Contact() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
+            </div>
             </div>
             <div className="messageclass">
               <label

@@ -57,7 +57,6 @@ export default function Contact() {
                 id="name"
                 name="name"
                 className="nameinputclass"
-                placeholder="Name"
                 onChange={(e) => setName(e.target.value)}
                 required
               />
@@ -71,7 +70,6 @@ export default function Contact() {
                 id="email"
                 name="email"
                 className="emailinputclass"
-                placeholder="Email"
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
@@ -86,7 +84,6 @@ export default function Contact() {
               <textarea
                 id="message"
                 name="message"
-                placeholder="Leave a message"
                 className="messageinputclass"
                 onChange={(e) => setMessage(e.target.value)} 
               />

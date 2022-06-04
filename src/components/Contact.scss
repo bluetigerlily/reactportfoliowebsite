@@ -127,16 +127,15 @@ $mypink: rgba(249, 222, 201, 1);
 }
 label {
     color:  $mypink;
-    border: 2px solid $mypink;
     display: block;
-    background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
+    background: radial-gradient(circle, rgba(94,84,142,0.9303944315545244) 97%, rgba(94,84,142,0.46867749419953597) 100%);
     height: 3rem;
     width: 7rem;
     font-size: 1.3rem;    
     margin-right: .3rem;
     margin-bottom: .6rem;
     margin-top: 1rem;
-    border-radius: .25rem;
+    border-radius: .5rem;
     padding-top: .35rem;
   }
   label:after { content: ": " }
@@ -154,17 +153,17 @@ label {
 @media screen and (max-width: 1000px) {
     label {
     color:  $mypink;
-    border: 2px solid $mypink;
     font-weight: bold;
-    background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
+    background: radial-gradient(circle, rgba(94,84,142,0.9303944315545244) 97%, rgba(94,84,142,0.46867749419953597) 100%);
     height: 30px;
     width: 80px;
     font-size: 1rem;
     margin-right: .3rem;
     margin-bottom: .3rem;
-    border-radius: .25rem;
     align-items: left !important;
     padding-top: .1rem;
+    border-radius: .5rem;
+
   }
   
 }
@@ -271,17 +270,17 @@ textarea {
 }
 
 #email {
-    background: $mypink;
+    background: radial-gradient(circle, rgba(148,187,233,1) 97%,  rgba(94,84,142,1) 100%);
     color: $mypurple;
     font-size: 1rem;
 }
 #name {
-    background: $mypink;
+    background: radial-gradient(circle, rgba(148,187,233,1) 97%,  rgba(94,84,142,1) 100%);
     color: $mypurple;
     font-size: 1rem;
 }
 #message {
-    background: $mypink;
+    background: radial-gradient(circle, rgba(148,187,233,1) 97%,  rgba(94,84,142,1) 100%);
     color: $mypurple;
     font-size: 1rem;    
 }
@@ -306,7 +305,7 @@ textarea {
         content: '';
         height: 100%;
         width: 100%;
-        background: linear-gradient($mypurple, $mypurple), url(../assests/leather.svg);
+        background: radial-gradient(circle, rgba(94,84,142,0.9303944315545244) 97%, rgba(94,84,142,0.46867749419953597) 100%);
         top: .5rem;
         left: .5rem;
         border-radius: .5rem;
@@ -354,7 +353,7 @@ textarea {
             display: block;
             justify-items: center;
             justify-content: center;
-            background: $mypurple;
+            background: radial-gradient(circle, rgba(94,84,142,1) 90%, rgba(148,187,233,1) 100%);
             height: 20px;
             width: 80px;
             font-size: .8rem;

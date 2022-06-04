@@ -190,24 +190,107 @@ button {
 }
 }
 @media screen and (max-width: 1585px) {
-.gearandparacontainer {
-    visibility: hidden;
-    margin-bottom: 0rem;
-    margin-top: 0;
+.gearandparacontainer {    
+    
+    margin-bottom: 8rem;
+
 }
 .geardiv{
-    height: 0;
-    width: 0;
+    width: 40rem;
+    height: 40rem;
 }
 .gearpone {
-    font-size: 0rem;
+    font-size: 2rem;
 }
 .gearptwo {
-    font-size: 0rem;
+    font-size: 1rem;
 }
-#aboutinnercontainerid {
-    margin-bottom: 0rem;
+
+
 }
+@media screen and (max-width: 1020px) {
+    .gearandparacontainer {    
+    
+        margin-bottom: 8rem;
+    
+    }
+    .geardiv{
+        width: 30rem;
+        height: 30rem;
+    }
+    .gearpone {
+        font-size: 2rem;
+    }
+    .gearptwo {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 630px) {
+    .gearandparacontainer {    
+    
+        margin-bottom: 4rem;
+    
+    }
+    .geardiv{
+        width: 20rem;
+        height: 20rem;
+    }
+    .gearpone {
+        font-size: 1.5rem;
+    }
+    .gearptwo {
+        font-size: 1rem;
+    }
+    .button-85 {
+        width: 50%;
+        height: 50%;
+        font-size: .5rem;
+    }
+}
+@media screen and (max-width: 550px) {
+    .gearandparacontainer {    
+    
+        margin-bottom: 4rem;
+    
+    }
+    .geardiv{
+        width: 15rem;
+        height: 15rem;
+    }
+    .gearpone {
+        font-size: 1.2rem;
+    }
+    .gearptwo {
+        font-size: .8rem;
+    }
+    .button-85 {
+        width: 50%;
+        height: 50%;
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .gearandparacontainer {    
+    
+        margin-bottom: 1rem;
+    
+    }
+    .geardiv{
+        width: 11rem;
+        height: 11rem;
+    }
+    .gearpone {
+        font-size: .8rem;
+    }
+    .gearptwo {
+        font-size: .7rem;
+    }
+    .button-85 {
+        width: 50%;
+        height: 50%;
+        font-size: .3rem;
+    }
 }
 
 .svgandparacontainer {
@@ -275,8 +358,6 @@ button {
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
 }
 
@@ -294,15 +375,23 @@ button {
         height: auto;
     }
 }
+@media screen and (max-width: 300px) {
+    .bubblegumgif {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    }
+
+}
 @media only screen 
 and (max-device-width: 0px) 
 and (min-device-width: 320px) { 
     .inner_poligon {
         flex-direction: column;
-        width: 15rem; 
-        min-width: 15rem;
-        height: 15rem;  
-        min-height: 15rem;
+        width: 10rem; 
+        min-width: 10rem;
+        height: 10rem;  
+        min-height: 10rem;
         min-inline-size: 10em;
         padding: 9vh;
         order: 0 !important;
@@ -311,8 +400,6 @@ and (min-device-width: 320px) {
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     .svgandparacontainer {
         flex-direction: column;
@@ -339,7 +426,7 @@ and (min-device-width: 320px) {
     }
    
     .imageoutercontainer img {
-        width: 300px;
+        width: 250px;
         position: relative;
         background-color: grey;
     }
@@ -352,11 +439,11 @@ and (min-device-width: 320px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .inner_poligon {
         flex-direction: column;
-        width: 15rem; 
-        min-width: 15rem;
-        height: 15rem;  
-        min-height: 15rem;
-        min-inline-size: 10em;
+        width: 12rem; 
+        min-width: 12rem;
+        height: 12rem;  
+        min-height: 12rem;
+        min-inline-size: 12em;
         padding: 9vh;
         order: 0 !important;
         display: flex;

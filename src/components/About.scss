@@ -570,10 +570,10 @@ and (min-device-width: 320px)
     
 @keyframes mover {
     from {
-        transform: translate(0, 0);
+        transform: translate(-1000px, 0);
       }
       to {
-        transform: translate(calc(-100% + (5 * 300px)));
+        transform: translate(calc(-100% + (5 * 200px)));
       }
     }
     .image {

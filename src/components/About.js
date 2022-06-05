@@ -35,7 +35,7 @@ render() {
             </Link></button> 
              </div>
 
-
+            <div className="svgparacarouselcontainer">
              <div className="svgandparacontainer">
             <div className="inner_poligon">
               <img src={bubblegumgif} className="bubblegumgif" alt="loading..."></img>
@@ -48,6 +48,7 @@ render() {
                 </div>
               </div>
             <Carouselleftright  />
+            </div>
           </div>
         </section>
       );

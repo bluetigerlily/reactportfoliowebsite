@@ -40,7 +40,35 @@ render() {
             <div className="inner_poligon">
               <img src={bubblegumgif} className="bubblegumgif" alt="loading..."></img>
             </div>
-                <div className="paracontainer">
+            <div className="gridcontainer">
+ <div className='panelcontainer'>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+   <div className="panel"></div>
+ </div>
+ </div>
+             <div className="paracontainer">
             <p className="aboutfirstpara" id="aboutfirstparaid">
             "The only thing worse than starting something and failing... 
             is not starting something." -- Seth Godin.

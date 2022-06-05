@@ -978,3 +978,49 @@ and (max-width: 1490px) {
         z-index: -1;
     }
 }
+
+
+.gridcontainer {
+    display: grid;
+    place-items: center;
+    perspective: 15000px;
+    perspective-origin: 50% calc(50% - 1300px);
+    z-index: -1;
+}
+.panelcontainer {
+    display: flex;
+    transform-style: preserve-3d;
+    animation: rotater 24s infinite linear;
+
+}
+$width: 179px;
+.panel {
+    width: $width;
+    height: 150px;
+    position: absolute;
+    overflow: hidden;
+    // background-color: #fff4;
+    transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(675px);
+}
+@keyframes rotater {
+     to { transform: rotateY(-360deg);}
+}
+.panel::before {
+    position: absolute;
+    content: '"The only thing worse than starting something and failing... is not starting something."';
+    font-size: 100px;
+    left: var(--left);
+    width: max-content;
+    color: $mypurple;
+}
+// .panel:hover {
+//     transform: scale(1.1);
+// }
+@for $i from 0 to 24 {
+    .panel:nth-child(#{$i+1}) {
+        --left: #{$width * $i * -1};
+        // --hue: #{360 / 24 * $i};
+        // --delay: #{$i * 0.1s};
+        --angle: #{360deg/ 24 * $i};
+    }
+}

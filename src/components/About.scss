@@ -9,9 +9,9 @@
 //some other variables throughout the code defined above
 //the parts as needed for easier toggling / changing of 
 //effects
-*, *::before, *::after { 
-    box-sizing: border-box 
-}
+ *, *::before, *::after { 
+     box-sizing: border-box 
+ }
 //my variables
 :root {
     --typewriterSpeed: 6s;
@@ -1024,3 +1024,5 @@ $width: 179px;
         --angle: #{360deg/ 24 * $i};
     }
 }
+
+

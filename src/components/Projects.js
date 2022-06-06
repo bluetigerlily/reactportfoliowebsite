@@ -25,7 +25,7 @@ export default function Projects() {
                 src={dashboard}
                 title="Be sure to check out my GitHub to see some more Awesome Projects I have!"
                 alt='...'
-                 />             
+                 />            
             </div>
 
 

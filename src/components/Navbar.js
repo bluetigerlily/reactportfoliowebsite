@@ -15,9 +15,8 @@ export default function Navbar() {
               offset={-70}
               duration={500}
               spy={true}
-              >
-              About Me
-           
+              > 
+              About Me 
             </Link>
           </li>
       

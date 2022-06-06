@@ -75,6 +75,7 @@
 }
 .gearandparacontainer {
     display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -986,6 +987,7 @@ and (max-width: 1490px) {
     perspective: 15000px;
     perspective-origin: 50% calc(50% - 1300px);
     z-index: -1;
+    opacity: .7;
 }
 .panelcontainer {
     display: flex;

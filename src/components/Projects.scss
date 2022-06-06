@@ -54,10 +54,14 @@ $myred: rgba(238, 71, 111, 1);
 .projectsparaclass {
   order: 1;
   width: 40%;
+  backdrop-filter: blur(5px);
+
 }
 #projectstitleid {
   font-size: 6rem;
   order: 0;
+  backdrop-filter: blur(5px);
+
 }
 
 @media screen and (max-width: 1000px) {
@@ -110,6 +114,7 @@ $myred: rgba(238, 71, 111, 1);
     padding: 0;
     margin: 0;
     width: 100%;
+    
   }
  
 @media screen and (max-width: 980px) {

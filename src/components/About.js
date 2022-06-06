@@ -40,7 +40,7 @@ render() {
             <div className="svgparacarouselcontainer">
              <div className="svgandparacontainer">
             <div className="inner_poligon">
-              <img src={bubblegumgif} className="bubblegumgif" alt="loading..."></img>
+              <img src={bubblegumgif} className="bubblegumgif" loading="lazy" alt="loading..."></img>
             </div>
             <div className="gridcontainer">
  <div className='panelcontainer'>

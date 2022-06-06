@@ -23,6 +23,7 @@ export default function Projects() {
                 <img
                 className="videodiv"
                 src={dashboard}
+                loading='lazy'
                 title="Be sure to check out my GitHub to see some more Awesome Projects I have!"
                 alt='...'
                  />            

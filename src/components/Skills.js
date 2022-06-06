@@ -41,6 +41,7 @@ export default function Skills() {
             <img
                 className="skillsdiv"
                 src={womanstanding}
+                loading='lazy'
                 title="Hey you found a secret!  Here's some Capybara Facts as a reward.
                 Capybara are closely related to guinea pigs. ...
                 They are semi-aquatic mammals. ...

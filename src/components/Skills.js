@@ -3,7 +3,7 @@ import { codingskills } from "../data";
 import "./Skills.scss";
 import { FaHackerrank } from "react-icons/fa";
 import { SiCodecademy } from "react-icons/si";
-import womanstanding from '../assests/womanstanding.gif';
+import womanstanding from '../assests/womanstanding.mp4';
 
 
 export default function Skills() {
@@ -38,20 +38,14 @@ export default function Skills() {
             </div>
             </div>
             <div className="skillsvid">
-            <img
-                className="skillsdiv"
-                src={womanstanding}
-                loading='lazy'
-                title="Hey you found a secret!  Here's some Capybara Facts as a reward.
-                Capybara are closely related to guinea pigs. ...
-                They are semi-aquatic mammals. ...
-                Capybara can sleep in water. ...
-                They can run as fast as 35 kph. ...
-                Their teeth grow constantly. ...
-                Capybara are extremely picky eaters. ...
-                They can get scurvy. ..."
-                alt='...'
-                 />           
+            <video className="skillsdiv" 
+              autoPlay={true}
+              loading={'lazy'}
+              muted={true}
+              loop={true}
+              playsinline={true}>
+              <source src={womanstanding} type="video/mp4" />
+              </video>           
             </div>
           </div>
         </section>

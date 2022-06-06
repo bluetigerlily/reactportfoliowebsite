@@ -9,19 +9,19 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 
 function App() {
-  
+
   return (
 
   
 
     <div className="containerclass" id="containerid">
 
-     
       <div className="navbardivclass" id="navbardivid">
         <Navbar />
       </div>
-      <main className='appbodyclass' id='appbodyid'>    
+
       
+      <main className='appbodyclass' id='appbodyid'>    
 
         <About />     
         <Projects />
@@ -29,7 +29,6 @@ function App() {
         <Contact />
 
       </main>
-
 
     </div>
   );

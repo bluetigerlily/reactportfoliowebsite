@@ -263,7 +263,6 @@ textarea[type=text]{
 
 textarea {
     min-height: 8rem;
-    max-width: 15rem;
     min-width: 31rem;
     background: $mypink;
     color: $mypurple;
@@ -345,12 +344,7 @@ textarea {
         height: 1.5rem;
         width: 10rem;
         }
-    textarea{
-        height: fit-content;
-        max-width: 10rem;
-        min-height: 6em;
-        min-width: 10rem;
-        }
+  
         label {
             color:  $mypink;
             font-weight: bold;
@@ -371,4 +365,17 @@ textarea {
             .contactform {
                 padding: 1vh;
             }        
+}
+
+@media only screen and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    textarea {
+        min-width: 10rem !important;
+        max-width: 10rem !important;
+        height: fit-content;
+        min-height: 5rem;
+
+
+  }
 }

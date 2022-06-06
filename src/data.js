@@ -42,31 +42,31 @@ export const projects = [
     {
       className: "imageone__img",
       alt: "Haley Moses full-stack developer portfolio website seeking employment",
-      img: "https://live.staticflickr.com/65535/52010246990_c9d29d50b5_c.jpg?compress=1&resize=355x226&vertical=top",
+      img: "https://live.staticflickr.com/65535/52010246990_e81c3828dc_z.jpg",
       message: "I'm a Full-Stack Developer and Mechanical Engineer."
     },
     {
       className: "imagetwo__img",
       alt: "Haley Moses has a Mechanical Engineering Degree",
-      img: "https://live.staticflickr.com/65535/52101125909_50d0ae8b8b_n.jpg",
+      img: "https://live.staticflickr.com/65535/52101125909_d670bb23bd_n.jpg",
       message: `I have a Bachelor's of Science in Mechanical Engineering from the University of Texas at San Antonio.`
     }, 
     {
       className: "imagethree__img",
       alt: "Haley Moses full-stack developer's experience",
-      img: "https://cdn.dribbble.com/users/2131993/screenshots/15628402/media/7bb0d27e44d8c2eff47276ae86bfd6a3.png?compress=1&resize=355x226&vertical=top",
+      img: "https://live.staticflickr.com/65535/52127588524_db36d61db8_w.jpg",
       message: `I have experience in Engineering, Problem Solving, Front & Back-end Development, Communication, Math, and Computer Aided Design.`
     }, 
     {
       className: "imagefour__img",
       alt: "Haley Moses is a Capybara Fanatic",
-      img: "https://p0.pikist.com/photos/875/214/capybara-faunapark-animal-park-rodent-mammal-fur-hairy-fauna-caviidae-thumbnail.jpg",
+      img: "https://live.staticflickr.com/65535/52127332851_fe00b0eaca_n.jpg",
       message: `My favorite animal is the Capybara, the world's largest Rodent.` 
     },
     {
       className: "imagefive__img",
       alt: "What I'm interested in.",
-      img: "https://live.staticflickr.com/65535/52110617287_0b3eed4bec_c.jpg",
+      img: 'https://live.staticflickr.com/65535/52110617287_14ef38d9b0_z.jpg',
       message: `I want to find work in the Tech Industry where I can use my talents to solve problems, grow, and learn.`,
     },
   ]

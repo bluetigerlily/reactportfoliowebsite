@@ -475,65 +475,16 @@ a:focus::before
     }
 
 }
-@media only screen 
+@media only screen
 and (max-device-width: 0px) 
 and (min-device-width: 320px) { 
     .inner_poligon {
         flex-direction: column;
-        width: 10rem; 
-        min-width: 10rem;
-        height: 10rem;  
-        min-height: 10rem;
-        min-inline-size: 10em;
-        padding: 9vh;
-        order: 0 !important;
-        display: flex;
-        background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
-        justify-content: center;
-        align-items: center;
-        clip-path: circle(50% at 50% 50%); 
-    }
-    .svgandparacontainer {
-        flex-direction: column;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        margin: 5rem;
-        order: 1 !important;
-        column-gap: 2rem;
-        border-radius: 5%;
-    }
-    
-    .imageoutercontainer {
-        order: 2 !important;
-        width: fit-content;
-        min-height: 30vh;
-        margin-bottom: 6rem;
-        column-gap: 3rem;
-        row-gap: 3rem;
-        align-items: center;
-    }
-   
-    .imageoutercontainer img {
-        width: 250px;
-        position: relative;
-        background-color: grey;
-    }
- }
-
-
-@media only screen 
-and (min-device-width: 320px)
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .inner_poligon {
-        flex-direction: column;
-        width: 12rem; 
-        min-width: 12rem;
-        height: 12rem;  
-        min-height: 12rem;
-        min-inline-size: 12em;
-        padding: 9vh;
+        width: 8rem; 
+        min-width: 8rem;
+        height: 8rem;  
+        min-height: 8rem;
+        padding: 8vh;
         order: 0 !important;
         display: flex;
         background: $mypink;
@@ -542,6 +493,53 @@ and (min-device-width: 320px)
         clip-path: circle(50% at 50% 50%); 
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .bubblegumgif {
+        min-height: 15rem;
+        min-width: 15rem;
+    }
+    .svgandparacontainer {
+        flex-direction: column;
+        display: flex;
+        margin: 5rem;
+        order: 1 !important;
+        column-gap: 2rem;
+        border-radius: 5%;
+     }
+     .imageoutercontainer {
+        flex-flow: column;
+        order: 2 !important;
+        margin-bottom: 6rem;
+        row-gap: 2rem;
+        display: flex;        
+    }
+   
+ 
+ }
+
+
+@media only screen and (min-device-width: 320px)
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .inner_poligon {
+        flex-direction: column;
+        width: 8rem; 
+        min-width: 8rem;
+        height: 8rem;  
+        min-height: 8rem;
+        padding: 8vh;
+        order: 0 !important;
+        display: flex;
+        background: $mypink;
+        justify-content: center;
+        align-items: center;
+        clip-path: circle(50% at 50% 50%); 
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .bubblegumgif {
+        min-height: 15rem;
+        min-width: 15rem;
     }
     .svgandparacontainer {
         flex-direction: column;
@@ -552,23 +550,14 @@ and (min-device-width: 320px)
         border-radius: 5%;
      }
     
-   
-
+    
 
      .imageoutercontainer {
         flex-flow: column;
         order: 2 !important;
-        width: auto;
-        height: auto;
-        min-width: 400px;
-        min-height: 30vh;
         margin-bottom: 6rem;
-        column-gap: 3rem;
-        row-gap: 3rem;
-        display: flex;
-        padding: 1rem;
-        align-items: center;
-        
+        row-gap: 2rem;
+        display: flex;        
     }
   }
 

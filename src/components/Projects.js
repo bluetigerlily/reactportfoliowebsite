@@ -2,7 +2,7 @@ import React from "react";
 import { projects } from "../data";
 import "./Projects.scss";
 import { FaGithub } from 'react-icons/fa';
-import dashboard from '../assests/dashboard.gif'
+import dashboard from '../assests/dashboard.mp4'
 
 
 
@@ -20,13 +20,15 @@ export default function Projects() {
                  <a href="https://github.com/bluetigerlily" id="github" target="_blank" rel="noreferrer"><FaGithub /></a>.
               </p>
               </div>
-                <img
-                className="videodiv"
-                src={dashboard}
-                loading='lazy'
-                title="Be sure to check out my GitHub to see some more Awesome Projects I have!"
-                alt='...'
-                 />            
+              <video className="videodiv" 
+              autoPlay={true}
+              loading={'lazy'}
+              muted={true}
+              loop={true}
+              playsinline={true}>
+              <source src={dashboard} type="video/mp4" />
+              </video>
+              
             </div>
 
 

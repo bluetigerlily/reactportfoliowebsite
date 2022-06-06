@@ -1,6 +1,6 @@
 import React from "react";
-import { FaAws, FaCss3, FaHtml5, FaPython, FaReact, FaJs, FaJava, FaNode, FaGithub, FaFoursquare } from "react-icons/fa"
-import { SiApachemaven, SiPostgresql, SiCypress, SiHibernate, SiJunit5 } from "react-icons/si";
+import { FaCss3, FaHtml5, FaPython, FaReact, FaJs, FaJava, FaNode, FaGithub, FaFoursquare } from "react-icons/fa"
+import { SiApachemaven, SiPostgresql, SiJunit5 } from "react-icons/si";
 
 export const projects = [
     {
@@ -79,11 +79,8 @@ export const projects = [
   ["Javascript", <FaJs />],
   ["React", <FaReact />],
   ["SQL", <SiPostgresql />],
-  ["Hibernate", <SiHibernate />],
   ["Python", <FaPython />],
   ["JUnit Testing", <SiJunit5 />],
-  ["Cypress", <SiCypress />],
-  ["AWS", <FaAws />],
   ["APIs", <FaFoursquare />],
   ["Node.js", <FaNode />],
   ["Maven", <SiApachemaven />],

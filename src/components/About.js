@@ -2,7 +2,7 @@ import React from "react";
 import "./About.scss";
 import Carouselleftright from "./Carouselleftright";
 import { Link } from "react-scroll";
-import bubblegumgif from '../assests/bubblegumgif.gif'
+import bubblegumgif from '../assests/bubblegumgif.mp4'
 
 // import Properties from "../data";
 
@@ -40,8 +40,15 @@ render() {
             <div className="svgparacarouselcontainer">
              <div className="svgandparacontainer">
             <div className="inner_poligon">
-              <img src={bubblegumgif} className="bubblegumgif" loading="lazy" alt="loading..."></img>
-            </div>
+            <video className="bubblegumgif" 
+              autoPlay={true}
+              loading={'lazy'}
+              muted={true}
+              loop={true}
+              alt={'loading...'}
+              playsinline={true}>
+              <source src={bubblegumgif} type="video/mp4" />
+              </video>            </div>
             <div className="gridcontainer">
  <div className='panelcontainer'>
    <div className="panel"></div>

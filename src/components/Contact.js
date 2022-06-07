@@ -30,8 +30,8 @@ export default function Contact() {
     return (
       <section id="contact" className="relative">
         <div className="contactoutercontainerclass">
-          <div className="contactSvg">
-          </div>
+          <img className="contactSvg" loading="lazy" alt="">
+          </img>
           <div className="formcontainer">
           <form
             data-netlify="true"

@@ -104,7 +104,6 @@ render() {
           alt={imagesArray[this.state.fifthImg].alt} 
           className={imagesArray[this.state.fifthImg].className}
           id={'s5'}
-          loading={'lazy'}
           />
           <div className="image__overlay"> 
               

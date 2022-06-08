@@ -75,7 +75,6 @@
 }
 .gearandparacontainer {
     display: flex;
-    
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -96,6 +95,9 @@
     color: $mypurple;
     z-index: -2;
     animation: rotate 5s linear infinite;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    opacity: .6;
 }
 @keyframes rotate {
     0% {
@@ -112,11 +114,13 @@
    font-size: 3rem;
    font-family: 'Rajdhani', sans-serif;
    font-weight: bold;
+   color: $mypurple;
 }
 .gearptwo {
     font-size: 2rem;
     font-weight: bold;
     font-family: 'Rajdhani', sans-serif;
+    color: $mypurple;
 }
 
     
@@ -129,7 +133,6 @@
   font-size: 1.5rem;
   cursor: pointer;
   font-family: 'Rajdhani', sans-serif;
-
   position: relative;
   z-index: 0;
   border-radius: 10%;
@@ -140,21 +143,15 @@
 
 .button-85:before {
   content: "";
-  background: linear-gradient(
-    45deg,
-    $mypurple,
-    $mypurple
-  );
+  background: $mypurple;
+  outline: 2px solid $myblue;
   position: absolute;
   top: -2px;
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing-button-85 20s linear infinite;
   transition: opacity 0.3s ease-in-out;
   border-radius: 10%;
 }
@@ -195,7 +192,6 @@ a:focus::before
     content: "";
     background: linear-gradient(
       45deg,
-      $mypink,
       $mypink,
       $myblue,
     );

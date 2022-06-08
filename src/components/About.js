@@ -50,7 +50,7 @@ render() {
               <source src={bubblegumgif} type="video/mp4" />
               </video>            </div>
             <div className="gridcontainer">
- <div className='panelcontainer'>
+              <div className='panelcontainer'>
    <div className="panel"></div>
    <div className="panel"></div>
    <div className="panel"></div>
@@ -75,8 +75,8 @@ render() {
    <div className="panel"></div>
    <div className="panel"></div>
    <div className="panel"></div>
- </div>
- </div>
+              </div>
+            </div>
              <div className="paracontainer">
             <p className="aboutfirstpara" id="aboutfirstparaid">
             "The only thing worse than starting something and failing... 

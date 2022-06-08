@@ -965,9 +965,10 @@ and (max-width: 1490px) {
     display: grid;
     place-items: center;
     perspective: 15000px;
+    width: 50%;
     perspective-origin: 50% calc(50% - 1300px);
     z-index: -1;
-    opacity: .7;
+    opacity: .5;
 }
 .panelcontainer {
     display: flex;

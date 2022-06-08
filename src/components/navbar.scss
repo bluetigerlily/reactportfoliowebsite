@@ -20,8 +20,6 @@ $myred: rgba(238, 71, 111, 1);
     background: linear-gradient($myblue, $mypurple), url(../assests/leather.svg);
     cursor: pointer !important;
     font-size: 2vw;
-    background-attachment: relative;
-
 }
 @media screen and (max-width: 1000px) {
     .navcontainer {
@@ -64,27 +62,26 @@ and (min-device-width: 320px) {
     a {
         color:     $mypink;
         text-decoration: none;
-        border-bottom: 0.2em solid $mypurple;
-        border-top: 0.2em solid $mypurple;
+        border-bottom: 0.2rem solid $mypurple;
+        border-top: 0.2rem solid $mypurple;
         padding: 1rem;
         transition: background 0.1s cubic-bezier(.33,.66,.66,1);
     }    
 }
 
 a {
-    color:     $mypink;
+    color: $mypink;
     text-decoration: none;
-    border-bottom: 0.2em solid $mypurple;
-    border-top: 0.2em solid $mypurple;
+    border-bottom: 0.2rem solid $mypurple;
+    border-top: 0.2rem solid $mypurple;
     transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 
-a:hover,
+A:hover,
 a:focus {
   background: linear-gradient($myblue, $mypink), url(../assests/leather.svg);
   color: $mypurple;
   text-decoration: underline;
-  border-radius: 10%;
 }
 
 #aboutbtnnav {

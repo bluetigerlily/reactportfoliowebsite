@@ -86,7 +86,7 @@
 }
 .geardiv {
     position: absolute;
-    background-image: url('../assests/gear.svg');
+    background-image: url('../../assests/gear.svg');
     background-repeat: no-repeat;
     background-color: $myblue;
     background-size: contain;
@@ -405,7 +405,7 @@ a:focus::before
 .inner_poligon{
     order: 0 !important;
     display: flex;
-    background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1)), url(../assests/leather.svg);
+    background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1));
     width: 40rem; 
     min-width: 40rem;
     min-height: 40rem;
@@ -442,7 +442,7 @@ a:focus::before
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1)), url(../assests/leather.svg);
+        background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1));
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 

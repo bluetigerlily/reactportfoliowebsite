@@ -189,7 +189,7 @@ $myred: rgba(238, 71, 111, 1);
     margin: 1.5rem;
     width: 100%;
     height: auto;
-    background: linear-gradient($mypink, $myblue), url(../assests/leather.svg);
+    background: linear-gradient($mypink, $myblue);
     background-attachment: fixed;
 
     color: $mypurple;

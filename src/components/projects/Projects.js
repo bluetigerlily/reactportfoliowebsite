@@ -1,8 +1,8 @@
 import React from "react";
-import { projects } from "../data";
+import { projects } from "../../data";
 import "./Projects.scss";
 import { FaGithub } from 'react-icons/fa';
-import dashboard from '../assests/dashboard.mp4'
+import dashboard from '../../assests/dashboard.mp4'
 
 
 

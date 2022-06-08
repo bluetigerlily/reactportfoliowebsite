@@ -1,9 +1,9 @@
 import React from "react";
-import { codingskills } from "../data";
+import { codingskills } from "../../data";
 import "./Skills.scss";
 import { FaHackerrank } from "react-icons/fa";
 import { SiCodecademy } from "react-icons/si";
-import womanstanding from '../assests/womanstanding.mp4';
+import womanstanding from '../../assests/womanstanding.mp4';
 
 
 export default function Skills() {

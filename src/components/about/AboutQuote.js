@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.scss";
 import bubblegumgif from '../../assests/bubblegumgif.mp4';
 
 const AboutQuote = () => {

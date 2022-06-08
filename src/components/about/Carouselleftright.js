@@ -1,5 +1,4 @@
 import React from 'react';
-import './About.scss'
 import { imagesArray } from '../../data'
 
 class Carouselleftright extends React.Component {

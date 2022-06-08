@@ -33,7 +33,6 @@ render() {
           alt={imagesArray[this.state.fourthImg].alt} 
           className={imagesArray[this.state.fourthImg].className}
           id={'s4'}
-          loading={'lazy'}
           />
           <div className="image__overlay"> 
               
@@ -51,7 +50,6 @@ render() {
           alt={imagesArray[this.state.currImg].alt} 
           className={imagesArray[this.state.currImg].className}
           id={'s1'}
-          loading={'lazy'}
           />
           <div className="image__overlay"> 
               
@@ -69,7 +67,6 @@ render() {
           alt={imagesArray[this.state.secondImg].alt} 
           className={imagesArray[this.state.secondImg].className} 
           id={'s2'}
-          loading={'lazy'}
           />
           <div className="image__overlay">      
              <p>{imagesArray[this.state.secondImg].message}</p>
@@ -87,7 +84,6 @@ render() {
           alt={imagesArray[this.state.thirdImg].alt} 
           className={imagesArray[this.state.thirdImg].className}
           id={'s3'}
-          loading={'lazy'}
           />
           <div className="image__overlay"> 
              <p>{imagesArray[this.state.thirdImg].message}</p>

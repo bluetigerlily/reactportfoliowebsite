@@ -352,8 +352,6 @@ a:focus::before
     rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
      rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
       rgba(153, 178, 221, .8));
-      width: auto;
-      height: auto;
       color: $mypurple;
       font-family: 'Merienda', cursive;
       margin-top: 9rem;
@@ -366,13 +364,11 @@ a:focus::before
       }
   
       &::before {
-        width: auto;
         background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
     rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
     rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
      rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
       rgba(153, 178, 221, .8));
-        height: auto;
         z-index: 0;    
       }
       &::after {
@@ -467,15 +463,8 @@ a:focus::before
         height: auto;
     }
 }
-@media screen and (max-width: 300px) {
-    .bubblegumgif {
-    display: inline-block;
-    width: auto;
-    height: auto;
-    }
 
-}
-@media only screen
+@media screen
 and (max-device-width: 0px) 
 and (min-device-width: 320px) { 
     .inner_poligon {
@@ -495,8 +484,10 @@ and (min-device-width: 320px) {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     .bubblegumgif {
-        min-height: 15rem;
-        min-width: 15rem;
+        min-height: 5rem;
+        height: 5rem;
+        width: 5rem;
+        min-width: 5rem;
     }
     .svgandparacontainer {
         flex-direction: column;
@@ -518,7 +509,7 @@ and (min-device-width: 320px) {
  }
 
 
-@media only screen and (min-device-width: 320px)
+@media screen and (min-device-width: 320px)
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .inner_poligon {

@@ -25,7 +25,7 @@ export default function Projects() {
               loading={'lazy'}
               muted={true}
               loop={true}
-              playsinline={true}>
+              playsInline={true}>
               <source src={dashboard} type="video/mp4" />
               </video>
               

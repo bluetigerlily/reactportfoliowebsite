@@ -43,7 +43,7 @@ export default function Skills() {
               loading={'lazy'}
               muted={true}
               loop={true}
-              playsinline={true}>
+              playsInline={true}>
               <source src={womanstanding} type="video/mp4" />
               </video>           
             </div>

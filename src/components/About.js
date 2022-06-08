@@ -46,7 +46,7 @@ render() {
               muted={true}
               loop={true}
               alt={'loading...'}
-              playsinline={true}>
+              playsInline={true}>
               <source src={bubblegumgif} type="video/mp4" />
               </video>            </div>
             <div className="gridcontainer">

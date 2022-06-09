@@ -49,7 +49,7 @@ $myred: rgba(238, 71, 111, 1);
   margin: 1rem;
   margin: 1rem;
   z-index: -1;
-  border: 1rem solid $mypurple;
+  // border: 1rem solid $mypurple;
 }
 .projectsparaclass {
   order: 1;
@@ -108,7 +108,8 @@ $myred: rgba(238, 71, 111, 1);
   }   
   .projectimgclass {
     margin-top: 5%;
-    border: .8rem solid $mypurple;
+    outline: .5rem solid $mypurple;
+    // box-shadow: 0.5rem 0.5rem $mypink, -0.5rem -0.5rem $mypurple;
   }
   .projectsparaclass {
     padding: 0;

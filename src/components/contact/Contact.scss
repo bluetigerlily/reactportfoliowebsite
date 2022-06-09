@@ -20,7 +20,6 @@ $myred: rgba(238, 71, 111, 1);
     display: flex;
     flex-direction: row;
     color: $mypurple;
-    justify-content: center;
     background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
     rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
     rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
@@ -32,9 +31,8 @@ $myred: rgba(238, 71, 111, 1);
     width: 100%;
     height: 100%;
     background-attachment: fixed;
-
-    justify-content: center;    
 }
+
 .contactSvg {
     order: 1;
     min-width: 30%;
@@ -44,11 +42,11 @@ $myred: rgba(238, 71, 111, 1);
     margin-right: 2rem;
     background-image: url('../../assests/thankyou.png');
     background-size: contain;
-    background-origin: border-box;
     background-repeat: no-repeat;
+    background-clip: border-box;
     background-position: center;
-    opacity: 0.7;
-    box-shadow: 0.5rem 0.5rem $mypink, -0.5rem -0.5rem $mypurple;
+    opacity: .7;
+    // box-shadow: 0.5rem 0.5rem $mypink, -0.5rem -0.5rem $mypurple;
 }
 
 .formcontainer {

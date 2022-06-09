@@ -5,6 +5,7 @@
 // $wild-blue-yonder: #99b2dd;
 // $purple-navy: #5e548e;
 // $paradise pink: #EF476F;
+// $rose white: rgba(255, 248, 248, 1) 
 
 //some other variables throughout the code defined above
 //the parts as needed for easier toggling / changing of 
@@ -22,6 +23,8 @@
   $myblue: rgba(153, 178, 221, 1);
   $mypink: rgba(249, 222, 201, 1);
   $myred: rgba(238, 71, 111, 1);
+  $mywhite: rgba(255, 248, 248, 1); 
+
 
   //change to adjust the curvature of the images
   $imageborderradius: 10%;
@@ -144,7 +147,6 @@
 .button-85:before {
   content: "";
   background: $mypurple;
-  outline: 2px solid $myblue;
   position: absolute;
   top: -2px;
   left: -2px;

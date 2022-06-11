@@ -10,20 +10,18 @@ import Skills from "./components/skills/Skills";
 
 function App() {
 
+
   return (
-
-  
-
     <div className="containerclass" id="containerid">
 
       <div className="navbardivclass" id="navbardivid">
         <Navbar />
       </div>
-
-      
+    
+   
       <main className='appbodyclass' id='appbodyid'>    
-
-        <About />     
+    
+        <About />
         <Projects />
         <Skills />
         <Contact />

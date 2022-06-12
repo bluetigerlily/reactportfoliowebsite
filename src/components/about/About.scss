@@ -448,7 +448,7 @@ a:focus::before
         min-width: 25rem;
         min-height: 25rem;
         height: 25rem;  
-        min-inline-size: 10em;
+        min-inline-size: 10rem;
         padding: 9vh;
         order: 0 !important;
         display: flex;
@@ -509,7 +509,6 @@ and (min-device-width: 320px) {
     .svgandparacontainer {
         flex-direction: column;
         display: flex;
-        margin: 5rem;
         order: 1 !important;
         column-gap: 2rem;
      }
@@ -557,13 +556,10 @@ and (min-device-width: 320px) {
     .svgandparacontainer {
         flex-direction: column;
         display: flex;
-        margin: 5rem;
         order: 1 !important;
         column-gap: 2rem;
      }
     
-    
-
      .imageoutercontainer {
         flex-flow: column;
         order: 2 !important;

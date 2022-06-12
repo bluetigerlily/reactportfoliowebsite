@@ -479,11 +479,11 @@ and (max-device-width: 0px)
 and (min-device-width: 320px) { 
     .inner_poligon {
         flex-direction: column;
-        width: 8rem; 
-        min-width: 8rem;
-        height: 8rem;  
-        min-height: 8rem;
-        padding: 8vh;
+        width: 10rem; 
+        min-width: 10rem;
+        height: 10rem;  
+        min-height: 10rem;
+        padding: 2vh;
         order: 0 !important;
         display: flex;
         background: $mypink;
@@ -494,10 +494,10 @@ and (min-device-width: 320px) {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     .bubblegumgif {
-        min-height: 5rem;
-        height: 5rem;
-        width: 5rem;
-        min-width: 5rem;
+        min-height: 9rem;
+        height: 9rem;
+        width: 9rem;
+        min-width: 9rem;
     }
     .svgandparacontainer {
         flex-direction: column;
@@ -523,10 +523,10 @@ and (min-device-width: 320px) {
   and (-webkit-min-device-pixel-ratio: 2) {
     .inner_poligon {
         flex-direction: column;
-        width: 8rem; 
-        min-width: 8rem;
-        height: 8rem;  
-        min-height: 8rem;
+        width: 10rem; 
+        min-width: 10rem;
+        height: 10rem;  
+        min-height: 10rem;
         padding: 1vh;
         order: 0 !important;
         display: flex;
@@ -538,8 +538,8 @@ and (min-device-width: 320px) {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     .bubblegumgif {
-        min-height: 15rem;
-        min-width: 15rem;
+        min-height: 9rem;
+        min-width: 9rem;
     }
     .svgandparacontainer {
         flex-direction: column;

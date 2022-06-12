@@ -483,7 +483,7 @@ and (min-device-width: 320px) {
         min-width: 10rem;
         height: 10rem;  
         min-height: 10rem;
-        padding: 2vh;
+        padding: 1vh;
         order: 0 !important;
         display: flex;
         background: $mypink;
@@ -493,11 +493,15 @@ and (min-device-width: 320px) {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
+    
+.inner_poligon:active {
+    animation: none !important;
+}
     .bubblegumgif {
-        min-height: 9rem;
-        height: 9rem;
-        width: 9rem;
-        min-width: 9rem;
+        min-height: 10rem;
+        height: 10rem;
+        width: 10rem;
+        min-width: 10rem;
     }
     .svgandparacontainer {
         flex-direction: column;
@@ -537,9 +541,12 @@ and (min-device-width: 320px) {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
+    .inner_poligon:active {
+        animation: none !important;
+    }
     .bubblegumgif {
-        min-height: 9rem;
-        min-width: 9rem;
+        min-height: 10rem;
+        min-width: 10rem;
     }
     .svgandparacontainer {
         flex-direction: column;

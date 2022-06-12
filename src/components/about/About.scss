@@ -497,6 +497,9 @@ and (min-device-width: 320px) {
 .inner_poligon:active {
     animation: none !important;
 }
+.geardiv {
+    animation: none !important;
+}
     .bubblegumgif {
         min-height: 10rem;
         height: 10rem;
@@ -542,6 +545,9 @@ and (min-device-width: 320px) {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     .inner_poligon:active {
+        animation: none !important;
+    }
+    .geardiv {
         animation: none !important;
     }
     .bubblegumgif {

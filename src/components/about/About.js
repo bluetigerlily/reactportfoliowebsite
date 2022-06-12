@@ -4,6 +4,7 @@ import Carouselleftright from "./Carouselleftright";
 import AboutHero from "./AboutHero";
 import AboutQuote from "./AboutQuote";
 
+
 // import Properties from "../data";
 
 

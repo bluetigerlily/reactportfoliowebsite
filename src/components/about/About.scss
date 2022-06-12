@@ -520,8 +520,8 @@ and (min-device-width: 320px) {
         display: flex;        
     }
     .svgparacarouselcontainer {
-        padding: 0;
-        margin-top: 2rem;
+        padding: 0 !important;
+        margin-top: 2rem !important;
     }
    
  
@@ -567,13 +567,13 @@ and (min-device-width: 320px) {
      .imageoutercontainer {
         flex-flow: column;
         order: 2 !important;
-        margin-bottom: 6rem;
+        margin-bottom: 4rem;
         row-gap: 2rem;
         display: flex;        
     }
     .svgparacarouselcontainer {
-        padding: 0;
-        margin-top: 2rem;
+        padding: 0 !important;
+        margin-top: 2rem !important;
     }
   }
 

@@ -497,8 +497,18 @@ and (min-device-width: 320px) {
 .inner_poligon:active {
     animation: none !important;
 }
-.geardiv {
-    animation: none !important;
+// .geardiv {
+//     animation: none !important;
+// }
+.panelcontainer {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+}
+.gridcontainer {
+    visibility: hidden;
+    height: 0;
+    width: 0;
 }
     .bubblegumgif {
         min-height: 10rem;
@@ -550,8 +560,18 @@ and (min-device-width: 320px) {
     .inner_poligon:active {
         animation: none !important;
     }
-    .geardiv {
-        animation: none !important;
+    // .geardiv {
+    //     animation: none !important;
+    // }
+    .panelcontainer {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+    }
+    .gridcontainer {
+        visibility: hidden;
+        height: 0;
+        width: 0;
     }
     .bubblegumgif {
         min-height: 10rem;

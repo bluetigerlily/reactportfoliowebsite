@@ -1,26 +1,13 @@
 import React from 'react';
 import bubblegumgif from '../../assests/bubblegumgif.mp4';
-import { useSpring } from 'react-spring';
 
 const AboutQuote = () => {
     
-    
-    const [greetingStatus, displayGreeting] = React.useState(false);
-    // eslint-disable-next-line no-unused-vars
-    const contentProps = useSpring({
-      opacity: greetingStatus ? 1 : 0,
-    });
-   
 
     return (
     <div className="svgandparacontainer">
-        <div className='clickerClass' onClick={() => displayGreeting(a => !a)}>
-            {(greetingStatus === false) ? (`What's worse than failing?`) : null}
-        </div>
-        {!greetingStatus ? (<div className='secretDiv'></div>) : (
-            <>
-            <div className="inner_poligon">
-
+   
+        <div className="inner_poligon">
             <video className="bubblegumgif" 
                 autoPlay={true}
                 loading={'lazy'}
@@ -29,7 +16,8 @@ const AboutQuote = () => {
                 alt={'loading...'}
                 playsInline={true}>
                 <source src={bubblegumgif} type="video/mp4" />
-             </video>
+             
+            </video>
         </div>
     <div className="gridcontainer">
       <div className='panelcontainer'>
@@ -65,7 +53,6 @@ const AboutQuote = () => {
     is not starting something." -- Seth Godin.
              </p>
         </div>
-          </>   )}
     </div> 
     );
 }

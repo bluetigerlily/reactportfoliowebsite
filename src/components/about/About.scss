@@ -212,13 +212,8 @@ a:focus::before
 }
 }
 @media screen and (max-width: 1585px) {
-    .clickerClass {
-        font-size: 2.5rem !important;
-    }
 .gearandparacontainer {    
-    
     margin-bottom: 8rem;
-
 }
 .geardiv{
     width: 40rem;
@@ -235,13 +230,9 @@ a:focus::before
 }
 @media screen and (max-width: 1100px) {
     .gearandparacontainer {    
-    
         margin-bottom: 8rem;
-    
     }
-    .clickerClass {
-        font-size: 2rem !important;
-    }
+
     .geardiv{
         width: 30rem;
         height: 30rem;
@@ -260,9 +251,7 @@ a:focus::before
 }
 
 @media screen and (max-width: 800px) {
-    .clickerClass {
-        font-size: 1.5rem !important;
-    }
+
     .gearandparacontainer {    
     
         margin-bottom: 4rem;
@@ -285,9 +274,7 @@ a:focus::before
     }
 }
 @media screen and (max-width: 630px) {
-    .clickerClass {
-        font-size: 1rem !important;
-    }
+
     .gearandparacontainer {    
     
         margin-bottom: 4rem;
@@ -506,9 +493,6 @@ and (min-device-width: 320px) {
     width: 0 !important;
 }
 
-.clickerClass {
-    margin-bottom: 2rem !important;
-}
 .panelcontainer {
     visibility: hidden;
     height: 0;
@@ -577,9 +561,7 @@ and (min-device-width: 320px) {
         height: 0 !important;
         width: 0 !important;
     }
-    .clickerClass {
-        margin-bottom: 2rem !important;
-    }
+ 
     .panelcontainer {
         visibility: hidden;
         height: 0;
@@ -1060,25 +1042,11 @@ $width: 179px;
     width: max-content;
     color: $mypurple;
 }
-// .panel:hover {
-//     transform: scale(1.1);
-// }
+
 @for $i from 0 to 24 {
     .panel:nth-child(#{$i+1}) {
         --left: #{$width * $i * -1};
-        // --hue: #{360 / 24 * $i};
-        // --delay: #{$i * 0.1s};
         --angle: #{calc(360deg/ 24 * $i)};
     }
 }
 
-.clickerClass {
-    font-size: 3rem;
-    font-family: 'Rajdhani', sans-serif;
-    font-weight: bold;
-    cursor: pointer;
-}
-.clickerClass:hover {
-    background-color: $mypurple;
-    color: $mypink;
-}

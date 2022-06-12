@@ -494,11 +494,20 @@ and (min-device-width: 320px) {
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
     
-// .inner_poligon:active {
-//     animation: none !important;
-// }
+.inner_poligon:active {
+    animation: none !important;
+}
 .geardiv {
     animation: none !important;
+}
+.gearandparacontainer {
+    visibility: hidden !important;
+    height: 0 !important;
+    width: 0 !important;
+}
+
+.clickerClass {
+    margin-bottom: 2rem !important;
 }
 .panelcontainer {
     visibility: hidden;
@@ -557,11 +566,19 @@ and (min-device-width: 320px) {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
         rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
-    // .inner_poligon:active {
-    //     animation: none !important;
-    // }
+    .inner_poligon:active {
+        animation: none !important;
+    }
     .geardiv {
         animation: none !important;
+    }
+    .gearandparacontainer {
+        visibility: hidden !important;
+        height: 0 !important;
+        width: 0 !important;
+    }
+    .clickerClass {
+        margin-bottom: 2rem !important;
     }
     .panelcontainer {
         visibility: hidden;

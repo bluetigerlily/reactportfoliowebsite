@@ -1,42 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { imagesArray } from '../../data'
 
-class Carouselleftright extends React.Component {
+const Carouselleftright = () => {
 
+    const [currImg] = useState(0);
+    const [secondImg] = useState(1);
+    const [thirdImg] = useState(2);
+    const [fourthImg] = useState(3);
+    const [fifthImg] = useState(4);
  
-    constructor(props) {
-        super(props);
-        this.state = {
-            currImg: 0,
-            secondImg: 1,
-            thirdImg: 2,
-            fourthImg: 3,
-            fifthImg: 4,
-        }
-    }
-    //default states for the images
-
-
-
-render() {
+    //default states for the image
+  
 
     return (
 
-<div className='imageoutercontainer' >
+    <div className='imageoutercontainer' >
         
-    
 <div className="image" style={{
         'display': 'block',
     }}>
           <img 
-          src={imagesArray[this.state.fourthImg].img} 
-          alt={imagesArray[this.state.fourthImg].alt} 
-          className={imagesArray[this.state.fourthImg].className}
+          src={imagesArray[fourthImg].img} 
+          alt={imagesArray[fourthImg].alt} 
+          className={imagesArray[fourthImg].className}
           id={'s4'}
           />
+          
           <div className="image__overlay"> 
-              
-             <p>{imagesArray[this.state.fourthImg].message}</p>
+             <p>{imagesArray[fourthImg].message}</p>
 
              </div>
 
@@ -46,14 +37,14 @@ render() {
         'display': 'block',
     }}>
           <img 
-          src={imagesArray[this.state.currImg].img} 
-          alt={imagesArray[this.state.currImg].alt} 
-          className={imagesArray[this.state.currImg].className}
+          src={imagesArray[currImg].img} 
+          alt={imagesArray[currImg].alt} 
+          className={imagesArray[currImg].className}
           id={'s1'}
           />
           <div className="image__overlay"> 
               
-             <p>{imagesArray[this.state.currImg].message}</p>
+             <p>{imagesArray[currImg].message}</p>
 
              </div>
 
@@ -63,13 +54,13 @@ render() {
         'display': 'block',
     }}>
           <img 
-          src={imagesArray[this.state.secondImg].img} 
-          alt={imagesArray[this.state.secondImg].alt} 
-          className={imagesArray[this.state.secondImg].className} 
+          src={imagesArray[secondImg].img} 
+          alt={imagesArray[secondImg].alt} 
+          className={imagesArray[secondImg].className} 
           id={'s2'}
           />
           <div className="image__overlay">      
-             <p>{imagesArray[this.state.secondImg].message}</p>
+             <p>{imagesArray[secondImg].message}</p>
           </div>
     
 
@@ -80,13 +71,13 @@ render() {
         
     }}>
           <img 
-          src={imagesArray[this.state.thirdImg].img} 
-          alt={imagesArray[this.state.thirdImg].alt} 
-          className={imagesArray[this.state.thirdImg].className}
+          src={imagesArray[thirdImg].img} 
+          alt={imagesArray[thirdImg].alt} 
+          className={imagesArray[thirdImg].className}
           id={'s3'}
           />
           <div className="image__overlay"> 
-             <p>{imagesArray[this.state.thirdImg].message}</p>
+             <p>{imagesArray[thirdImg].message}</p>
              
         </div>
     </div>
@@ -96,23 +87,23 @@ render() {
         'display': 'block',
     }}>
           <img 
-          src={imagesArray[this.state.fifthImg].img} 
-          alt={imagesArray[this.state.fifthImg].alt} 
-          className={imagesArray[this.state.fifthImg].className}
+          src={imagesArray[fifthImg].img} 
+          alt={imagesArray[fifthImg].alt} 
+          className={imagesArray[fifthImg].className}
           id={'s5'}
           />
           <div className="image__overlay"> 
               
-             <p>{imagesArray[this.state.fifthImg].message}</p>
+             <p>{imagesArray[fifthImg].message}</p>
 
           </div>
     </div>
 
         
-    
-
+   
      </div>
-    )
+
+    );
 }
- }
+ 
  export default Carouselleftright;

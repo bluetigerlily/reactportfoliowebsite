@@ -29,6 +29,11 @@
   //change to adjust the curvature of the images
   $imageborderradius: 10%;
 
+  $gradientbackground: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
+  rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
+  rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
+   rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
+    rgba(153, 178, 221, .8));
 
 
 #aboutcontainerid {
@@ -344,11 +349,7 @@ a:focus::before
 
 
 .svgparacarouselcontainer {
-    background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
-    rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
-    rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
-     rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
-      rgba(153, 178, 221, .8));
+    background: $gradientbackground;
       color: $mypurple;
       font-family: 'Merienda', cursive;
       margin-top: 9rem;
@@ -361,19 +362,11 @@ a:focus::before
       }
   
       &::before {
-        background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
-    rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
-    rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
-     rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
-      rgba(153, 178, 221, .8));
+        background: $gradientbackground;
         z-index: 0;    
       }
       &::after {
-        background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
-    rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
-    rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
-     rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
-      rgba(153, 178, 221, .8));
+        background: $gradientbackground;
         width: 100vw;
         left: 50%;
         top: 0;
@@ -477,8 +470,7 @@ and (min-device-width: 320px) {
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     }
     
 .inner_poligon:active {
@@ -547,8 +539,7 @@ and (min-device-width: 320px) {
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
-        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     }
     .inner_poligon:active {
         animation: none !important;

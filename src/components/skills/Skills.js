@@ -6,22 +6,30 @@ import { SiCodecademy } from "react-icons/si";
 import womanstanding from '../../assests/womanstanding.mp4';
 
 
-export default function Skills() {
-    return (
+const Skills = () => {
+
+  const titleSkills = `Skills & Technologies`;
+  const paraSkills = `as learning resources along with following Programming Youtubers, Online Articles, and Completeing Projects.  
+  Below are some of the Skills and Technologies I've learned during my time Programming:  `;
+  
+
+
+
+  
+  return (
         <section id="skills">
           <div className="skillsouterdivclass" id="skillsouterdivid">
             <div className="titleparaskills">
             <div className="skillsinnerdivclass" id="skillsinnerdivid">
               <h1 className="skillstitleclass" id="skillstitleid">
-                Skills &amp; Technologies
+                {titleSkills}
               </h1>
               <p className="skillsparadescriptionclass" id="skillsparadescriptionid">
                 I use: &nbsp;
                 <a href="https://www.codecademy.com/learn" target="_blank" id="codeacademy" rel="noreferrer"><SiCodecademy /> Codecademy</a> 
                 &nbsp;&amp;&nbsp;
                 <a href="https://www.hackerrank.com/vhr825" target="_blank" id="hackerrank" rel="noreferrer"><FaHackerrank /> Hackerrank</a>&nbsp; 
-                as supplemental learning resources along with following Programming Youtubers, Online Articles, and Completeing Projects.  
-                 Below are some of the Skills and Technologies I've learned during my time Programming:  
+                {paraSkills}
               </p>
             </div>
 
@@ -51,3 +59,5 @@ export default function Skills() {
         </section>
       );
 }
+
+export default Skills;

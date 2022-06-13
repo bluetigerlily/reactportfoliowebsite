@@ -89,13 +89,3 @@ export const projects = [
 ];
 
 
-  export default function Properties(props) {
-    
-    
-    return (
-      <div>
-        <p>Title: {props.title}</p>
-        <p>Count: {props.count}</p>
-      </div>
-    )
-  }

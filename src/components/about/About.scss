@@ -667,6 +667,21 @@ and (min-device-width: 320px) {
     display: block;
     border-radius: $imageborderradius;
 }
+.imageone__img:hover {
+    animation: none;
+}
+.imagetwo__img:hover {
+    animation: none;
+}
+.imagethree__img:hover{
+    animation: none;
+}
+.imagefour__img:hover {
+    animation: none;
+}
+.imagefive__img:hover {
+    animation: none;
+}
 
 .imagetwo__img {
         position: absolute;

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCss3, FaHtml5, FaPython, FaReact, FaJs, FaJava, FaNode, FaGithub, FaFoursquare } from "react-icons/fa"
 import { SiApachemaven, SiPostgresql, SiJunit5 } from "react-icons/si";
-
+import Capybara from './assests/capybara.jpg';
 export const projects = [
     {
       title: "Bicycle Store Application",
@@ -26,12 +26,12 @@ export const projects = [
       target: '_blank',
     },
     {
-      title: "Excursion - Travel Website",
+      title: "Capybara Website",
       subtitle: "React",
       description:
-        `Excursion is a Travel Website made using React, Material UI, React Router, and Axios.  Allows users to Login, Register, and Book a Travel Package. `,
-      image: 'https://live.staticflickr.com/65535/52100546811_38e3d61658_n.jpg',
-      link: "https://jocular-madeleine-0bc72c.netlify.app/",
+        `The Capybara Website is Capybara Meme Fan Website made using React and React Router which uses conditional rendering and state management throughout. `,
+      image: Capybara,
+      link: "https://clinquant-palmier-c67303.netlify.app/",
       target: '_blank',
     },
     

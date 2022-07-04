@@ -5,7 +5,6 @@ import { FaGithub } from 'react-icons/fa';
 import dashboard from '../../assests/dashboard.mp4'
 
 
-
 export default function Projects() {
     return (
         <section id="projects" className="projectssectionclass">
@@ -60,7 +59,6 @@ export default function Projects() {
                   </div>
                 </a>
               ))}
-          
             </div>
           </div>
         </section>

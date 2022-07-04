@@ -648,6 +648,12 @@ and (min-device-width: 320px) {
         transform: translate(calc(-100% + (5 * 200px)));
       }
     }
+    @keyframes fadeinphoto {
+        0% {opacity: 0;}
+        50% { opacity: 1;}
+        100% {opacity: 0;}
+    }
+
     .image {
         animation: mover 30s linear infinite alternate;
         } 

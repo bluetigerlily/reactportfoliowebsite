@@ -3,14 +3,55 @@ import { imagesArray } from '../../data'
 
 const Carouselleftright = () => {
 
-    const [currImg] = useState(0);
-    const [secondImg] = useState(1);
-    const [thirdImg] = useState(2);
-    const [fourthImg] = useState(3);
-    const [fifthImg] = useState(4);
+    const [currImg, setCurrImg] = useState(0);
+    const [secondImg, setSecondImg] = useState(1);
+    const [thirdImg, setThirdImg] = useState(2);
+    const [fourthImg, setFourthImg] = useState(3);
+    const [fifthImg, setFifthImg] = useState(4);
  
-    //default states for the image
+    //default states for the images
   
+    //will be used if I decide to add autolooping if not changed over 20 ticks.
+    const [isClickedRight, setIsClickedRight] = useState();
+    const [isClickedLeft, setIsClickedLeft] = useState();
+    
+    //event handler functions
+    const handleClickRight = (e) => {
+        e.preventDefault();
+        setIsClickedRight(!isClickedRight);
+    }
+    
+    const handleClickLeft = (e) => {
+        e.preventDefault();
+        setIsClickedLeft(!isClickedLeft);
+        if (currImg.state === 0) {
+            setCurrImg(currImg.state + 4);
+        } else {
+            setCurrImg(currImg.state - 1);
+        }
+        if (secondImg.state === 0) {
+            setSecondImg(secondImg.state + 4);
+        } else {
+            setSecondImg(secondImg.state - 1);
+        }
+        if (thirdImg.state -1  === 0) { 
+            setThirdImg(thirdImg.state + 4);
+        } else {
+            setThirdImg(thirdImg.state - 1);
+        }
+        if (fourthImg.state === 0) {
+            setFourthImg(fourthImg.state + 4);
+        } else {
+            setFourthImg(fourthImg.state - 1);
+        }
+        if ( fifthImg.state === 0) {
+            setFifthImg(fifthImg.state + 4);
+        } else {
+            setFifthImg(fifthImg.state - 1);
+        }
+    }
+
+
 
     return (
 
@@ -18,7 +59,9 @@ const Carouselleftright = () => {
         
 <div className="image" style={{
         'display': 'block',
-    }}>
+        'opacity':'.3',
+        'cursor': 'pointer',
+    }} onClick={handleClickLeft}>
           <img 
           src={imagesArray[fourthImg].img} 
           alt={imagesArray[fourthImg].alt} 
@@ -85,7 +128,9 @@ const Carouselleftright = () => {
 
     <div className="image" style={{
         'display': 'block',
-    }}>
+        'opacity': '.3',
+        'cursor': 'pointer',
+    }} onClick={handleClickRight}>
           <img 
           src={imagesArray[fifthImg].img} 
           alt={imagesArray[fifthImg].alt} 

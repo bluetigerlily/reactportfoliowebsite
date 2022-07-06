@@ -384,7 +384,7 @@ a:focus::before
     text-align: center;
     margin-right: 9rem;
     margin-left: 9rem;
-    order: 1 !important;
+    order: 0 !important;
     column-gap: 2rem;
     padding: 12rem;
     width: auto;
@@ -393,7 +393,7 @@ a:focus::before
 }
 
 .inner_poligon{
-    order: 0 !important;
+    order: 1 !important;
     display: flex;
     background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1));
     width: 40rem; 
@@ -640,23 +640,23 @@ and (min-device-width: 320px) {
 
   @media screen and (min-width: 1490px ){
     
-@keyframes mover {
-    from {
-        transform: translate(-1000px, 0);
-      }
-      to {
-        transform: translate(calc(-100% + (5 * 200px)));
-      }
-    }
-    @keyframes fadeinphoto {
-        0% {opacity: 0;}
-        50% { opacity: 1;}
-        100% {opacity: 0;}
-    }
+// @keyframes mover {
+//     from {
+//         transform: translate(-1000px, 0);
+//       }
+//       to {
+//         transform: translate(calc(-100% + (5 * 200px)));
+//       }
+//     }
+//     @keyframes fadeinphoto {
+//         0% {opacity: 0;}
+//         50% { opacity: 1;}
+//         100% {opacity: 0;}
+//     }
 
-    .image {
-        animation: mover 30s linear infinite alternate;
-        } 
+//     .image {
+//         animation: mover 30s linear infinite alternate;
+//         } 
    }
 
 .imageoutercontainer img {

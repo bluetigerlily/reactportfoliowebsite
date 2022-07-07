@@ -24,7 +24,7 @@ export default function Navbar() {
             <li className="projectsnav" id="projectsnavbar">
             <Link to="projects"
               smooth={true}
-              offset={-70}
+              offset={10}
               duration={500}
               spy={true}
               >

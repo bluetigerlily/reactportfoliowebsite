@@ -779,22 +779,22 @@ and (max-width: 1490px) {
  
 }
 .image {
-    width: auto;
-    height: fit-content;
-    position: relative;
+    width: auto !important;
+    height: fit-content !important;
+    position: relative !important;
     background: none;
-    border: .1rem solid $mypurple;
-    order: 2;
-    height: 25rem;
-    padding: 1rem;
-    border-radius: $imageborderradius;
-    margin: 1rem;
+    border: .1rem solid $mypurple !important;
+    order: 2 !important;
+    height: 25rem !important;
+    padding: 1rem !important;
+    border-radius: $imageborderradius !important;
+    margin: 1rem !important;
 }
 
 .image__img {
-    width: 100%;
-    display: block;
-    transition: opacity ease-out 250ms;
+    width: 100% !important;
+    display: block !important;
+    transition: opacity ease-out 250ms ;
     opacity: 1;
     border-radius: $imageborderradius;
 
@@ -807,23 +807,24 @@ and (max-width: 1490px) {
 }
 
 .image__overlay {
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: absolute !important;
+    top: 80% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     color: $mypurple;
     opacity: 1;
     transition: opacity ease-out 250ms;
-    width: 100%;    
-    height: 100%;
-    display: flex;
-    padding: 1rem;
-    font-family: 'Rajdhani', sans-serif;
+    width: 100% !important;    
+    height: 100% !important;
+    display: flex !important;
+    flex-flow: wrap !important;
+    padding: 1rem !important;
+    font-family: 'Rajdhani', sans-serif !important;
     font-weight: bold;
     font-size: 1.3rem;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
     border-radius: $imageborderradius;
 }
 
@@ -1073,3 +1074,41 @@ $width: 179px;
     }
 }
 
+li.thumb {
+    width: 0vw !important;
+    height: 0vh !important;
+    border: .2rem solid $mypurple !important;
+    cursor: pointer !important;
+    visibility: hidden !important;
+}
+li.thumb.selected {
+    border: .2rem solid $mypink !important;
+}
+.carousel .control-dots .dot {
+    background: $mypurple !important;
+}
+.carousel .slider-wrapper {
+    width: 25rem !important;
+}
+ul {
+    margin-bottom: 3rem !important;
+}
+.carousel .carousel-status {
+    visibility: hidden !important;
+}
+.carousel.carousel-slider .control-arrow {
+    color: $mypink !important;
+}
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: rgba(94, 84, 142, .5) !important;
+}
+#aboutcontainerid > div.svgparacarouselcontainer > div.imageoutercontainer {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+#aboutcontainerid > div.svgparacarouselcontainer > div.imageoutercontainer > div > div:nth-child(2) > div {
+    visibility: hidden !important;
+    width: 0 !important;
+    height: 0 !important;
+}

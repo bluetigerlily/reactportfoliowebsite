@@ -64,7 +64,7 @@ $mywhite: rgba(255, 248, 248, 1);
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./assests/background.png');   
+  background-image: url('./assests/background.webp');   
 }
 .line-container {
   position: fixed;
@@ -91,7 +91,7 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url('./assests/background.png');
+  background-image: url('./assests/background.webp');
   overflow: hidden;
   width: 100%;
   margin: 3%;

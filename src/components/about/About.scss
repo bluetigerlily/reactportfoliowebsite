@@ -1159,41 +1159,78 @@ $width: 179px;
     }
 }
 
-li.thumb {
-    width: 0vw !important;
-    height: 0vh !important;
-    border: .2rem solid $mypurple !important;
-    cursor: pointer !important;
-    visibility: hidden !important;
+
+
+
+
+.carousel-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
-li.thumb.selected {
-    border: .2rem solid $mypink !important;
+
+.carousel-wrapper {
+    display: flex;
+    width: 100%;
+    position: relative;
 }
-.carousel .control-dots .dot {
-    background: $mypurple !important;
+
+.carousel-content-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
 }
-.carousel .slider-wrapper {
-    width: 25rem !important;
+
+.carousel-content {
+    display: flex;
+    transition: all 250ms linear;
+    -ms-overflow-style: none;  /* hide scrollbar in IE and Edge */
+    scrollbar-width: none;  /* hide scrollbar in Firefox */
 }
-ul {
-    margin-bottom: 3rem !important;
+
+
+
+.carousel-content.show-1 > * {
+    width: 100%;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
-.carousel .carousel-status {
-    visibility: hidden !important;
+.left-arrow, .right-arrow {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    color: $mypurple;
+    font-size: 35px;
+    opacity: .9;
+    background-color: $myblue;
+    border: 1px solid $mypurple;
+    cursor: pointer;
 }
-.carousel.carousel-slider .control-arrow {
-    color: $mypink !important;
+
+.left-arrow {
+    left: 24px;
 }
-.carousel.carousel-slider .control-arrow:hover {
-    background-color: rgba(94, 84, 142, .5) !important;
+
+.right-arrow {
+    right: 24px;
 }
-#aboutcontainerid > div.svgparacarouselcontainer > div.imageoutercontainer {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+@media (hover: none) and (pointer: coarse) {
+    .left-arrow, .right-arrow {
+        display: none;
+    }
 }
-#aboutcontainerid > div.svgparacarouselcontainer > div.imageoutercontainer > div > div:nth-child(2) > div {
-    visibility: hidden !important;
-    width: 0 !important;
-    height: 0 !important;
+.carousel-content.show-2 > * {
+    width: 50%;
+}
+
+.carousel-content.show-3 > * {
+    width: calc(100% / 3);
+}
+
+.carousel-content.show-4 > * {
+    width: calc(100% / 4);
 }

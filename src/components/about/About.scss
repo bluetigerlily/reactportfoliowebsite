@@ -434,24 +434,22 @@ a:focus::before
 
 
 .svgparacarouselcontainer {
-    background: $gradientbackground;
+    background: radial-gradient(circle at 100%, $myblue, $myblue 50%, $mypink 75%, $mypink 75%);    backdrop-filter: blur( 4px );
       color: $mypurple;
       font-family: 'Merienda', cursive;
-      margin-top: 9rem;
+      margin-top: 14rem;
       background-attachment: fixed;
-      box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
-
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
       &::before,
       &::after {
           content: '';
       }
   
       &::before {
-        background: $gradientbackground;
         z-index: 0;    
       }
       &::after {
-        background: $gradientbackground;
         width: 100vw;
         left: 50%;
         top: 0;
@@ -474,13 +472,12 @@ a:focus::before
     padding: 12rem;
     width: auto;
     height: auto;
-
 }
 
 .inner_poligon{
     order: 1 !important;
     display: flex;
-    background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1));
+    backdrop-filter: blur( 4px );
     width: 40rem; 
     min-width: 40rem;
     min-height: 40rem;
@@ -490,9 +487,7 @@ a:focus::before
     clip-path: circle(50% at 50% 50%); 
     max-width: 1440px;
     padding: 4vh;
-    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     cursor: pointer;
-    background-attachment: fixed;
 }
 
 .inner_poligon:active {
@@ -517,7 +512,6 @@ a:focus::before
         padding: 9vh;
         order: 0 !important;
         display: flex;
-        background: linear-gradient(rgba(153, 178, 221, 1), rgba(249, 222, 201, 1));
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
@@ -551,11 +545,9 @@ and (min-device-width: 320px) {
         padding: 1vh;
         order: 0 !important;
         display: flex;
-        background: $mypink;
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
-        box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     }
     
 .inner_poligon:active {
@@ -620,11 +612,9 @@ and (min-device-width: 320px) {
         padding: 1vh;
         order: 0 !important;
         display: flex;
-        background: $mypink;
         justify-content: center;
         align-items: center;
         clip-path: circle(50% at 50% 50%); 
-        box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     }
     .inner_poligon:active {
         animation: none !important;
@@ -710,7 +700,6 @@ and (min-device-width: 320px) {
 .imageoutercontainer {
     order: 2 !important;
     min-height: 30vh;
-    margin-bottom: 6rem;
     column-gap: 3rem;
     row-gap: 3rem;
     display: flex;
@@ -723,30 +712,9 @@ and (min-device-width: 320px) {
 }
 
 
-  @media screen and (min-width: 1490px ){
-    
-// @keyframes mover {
-//     from {
-//         transform: translate(-1000px, 0);
-//       }
-//       to {
-//         transform: translate(calc(-100% + (5 * 200px)));
-//       }
-//     }
-//     @keyframes fadeinphoto {
-//         0% {opacity: 0;}
-//         50% { opacity: 1;}
-//         100% {opacity: 0;}
-//     }
-
-//     .image {
-//         animation: mover 30s linear infinite alternate;
-//         } 
-   }
 
 .imageoutercontainer img {
     max-width: fit-content;
-    box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
 }
 .imageoutercontainer {
     min-height: 30rem;
@@ -803,6 +771,10 @@ and (min-device-width: 320px) {
     left: 0;
     display: block;
     border-radius: $imageborderradius;
+}
+.image {
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
 }
 
 
@@ -1123,7 +1095,7 @@ and (max-width: 1490px) {
     width: 50%;
     perspective-origin: 50% calc(50% - 1300px);
     z-index: -1;
-    opacity: .5;
+    opacity: .05;
 }
 .panelcontainer {
     display: flex;

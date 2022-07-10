@@ -101,11 +101,32 @@
     height: 50rem;
     color: $mypurple;
     z-index: -2;
-    animation: rotate 5s linear infinite;
+    animation: rotate 12s linear infinite;
     filter: blur(4px);
     -webkit-filter: blur(4px);
     opacity: .6;
 }
+.geartwo {
+    animation: rotatetwo 6s linear infinite;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    opacity: .6;
+    margin-left: 2.8vw;
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    float: right;
+}
+.geartwo:hover {
+    animation: rotatetwo 6s linear infinite;
+}
+.gearscontainer {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -115,6 +136,17 @@
     }
     100% {
         transform: rotate(359deg);
+    }
+}
+@keyframes rotatetwo {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(-359deg);
     }
 }
 .gearpone {
@@ -229,7 +261,17 @@ a:focus::before
 .gearptwo {
     font-size: 1.5rem;
 }
-
+.geartwo {
+    animation: rotatetwo 6s linear infinite;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+    opacity: .6;
+    margin-left: 2vw;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    float: right;
+}
 
 }
 @media screen and (max-width: 1100px) {
@@ -251,6 +293,17 @@ a:focus::before
         width: 50%;
         height: 50%;
         font-size: .7rem;
+    }
+    .geartwo {
+        animation: rotatetwo 6s linear infinite;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        opacity: .6;
+        margin-left: 2vw;
+        width: 225px;
+        height: 225px;
+        position: absolute;
+        float: right;
     }
 }
 
@@ -276,6 +329,17 @@ a:focus::before
         height: 50%;
         font-size: .5rem;
     }
+    .geartwo {
+        animation: rotatetwo 6s linear infinite;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        opacity: .6;
+        margin-left: 2vw;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        float: right;
+    }
 }
 @media screen and (max-width: 630px) {
 
@@ -299,6 +363,17 @@ a:focus::before
         height: 50%;
         font-size: .5rem;
     }
+    .geartwo {
+        animation: rotatetwo 6s linear infinite;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        opacity: .6;
+        margin-left: .5vw;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        float: right;
+    }
 }
 @media screen and (max-width: 550px) {
     .gearandparacontainer {    
@@ -320,6 +395,17 @@ a:focus::before
         width: 50%;
         height: 50%;
         font-size: .5rem;
+    }
+    .geartwo {
+        animation: rotatetwo 6s linear infinite;
+        filter: blur(4px);
+        -webkit-filter: blur(4px);
+        opacity: .6;
+        margin-left: -1.7vw;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        float: right;
     }
 }
 

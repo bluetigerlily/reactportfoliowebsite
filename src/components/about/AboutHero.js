@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
+import geartwo from '../../assests/geartwo.svg';
 
 const AboutHero = () => {
     return (
@@ -9,11 +10,12 @@ const AboutHero = () => {
           Haley Moses
         </h1>
        </div>
+       <div className="gearscontainer">
        <div className="gearandparacontainer">
        <div className="geardiv">
        </div>
-         <p className="gearptwo">A Full Stack Experience</p>
-         <p className="gearpone">That Brings It All Together</p>
+         <p className="gearptwo">Full Stack Developer</p>
+         <p className="gearpone">Keeping the Gears Turning</p>
           <button className="button-85">     
           <Link to="projects"
         smooth={true}
@@ -23,6 +25,16 @@ const AboutHero = () => {
         >
       Check Out My Work
       </Link></button> 
+       </div>
+       <div>
+        <img 
+        className="geartwo"
+        src={geartwo}
+        alt={'loading'}
+        width={450}
+        height={450}
+        />
+       </div>
        </div>
        </>
     );

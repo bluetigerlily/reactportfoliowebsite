@@ -91,9 +91,11 @@ a {
 
 a:hover,
 a:focus {
-  background: linear-gradient($myblue, $mypink);
-  color: $mypurple;
-  text-decoration: underline;
+	background: rgba(255, 255, 255, .4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+    color: $mypurple;
+    text-decoration: underline;
 }
 
 #aboutbtnnav {

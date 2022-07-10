@@ -15,8 +15,8 @@ export default function Projects() {
                 Projects
               </h1>
               <p className="projectsparaclass" id="projectsparaid">
-                Below are just a few of the projects I've completed during my time coding!  My full GitHub can be found here:&nbsp;  
-                 <a href="https://github.com/bluetigerlily" id="github" target="_blank" rel="noreferrer"><FaGithub /></a>.
+                Below are just a few of the projects I've completed during my time coding!  My full GitHub can be found&nbsp;  
+                 <a href="https://github.com/bluetigerlily" id="github" target="_blank" rel="noreferrer">here <FaGithub /></a>.
               </p>
               </div>
               <video className="videodiv" 

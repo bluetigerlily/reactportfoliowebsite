@@ -33,12 +33,9 @@ $myred: rgba(238, 71, 111, 1);
   }
 
  .projectsinnerdivclass {
-  background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
-  rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
-  rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
-   rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
-    rgba(153, 178, 221, .8));  
-  box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
+  background: rgba(255, 255, 255, .4);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
   align-items: left;
   display: flex;
   flex-direction: row;
@@ -52,18 +49,15 @@ $myred: rgba(238, 71, 111, 1);
   margin: 1rem;
   margin: 1rem;
   z-index: -1;
-  // border: 1rem solid $mypurple;
 }
 .projectsparaclass {
   order: 1;
   width: 40%;
-  backdrop-filter: blur(5px);
 
 }
 #projectstitleid {
   font-size: 6rem;
   order: 0;
-  backdrop-filter: blur(5px);
 
 }
 
@@ -112,7 +106,6 @@ $myred: rgba(238, 71, 111, 1);
   .projectimgclass {
     margin-top: 5%; 
     outline: .1rem solid $mypurple;
-    // box-shadow: 0.5rem 0.5rem $mypink, -0.5rem -0.5rem $mypurple;
   }
   .projectsparaclass {
     padding: 0;
@@ -193,11 +186,9 @@ $myred: rgba(238, 71, 111, 1);
     margin: 1.5rem;
     width: 100%;
     height: auto;
-    background: linear-gradient(to bottom, rgba(94, 84, 142, .8), rgba(103, 101, 158, .8),
-    rgba(112, 119, 173, .8), rgba(123, 136, 188, .8), rgba(135, 154, 202, .8), 
-    rgba(141, 162, 208, .8), rgba(147, 170, 215, .8), rgba(153, 178, 221, .8),
-     rgba(153, 178, 221, .8), rgba(153, 178, 221, .8), rgba(153, 178, 221, .8),
-      rgba(153, 178, 221, .8));   
+    background: rgba(255, 255, 255, .4);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
     background-attachment: fixed;
     border: none !important;
     color: $mypurple;
@@ -289,4 +280,7 @@ $myred: rgba(238, 71, 111, 1);
 .svgProject {
   position: absolute;
   z-index: -1;
+}
+#github {
+  color: $mypurple;
 }

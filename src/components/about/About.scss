@@ -66,12 +66,13 @@
 
     &::before {
         width: 100%;
-        background: linear-gradient(rgba(249, 222, 201, 0.57), rgba(153, 178, 221, .8));
         height: 100%;
         z-index: 0;    
     }
     &::after {
-        background: linear-gradient(rgba(249, 222, 201, .9), rgba(153, 178, 221, 0.8));
+        background: rgba(255, 255, 255, .4);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);        
         width: 100vw;
         left: 50%;
         top: 0;
@@ -434,8 +435,9 @@ a:focus::before
 
 
 .svgparacarouselcontainer {
-    background: radial-gradient(circle at 100%, $myblue, $myblue 50%, $mypink 75%, $mypink 75%);    backdrop-filter: blur( 4px );
-      color: $mypurple;
+	background: rgba(255, 255, 255, .4);
+	-webkit-backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);      color: $mypurple;
       font-family: 'Merienda', cursive;
       margin-top: 14rem;
       background-attachment: fixed;
@@ -1026,8 +1028,7 @@ and (max-width: 1490px) {
   }
   
   .abouttitle::before {
-    background: linear-gradient(#d6cecf, #afbcd8);
-
+    background: linear-gradient(60deg, #b9c5de 0%, #bbc8e1 100%);
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;
   }
@@ -1035,6 +1036,8 @@ and (max-width: 1490px) {
   .abouttitle::after {
     width: 0.125em;
     background: $mypurple;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);   
     animation: typewriter var(--typewriterSpeed)
         steps(var(--typewriterCharacters)) 1s forwards,
       blink 750ms steps(var(--typewriterCharacters)) infinite;

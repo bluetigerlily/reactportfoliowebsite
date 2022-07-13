@@ -26,9 +26,9 @@ const Skills = () => {
               </h1>
               <p className="skillsparadescriptionclass" id="skillsparadescriptionid">
                 I use: &nbsp;
-                <a href="https://www.codecademy.com/learn" target="_blank" id="codeacademy" rel="noreferrer"><SiCodecademy /> Codecademy</a> 
+                <a href="https://www.codecademy.com/learn" target="_blank" id="codeacademy" rel="noreferrer" style={{color: 'rgba(94, 84, 142, 1)',}}><SiCodecademy /> Codecademy</a> 
                 &nbsp;&amp;&nbsp;
-                <a href="https://www.hackerrank.com/vhr825" target="_blank" id="hackerrank" rel="noreferrer"><FaHackerrank /> Hackerrank</a>&nbsp; 
+                <a href="https://www.hackerrank.com/vhr825" target="_blank" id="hackerrank" rel="noreferrer" style={{color: 'rgba(94, 84, 142, 1)',}}><FaHackerrank /> Hackerrank</a>&nbsp; 
                 {paraSkills}
               </p>
             </div>

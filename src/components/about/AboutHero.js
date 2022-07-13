@@ -1,5 +1,4 @@
 import React from "react";
-import { FaRegIdBadge } from "react-icons/fa";
 import { Link } from "react-scroll";
 import geartwo from '../../assests/geartwo.svg';
 

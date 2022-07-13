@@ -21,7 +21,7 @@
   $myblack: rgba(8, 7, 8, 1);
   $mypurple: rgba(94, 84, 142, 1);
   $myblue: rgba(153, 178, 221, 1);
-  $mypink: rgba(249, 222, 201, 1);
+  $mypink: rgba(255, 255, 255, .9);
   $myred: rgba(238, 71, 111, 1);
   $mywhite: rgba(255, 248, 248, 1); 
 
@@ -73,7 +73,7 @@
         background: rgba(255, 255, 255, .4);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);        
-        width: 100vw;
+        width: 1001111vw;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
@@ -169,8 +169,9 @@
   padding: 0.6em 2em;
   border: none;
   outline: none;
-  color: $mypink;
   font-size: 1.5rem;
+  border: none !important;
+  outline: none !important;
   cursor: pointer;
   font-family: 'Rajdhani', sans-serif;
   position: relative;
@@ -214,16 +215,17 @@
   width: 100%;
   height: 100%;
   background: $mypurple;
+  color: $mypurple;
   left: 0;
   top: 0;
   border-radius: 10%;
 }
-.button-85 {
+.button-85:after {
     
     a:hover,
     a:focus {
-        background: $mypurple !important;
-        color: $mypink;
+        color: rgba(255, 255, 255, .9);
+        background: $mypurple;
 }
 a:hover::before,
 a:focus::before
@@ -231,7 +233,7 @@ a:focus::before
     content: "";
     background: linear-gradient(
       45deg,
-      $mypink,
+      rgba(255, 255, 255, .9),
       $myblue,
     );
     position: absolute;
@@ -239,9 +241,9 @@ a:focus::before
     left: -2px;
     background-size: 400%;
     z-index: -1;
-    filter: blur(5px);
-    -webkit-filter: blur(5px);
     width: calc(100% + 4px);
+    border: none;
+    text-decoration: none !important;
     height: calc(100% + 4px);
     animation: glowing-button-85 20s linear infinite;
     transition: opacity 0.3s ease-in-out;
@@ -709,7 +711,7 @@ and (min-device-width: 320px) {
     align-items: center;
     text-align: center;
     scroll-behavior: smooth;
-    color: $mypink;
+    color: rgba(255, 255, 255, .9);
     position: relative;
 }
 
@@ -931,7 +933,7 @@ and (max-width: 1490px) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: $mypink;
+    color: rgba(255, 255, 255, .9);
     font-weight: 400;
     opacity: 1;
     transition: opacity ease-out 250ms;
@@ -1181,7 +1183,7 @@ $width: 179px;
     color: $mypurple;
     font-size: 35px;
     opacity: .9;
-    background-color: $myblue;
+    background-color: rgba(255, 255, 255, .9);
     border: 1px solid $mypurple;
     cursor: pointer;
 }

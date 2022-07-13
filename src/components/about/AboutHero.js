@@ -1,4 +1,5 @@
 import React from "react";
+import { FaRegIdBadge } from "react-icons/fa";
 import { Link } from "react-scroll";
 import geartwo from '../../assests/geartwo.svg';
 
@@ -22,6 +23,9 @@ const AboutHero = () => {
         offset={-70}
         duration={500}
         spy={true}
+        style={{
+          color: 'rgba(255, 255, 255, .9)',
+          backgroundColor: `rgba(94, 84, 142, 1)`,}}
         >
       Check Out My Work
       </Link></button> 

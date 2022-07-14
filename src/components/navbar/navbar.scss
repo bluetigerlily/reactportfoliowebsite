@@ -21,7 +21,7 @@ $myred: rgba(238, 71, 111, 1);
     -webkit-backdrop-filter: blur(10px);
 	backdrop-filter: blur(10px);
     cursor: pointer !important;
-    font-size: 2vw;
+    font-size: clamp(.7rem ,2vw, 3rem);
     text-decoration: none;
 }
 ul {
@@ -84,10 +84,7 @@ and (min-device-width: 320px) {
 }
 
 a {
-    color: $mypink;
     text-decoration: none;
-    border-bottom: 0.2rem solid $mypurple;
-    border-top: 0.2rem solid $mypurple;
     transition: background 0.1s cubic-bezier(.33,.66,.66,1);
 }
 

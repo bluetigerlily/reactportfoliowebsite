@@ -1,4 +1,3 @@
-/* eslint-disable no-eval */
 import React, { useState, useEffect } from 'react';
 import { imagesArray } from '../../data';
 import Carousel from "./Carousel.js";
@@ -8,9 +7,9 @@ import Carousel from "./Carousel.js";
   
 const Carouselleftright = () => {
  
-    const [width, setWidth]   = useState(window.innerWidth);
+    const [width, setWidth]   = useState(window.outerWidth);
     const updateDimensions = () => {
-        setWidth(window.innerWidth);
+        setWidth(window.outerWidth);
     }
     useEffect(() => {
         window.addEventListener("resize", updateDimensions);

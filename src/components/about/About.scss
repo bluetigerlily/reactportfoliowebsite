@@ -686,8 +686,6 @@ and (min-device-width: 320px) {
         justify-content: center;
         outline-offset: 3rem;
     }
-    
-
     #aboutfirstparaid {
         min-height: 15vh;
         padding: 2vh;
@@ -1139,11 +1137,7 @@ $width: 179px;
 .right-arrow {
     right: 24px;
 }
-@media (hover: none) and (pointer: coarse) {
-    .left-arrow, .right-arrow {
-        display: none;
-    }
-}
+
 .carousel-content.show-2 > * {
     width: 50%;
 }

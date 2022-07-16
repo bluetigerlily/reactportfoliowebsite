@@ -18,10 +18,10 @@ const Carouselleftright = () => {
     }, []);
 
     return (
-        (width<800) ? 
-        (<div className='imageoutercontainer' style={{ maxWidth: 388, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+        (width>800) ? 
+        (<div className='imageoutercontainer' style={{ maxWidth: 776, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
         <Carousel
-            show={1}
+            show={2}
             infiniteLoop={true}>
          {imagesArray.map((item) => (
             <div className='image' id={item.id} style={{
@@ -48,9 +48,9 @@ const Carouselleftright = () => {
          </Carousel> 
 
          </div>
-) : (<div className='imageoutercontainer' style={{ maxWidth: 776, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+) : (<div className='imageoutercontainer' style={{ maxWidth: 388, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
 <Carousel
-    show={2}
+    show={1}
     infiniteLoop={true}>
  {imagesArray.map((item) => (
     <div className='image' id={item.id} style={{

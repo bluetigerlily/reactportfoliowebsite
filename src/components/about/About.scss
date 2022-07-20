@@ -445,6 +445,7 @@ a:focus::before
       background-attachment: fixed;
         backdrop-filter: blur( 4px );
         -webkit-backdrop-filter: blur( 4px );
+
   
       &::before {
         z-index: 0;    
@@ -465,8 +466,8 @@ a:focus::before
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-right: 9rem;
-    margin-left: 9rem;
+    margin-right: 9rem !important;
+    margin-left: 9rem !important;
     order: 0 !important;
     column-gap: 2rem;
     padding: 12rem;
@@ -823,7 +824,7 @@ and (min-device-width: 320px) {
 }
 
 @media screen 
-and (min-width: 320px)
+and (min-width: 100px)
 and (max-width: 1490px) {
     .imageoutercontainer {
         flex-direction: column;

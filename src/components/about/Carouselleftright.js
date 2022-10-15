@@ -21,7 +21,7 @@ const Carouselleftright = () => {
 
     return (
         (width<800) ?
-        (<div className='imageoutercontainer' style={{ maxWidth: 388, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+        (<div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
 <Carousel
     show={1}
     infiniteLoop={true}>
@@ -51,7 +51,7 @@ const Carouselleftright = () => {
 
  </div>
 ) : 
-        (<div className='imageoutercontainer' style={{ maxWidth: 776, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+        (<div className='imageoutercontainer' style={{ maxWidth: 775, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
         <Carousel
             show={2}
             infiniteLoop={true}>

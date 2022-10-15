@@ -829,7 +829,6 @@ and (max-width: 1490px) {
     .imageoutercontainer {
         flex-direction: column;
         order: 2 !important;
-        width: auto;
         min-height: 30vh;
         margin-bottom: 6rem;
         column-gap: 3rem;
@@ -838,7 +837,6 @@ and (max-width: 1490px) {
     }
  
     .imageoutercontainer img {
-        width: 388px !important;
         height: auto;
         position: relative;
         background-color:  rgba(94, 84, 142, 1);

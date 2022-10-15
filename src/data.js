@@ -43,7 +43,7 @@ export const projects = [
     {
       className: "imageone__img",
       alt: "Haley Moses full-stack developer portfolio website seeking employment",
-      img: "https://live.staticflickr.com/65535/52010246990_e81c3828dc_z.jpg",
+      img: "https://live.staticflickr.com/65535/52428708880_536f2cc12f_m.jpg",
       message: "I'm a Full-Stack Developer and Mechanical Engineer.",
       opacity: 1,
       id: 's1',
@@ -51,7 +51,7 @@ export const projects = [
     {
       className: "imagetwo__img",
       alt: "Haley Moses has a Mechanical Engineering Degree",
-      img: "https://live.staticflickr.com/65535/52101125909_d670bb23bd_n.jpg",
+      img: "https://live.staticflickr.com/65535/52427774152_71889c016c_m.jpg",
       message: `I have a Bachelor's of Science in Mechanical Engineering from the University of Texas at San Antonio.`,
       opacity: 1,
       id: 's2',
@@ -67,7 +67,7 @@ export const projects = [
     {
       className: "imagefour__img",
       alt: "Haley Moses is a Capybara Fanatic",
-      img: "https://live.staticflickr.com/65535/52127332851_fe00b0eaca_n.jpg",
+      img: "https://live.staticflickr.com/65535/52428265986_0b7f1f0dc9_m.jpg",
       message: `My favorite animal is the Capybara, the world's largest Rodent.`,
       opacity: .3,
       func: 'handleClickLeft',
@@ -77,7 +77,7 @@ export const projects = [
     {
       className: "imagefive__img",
       alt: "What I'm interested in.",
-      img: 'https://live.staticflickr.com/65535/52110617287_14ef38d9b0_z.jpg',
+      img: "https://live.staticflickr.com/65535/52428725005_ee3c99215e_m.jpg",
       message: `I want to find work in the Tech Industry where I can use my talents to solve problems, grow, and learn.`,
       opacity: .3,
       func: 'handleClickRight',

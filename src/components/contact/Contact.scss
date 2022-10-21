@@ -211,9 +211,7 @@ textarea[type=text]{
   
 }
 
-.contactoutercontainerclass:hover {
-    border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
-}
+
 .contactformtitle{
     order: 0;
 }
@@ -308,7 +306,7 @@ textarea {
         content: '';
         height: 100%;
         width: 100%;
-        background: radial-gradient(circle, rgba(94,84,142,0.9303944315545244) 97%, rgba(94,84,142,0.46867749419953597) 100%);
+        background: $mypurple;
         top: .5rem;
         left: .5rem;
         border-radius: .5rem;
@@ -351,7 +349,7 @@ textarea {
             display: block;
             justify-items: center;
             justify-content: center;
-            background: radial-gradient(circle, rgba(94,84,142,1) 90%, rgba(148,187,233,1) 100%);
+            background: $mypurple;
             height: 20px;
             width: 80px;
             font-size: .8rem;

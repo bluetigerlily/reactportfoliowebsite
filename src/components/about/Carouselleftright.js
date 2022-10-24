@@ -18,10 +18,9 @@ const Carouselleftright = () => {
         return () => window.removeEventListener("resize", updateDimensions);
     }, []);
 
-
-    return (
-        (width<800) ?
-        (<div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+if (width<800) {
+    return ( 
+       <div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
 <Carousel
     show={1}
     infiniteLoop={true}>
@@ -50,8 +49,10 @@ const Carouselleftright = () => {
  </Carousel> 
 
  </div>
-) : 
-        (<div className='imageoutercontainer' style={{ maxWidth: 775, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+ ) 
+   } else if (width<1200) {
+    return (
+        <div className='imageoutercontainer' style={{ maxWidth: 775, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
         <Carousel
             show={2}
             infiniteLoop={true}>
@@ -80,9 +81,40 @@ const Carouselleftright = () => {
          </Carousel> 
 
          </div>
-)
-        
-    );
+             )      
+            } else {
+                return (
+                    <div className='imageoutercontainer' style={{ maxWidth: 1164, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+        <Carousel
+            show={3}
+            infiniteLoop={true}>
+         {imagesArray.map((item) => (
+            <div className='image' id={item.id} style={{
+                'display': 'block',
+                }}
+                >
+                <img
+                    src={item.img}
+                    alt={item.alt}
+                    className={item.className}
+                />
+                <div className="image__overlay"
+                style={{
+                    'display': 'flex',
+                    'flexFlow': 'wrap',
+                }}>
+                    <p style={{
+                    'display': 'flex',
+                    'flexFlow': 'wrap',
+                }}>{item.message}</p>
+                </div>
+            </div>   
+         ))}   
+         </Carousel> 
+
+         </div>
+                )
+            }
 }
  
  export default Carouselleftright;

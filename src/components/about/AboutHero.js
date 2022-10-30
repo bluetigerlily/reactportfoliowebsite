@@ -1,12 +1,25 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
+import { gsap } from 'gsap';
 import { Link } from "react-scroll";
 import geartwo from '../../assests/geartwo.svg';
 
 const AboutHero = () => {
-    return (
+  
+  const titleRef = useRef(null);
+  
+  useEffect(() => {
+    gsap.from(titleRef.current, {
+      duration: 6, 
+      autoAlpha: 0, 
+      ease: 'none',
+      delay: 1
+    });
+  }, [titleRef])
+
+  return (
         <>
         <div className="aboutinnercontainer" id="aboutinnercontainerid">
-        <h1 className="abouttitle" id="abouttitleid">
+        <h1 ref={titleRef} className="abouttitle" id="abouttitleid">
           Haley Moses
         </h1>
        </div>

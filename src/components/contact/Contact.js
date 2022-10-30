@@ -91,7 +91,7 @@ export default function Contact() {
             <button
               type="submit"
               className="submitbuttonclass">
-              Submit
+              Contact Me Today
             </button>
             </div>
         

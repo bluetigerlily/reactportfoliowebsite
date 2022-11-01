@@ -370,8 +370,8 @@ textarea {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     textarea {
-        min-width: 10rem !important;
-        max-width: 10rem !important;
+        min-width: 15rem !important;
+        max-width: 15rem !important;
         height: fit-content;
         min-height: 5rem;
 

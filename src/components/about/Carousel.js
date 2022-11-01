@@ -28,6 +28,7 @@ const Carousel = (props) => {
         }
     }, [currentIndex, isRepeating, show, length])
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     const next = () => {
         if (isRepeating || currentIndex < (length - show)) {
             setCurrentIndex(prevState => prevState + 1)

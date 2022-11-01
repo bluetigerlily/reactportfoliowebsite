@@ -12,7 +12,8 @@ const Carouselleftright = () => {
     const updateDimensions = () => {
         setWidth(window.innerWidth);
     }
- 
+
+    
     useEffect(() => {
         window.addEventListener("resize", updateDimensions);
         return () => window.removeEventListener("resize", updateDimensions);

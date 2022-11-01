@@ -12,6 +12,8 @@ const Carousel = (props) => {
 
     const [touchPosition, setTouchPosition] = useState(null)
 
+
+
     // Set the length to match current children from props
     useEffect(() => {
         setLength(children.length)
@@ -29,7 +31,7 @@ const Carousel = (props) => {
     const next = () => {
         if (isRepeating || currentIndex < (length - show)) {
             setCurrentIndex(prevState => prevState + 1)
-        }
+        } 
     }
 
     const prev = () => {
@@ -64,6 +66,14 @@ const Carousel = (props) => {
         setTouchPosition(null)
     }
 
+
+    useEffect(() => {
+        const timeout = setTimeout(() => {
+            next();
+        }, 7000); 
+        return () => clearTimeout(timeout);
+    }, [currentIndex, next]);
+
     const handleTransitionEnd = () => {
         if (isRepeating) {
             if (currentIndex === 0) {
@@ -92,6 +102,9 @@ const Carousel = (props) => {
         }
         return output
     }
+    
+  
+    
 
     return (
         <div className="carousel-container">

@@ -85,7 +85,7 @@ if (width<800) {
              )      
             } else {
                 return (
-                    <div className='imageoutercontainer' style={{ maxWidth: 1164, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+                    <div className='imageoutercontainer' style={{ maxWidth: 1162, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
         <Carousel
             show={3}
             infiniteLoop={true}>

@@ -725,7 +725,7 @@ and (min-device-width: 320px) {
 
 
 .imageoutercontainer img {
-    max-width: fit-content;
+    max-width: min-content;
 }
 .imageoutercontainer {
     min-height: 30rem;
@@ -734,7 +734,6 @@ and (min-device-width: 320px) {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     border-radius: $imageborderradius;
 }
 .imageone__img:hover {
@@ -757,7 +756,6 @@ and (min-device-width: 320px) {
         position: absolute;
         top: 0;
         left: 0;
-        display: block;
         border-radius: $imageborderradius; 
 }
 
@@ -765,7 +763,6 @@ and (min-device-width: 320px) {
         position: absolute;
         top: 0;
         left: 0;
-        display: block;
         border-radius: $imageborderradius; 
 }
 
@@ -773,14 +770,12 @@ and (min-device-width: 320px) {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     border-radius: $imageborderradius; 
 }
 .imagefive__img {
     position: absolute;
     top: 0;
     left: 0;
-    display: block;
     border-radius: $imageborderradius;
 }
 .image {

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import { imagesArray } from '../../data';
 import Carousel from "./Carousel.js";
 
@@ -14,7 +14,7 @@ const Carouselleftright = () => {
     }
 
     
-    useEffect(() => {
+    useLayoutEffect(() => {
         window.addEventListener("resize", updateDimensions);
         return () => window.removeEventListener("resize", updateDimensions);
     }, []);

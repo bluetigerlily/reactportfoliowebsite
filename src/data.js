@@ -59,7 +59,7 @@ export const projects = [
     {
       className: "imagethree__img",
       alt: "Haley Moses full-stack developer's experience",
-      img: "https://live.staticflickr.com/65535/52127588524_db36d61db8_w.jpg",
+      img: "https://live.staticflickr.com/65535/52680752648_75aa584dc2_o.jpg",
       message: `I have experience in Engineering, Problem Solving, Front & Back-end Development, Communication, Math, and Computer Aided Design.`,
       opacity: 1,
       id: 's3',

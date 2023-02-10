@@ -21,7 +21,7 @@ const Carouselleftright = () => {
 
 if (width<800) {
     return ( 
-       <div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+       <div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: '21.5em', marginRight: '21.5em', marginTop: 64 }}>
 <Carousel
     show={1}
     infiniteLoop={true}>

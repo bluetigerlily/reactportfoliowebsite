@@ -71,7 +71,7 @@ const Carousel = (props) => {
     useEffect(() => {
         const timeout = setTimeout(() => {
             next();
-        }, 10000); 
+        }, 15000); 
         return () => clearTimeout(timeout);
     }, [currentIndex, next]);
 

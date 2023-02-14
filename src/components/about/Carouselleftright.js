@@ -7,7 +7,7 @@ import Carousel from "./Carousel.js";
   
 const Carouselleftright = () => {
  
-    const [width, setWidth]   = useState(320);
+    const [width, setWidth]   = useState(window.innerWidth);
 
     const updateDimensions = () => {
         setWidth(window.innerWidth);

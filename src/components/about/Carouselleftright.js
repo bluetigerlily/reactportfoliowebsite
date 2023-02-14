@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { imagesArray } from '../../data';
 import Carousel from "./Carousel.js";
 
@@ -7,21 +7,21 @@ import Carousel from "./Carousel.js";
   
 const Carouselleftright = () => {
  
-    const [width, setWidth]   = useState(window.innerWidth);
+    const [width, setWidth]   = useState(320);
 
     const updateDimensions = () => {
         setWidth(window.innerWidth);
     }
 
     
-    useLayoutEffect(() => {
+    useEffect(() => {
         window.addEventListener("resize", updateDimensions);
         return () => window.removeEventListener("resize", updateDimensions);
     }, []);
 
 if (width >= 1200) {
     return (
-        <div className='imageoutercontainer' style={{ maxWidth: 1162, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+        <div className='imageoutercontainer' onLoad={updateDimensions} style={{ maxWidth: 1162, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
 <Carousel
 show={3}
 infiniteLoop={true}>

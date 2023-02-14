@@ -19,39 +19,42 @@ const Carouselleftright = () => {
         return () => window.removeEventListener("resize", updateDimensions);
     }, []);
 
-if (width<800) {
-    return ( 
-       <div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: '21.5em', marginRight: '21.5em', marginTop: 64 }}>
+if (width >= 1200) {
+    return (
+        <div className='imageoutercontainer' style={{ maxWidth: 1162, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
 <Carousel
-    show={1}
-    infiniteLoop={true}>
- {imagesArray.map((item) => (
-    <div className='image' id={item.id} style={{
-        'display': 'block',
-        }}
-        >
-        <img
-            src={item.img}
-            alt={item.alt}
-            className={item.className}
-        />
-        <div className="image__overlay"
-        style={{
-            'display': 'flex',
-            'flexFlow': 'wrap',
-        }}>
-            <p style={{
-            'display': 'flex',
-            'flexFlow': 'wrap',
-        }}>{item.message}</p>
-        </div>
-    </div>   
- ))}   
- </Carousel> 
+show={3}
+infiniteLoop={true}>
+{imagesArray.map((item) => (
+<div className='image' id={item.id} style={{
+    'display': 'block',
+    }}
+    >
+    <img
+        src={item.img}
+        alt={item.alt}
+        className={item.className}
+    />
+    <div className="image__overlay"
+    style={{
+        'display': 'flex',
+        'flexFlow': 'wrap',
+    }}>
+        <p style={{
+        'display': 'flex',
+        'flexFlow': 'wrap',
+    }}>{item.message}</p>
+    </div>
+</div>   
+))}   
+</Carousel> 
 
- </div>
- ) 
-   } else if (width<1200) {
+</div>
+    )
+}
+
+
+else if ((width<1200) && (width>800)) {
     return (
         <div className='imageoutercontainer' style={{ maxWidth: 775, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
         <Carousel
@@ -83,39 +86,42 @@ if (width<800) {
 
          </div>
              )      
-            } else {
-                return (
-                    <div className='imageoutercontainer' style={{ maxWidth: 1162, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
-        <Carousel
-            show={3}
-            infiniteLoop={true}>
-         {imagesArray.map((item) => (
-            <div className='image' id={item.id} style={{
-                'display': 'block',
-                }}
-                >
-                <img
-                    src={item.img}
-                    alt={item.alt}
-                    className={item.className}
-                />
-                <div className="image__overlay"
-                style={{
-                    'display': 'flex',
-                    'flexFlow': 'wrap',
-                }}>
-                    <p style={{
-                    'display': 'flex',
-                    'flexFlow': 'wrap',
-                }}>{item.message}</p>
-                </div>
-            </div>   
-         ))}   
-         </Carousel> 
-
-         </div>
-                )
             }
+            
+            
+            else  {
+                return ( 
+                   <div className='imageoutercontainer' style={{ maxWidth: 387.5, marginLeft: 'auto', marginRight: 'auto', marginTop: 64 }}>
+            <Carousel
+                show={1}
+                infiniteLoop={true}>
+             {imagesArray.map((item) => (
+                <div className='image' id={item.id} style={{
+                    'display': 'block',
+                    }}
+                    >
+                    <img
+                        src={item.img}
+                        alt={item.alt}
+                        className={item.className}
+                    />
+                    <div className="image__overlay"
+                    style={{
+                        'display': 'flex',
+                        'flexFlow': 'wrap',
+                    }}>
+                        <p style={{
+                        'display': 'flex',
+                        'flexFlow': 'wrap',
+                    }}>{item.message}</p>
+                    </div>
+                </div>   
+             ))}   
+             </Carousel> 
+            
+             </div>
+             ) 
+               }
 }
  
  export default Carouselleftright;

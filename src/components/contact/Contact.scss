@@ -21,6 +21,7 @@ $myred: rgba(238, 71, 111, 1);
     flex-direction: row;
     color: $mypurple;
     background: rgba(255, 255, 255, .4);
+    backdrop-filter: blur(10px);
     box-shadow: rgba(0, 0, 0, 0.01) 0px 19px 38px, rgba(0, 0, 0, 0.05) 0px 15px 12px;
     justify-content: center;
     align-items: center;

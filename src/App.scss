@@ -24,7 +24,7 @@ $mywhite: rgba(255, 248, 248, 1);
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(153, 178, 221, 1);
+  background: rgba(122,175,221, .5);
   border: .1em solid $mypurple;
 
 }
@@ -65,7 +65,7 @@ $mywhite: rgba(255, 248, 248, 1);
   z-index: 1;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('./assests/background.webp');   
+  background-image: url('./assests/blueprint.jpeg');   
 }
 .line-container {
   position: fixed;
@@ -92,7 +92,7 @@ svg {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  background-image: url('./assests/background.webp');
+  background-image: url('./assests/blueprint.jpeg');
   overflow: hidden;
   width: 100%;
   margin: 3%;

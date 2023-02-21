@@ -73,7 +73,7 @@
         background: rgba(255, 255, 255, .4);
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);        
-        width: 1001111vw;
+        width: 100vw;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
@@ -922,7 +922,7 @@ and (max-width: 1490px) {
   }
   
   .abouttitle::before {
-    background: linear-gradient(60deg, #b9c5de 0%, #bbc8e1 100%);
+    background: linear-gradient(60deg, #d9e1ef 0%, #d6e0ef 100%);
     animation: typewriter var(--typewriterSpeed)
       steps(var(--typewriterCharacters)) 1s forwards;
   }

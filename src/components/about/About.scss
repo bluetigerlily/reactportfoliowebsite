@@ -854,7 +854,6 @@ and (max-width: 1490px) {
 
 .image__img {
     width: 100% !important;
-    // display: block !important;
     transition: opacity ease-out 250ms ;
     opacity: 1;
     border-radius: $imageborderradius;
@@ -1039,7 +1038,6 @@ $width: 179px;
 }
 
 .carousel-wrapper {
-    display: flex;
     width: 100%;
     position: relative;
 }

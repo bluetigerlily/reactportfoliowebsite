@@ -37,7 +37,8 @@ const AboutHero = () => {
         spy={true}
         style={{
           color: 'rgba(255, 255, 255, .9)',
-          backgroundColor: `rgba(94, 84, 142, 1)`,}}
+          backgroundColor: `rgba(94, 84, 142, 1)`,
+          padding: `.1rem`}}
         >
       Check Out My Work
       </Link></button> 

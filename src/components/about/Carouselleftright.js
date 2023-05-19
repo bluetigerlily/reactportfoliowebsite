@@ -26,15 +26,18 @@ if (width >= 1200) {
 show={3}
 infiniteLoop={true}>
 {imagesArray.map((item) => (
+
 <div className='image' id={item.id} style={{
     'display': 'block',
     }}
     >
+
     <img
         src={item.img}
         alt={item.alt}
         className={item.className}
     />
+
     <div className="image__overlay"
     style={{
         'display': 'flex',
@@ -45,11 +48,14 @@ infiniteLoop={true}>
         'flexFlow': 'wrap',
     }}>{item.message}</p>
     </div>
+
 </div>   
+
 ))}   
 </Carousel> 
 
 </div>
+
     )
 }
 

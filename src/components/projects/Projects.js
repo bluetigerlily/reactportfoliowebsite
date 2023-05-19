@@ -3,6 +3,7 @@ import { projects } from "../../data";
 import "./Projects.scss";
 import { FaGithub } from 'react-icons/fa';
 import dashboard from '../../assests/dashboard.mp4'
+import Tilt from 'react-vanilla-tilt';
 
 
 export default function Projects() {
@@ -30,16 +31,20 @@ export default function Projects() {
               
             </div>
 
-
+          
             <div className="projectsmappingdivclass" id="projectsmappingdivid">
-
+           
               {projects.map((project) => (
-                <a
+                <a 
                   href={project.link}
                   target={project.target}
                   key={project.image}
                   className="projectslinkclass">
+
                   <div className="projectsimgcontainerclass">
+                  <Tilt style={{
+                  }}>
+
                     <img
                       alt="gallery"
                       className="projectimgclass"
@@ -47,6 +52,8 @@ export default function Projects() {
                       src={project.image}
                       target={project.target}
                     />
+                                      </Tilt>
+
                     <div className="projectssubtitlecontainerclass">
                       <h2 className="projectssubtitleclass">
                         {project.subtitle}
@@ -56,11 +63,17 @@ export default function Projects() {
                       </h1>
                       <p className="projectsdescriptionclass">{project.description}</p>
                     </div>
+
                   </div>
+                  
+
                 </a>
               ))}
+              
             </div>
+
           </div>
-        </section>
+      
+        </section> 
       );
-}
+ }

@@ -1,0 +1,68 @@
+/* font-family: 'Merienda', cursive; */
+
+
+// $rich form black: #080708;
+// $champagne-pink: #f9dec9;
+// $wild-blue-yonder: #99b2dd;
+// $purple-navy: #5e548e;
+// $paradise pink: #EF476F;
+
+//variables
+$myblack: rgba(8, 7, 8, 1);
+$mypurple: rgba(94, 84, 142, 1);
+$myblue: rgba(153, 178, 221, 1);
+$mypink: rgba(249, 222, 201, 1);
+$myred: rgba(238, 71, 111, 1);
+
+
+.backgroundContainer {
+    position: fixed;
+    margin: 2rem;
+}
+.buttonContainer {
+    perspective: 500px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.neumorphicBtn {
+    height: 6rem;
+    width: 7rem;
+    background: $mypurple;
+    border: none;
+    border-radius: .5rem;
+    color: $myblue;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-align: center;
+    border-radius: 20rem;
+    outline: none;
+    cursor: pointer;
+    transform:  rotateY(15deg);
+
+    transition: .2s ease-in-out;
+    box-shadow: -6px -6px 14px rgba(255, 255, 255, .1),
+                -6px -6px 10px rgba(255, 255, 255, .1),
+                6px 6px 8px rgba(255, 255, 255, .075),
+                6px 6px 10px rgba(0, 0, 0, .15);
+}
+.neumorphicBtn:hover {
+    box-shadow: -2px -2px 6px rgba(255, 255, 255, .6),
+                -2px -2px 4px rgba(255, 255, 255, .4),
+                2px 2px 2px rgba(255, 255, 255, .05),
+                2px 2px 4px rgba(0, 0, 0, .1);
+  }
+  .neumorphicBtn:active {
+    box-shadow: inset -2px -2px 6px rgba(255, 255, 255, .7),
+                inset -2px -2px 4px rgba(255, 255, 255, .5),
+                inset 2px 2px 2px rgba(255, 255, 255, .075),
+                inset 2px 2px 4px rgba(0, 0, 0, .15);
+  }
+
+
+.backgroundimgReact {
+    transform:  rotateY(15deg);
+}

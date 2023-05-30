@@ -29,6 +29,7 @@ export default function Contact() {
   
     return (
       <section id="contact" className="relative">
+
         <div className="contactoutercontainerclass">
           <img className="contactSvg" loading="lazy" alt="">
           </img>

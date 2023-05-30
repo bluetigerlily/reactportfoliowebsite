@@ -18,6 +18,7 @@ const Skills = () => {
   
   return (
         <section id="skills">
+
           <div className="skillsouterdivclass" id="skillsouterdivid">
             <div className="titleparaskills">
             <div className="skillsinnerdivclass" id="skillsinnerdivid">

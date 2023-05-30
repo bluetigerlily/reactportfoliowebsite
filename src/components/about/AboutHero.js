@@ -23,6 +23,7 @@ const AboutHero = () => {
           Haley Moses
         </h1>
        </div>
+      
        <div className="gearscontainer">
        <div className="gearandparacontainer">
        <div className="geardiv">

@@ -9,6 +9,7 @@ import Tilt from 'react-vanilla-tilt';
 export default function Projects() {
     return (
         <section id="projects" className="projectssectionclass">
+
           <div className="projectsouterdivclass" id="projectsouterdivid">
             <div className="projectsinnerdivclass" id="projectsinnerdivid">
               <div className="projectstitlepara">
@@ -73,7 +74,6 @@ export default function Projects() {
             </div>
 
           </div>
-      
         </section> 
       );
  }

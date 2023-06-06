@@ -60,9 +60,44 @@ $myred: rgba(238, 71, 111, 1);
                 inset -2px -2px 4px rgba(255, 255, 255, .5),
                 inset 2px 2px 2px rgba(255, 255, 255, .075),
                 inset 2px 2px 4px rgba(0, 0, 0, .15);
+
   }
 
-
-.backgroundimgReact {
+.imgContainer {
+    display: flex;
+    flex-direction: column;
     transform:  rotateY(15deg);
+    gap: 0.5rem;
+    cursor: pointer;
+}
+.backgroundimgReact__one {
+    aspect-ratio: 16 / 9;
+    height: 4rem;
+    width: 6rem;
+    border-radius: 20%;
+}
+.backgroundimgReact__two {
+    aspect-ratio: 16 / 9;
+    height: 4rem;
+    width: 6rem;
+    margin-top: 0rem;
+    border-radius: 20%;
+}
+.backgroundimgReact__three {
+    aspect-ratio: 16 / 9;
+    height: 4rem;
+    width: 6rem;
+    border-radius: 20%;
+}
+.backgroundimgReact__four {
+    aspect-ratio: 16 / 9;
+    height: 4rem;
+    width: 6rem;
+    border-radius: 20%;
+}
+.backgroundimgReact__five {
+    aspect-ratio: 16 / 9;
+    height: 4rem;
+    width: 6rem;
+    border-radius: 20%;
 }

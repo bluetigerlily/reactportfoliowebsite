@@ -17,7 +17,7 @@ function App() {
 
       <div className="navbardivclass" id="navbardivid">
         <Navbar />
-        <Button />
+        {/* <Button /> */}
 
       </div>
     
